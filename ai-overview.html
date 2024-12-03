@@ -1,0 +1,4641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="oVpevWyvVJFdBwNuZvDU+ql+iYG6Gva+QWrHhQMLA4EoSa1nZZi202MHaGILpk6dfyTEOTIS51Xd35wbUixkMA==" />
+
+      
+  <title>Google AI Overview Results API - SerpApi</title>
+  <meta name="description" content="Scrape Google Search AI Overview results with SerpApi&#39;s Google AI Overview Results API. Snippets, lists, references and more.">
+  <meta name="keywords" content="Google AI Overview Results API - SerpApi">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SerpApi">
+
+    <link rel="canonical" href="ai-overview.html" />
+
+    <meta property="og:type" content="website" />
+<meta property="og:title" content="Google AI Overview Results API - SerpApi" />
+<meta property="og:description" content="Scrape Google Search AI Overview results with SerpApi&#39;s Google AI Overview Results API. Snippets, lists, references and more." />
+<meta property="og:url" content="https://serpapi.com/ai-overview" />
+<meta property="og:site_name" content="SerpApi" />
+<meta name="twitter:image:alt" content="SerpApi" />
+<meta name="twitter:site" content="@serp_api" />
+
+
+    <link rel="stylesheet" href="third_party/fontawesome/css/all.min.css%3Fversion=5.15.4.css">
+
+    <link rel="stylesheet" media="all" href="assets/dashboard-10926cc01328e1858b1d211a9531d5379953bdbdbbb67aa3399a4ee26249e5b1.css" />
+
+      <link rel="stylesheet" media="all" href="assets/user-7206655d99805b09b3887384d5f68d7cd4619394e95e0b570a016d6bbfc22c6c.css" />
+      <link rel="stylesheet" media="all" href="assets/documentation-618f217274147bb5b967dd84a117695d1d6acfbd1f677a5293b03a10ad0b3da3.css" />
+
+    <script src="assets/application-726242955cb3df4b96532632507f246a430aae8d2266bc1d241c57627b012b43.js"></script>
+
+      
+  <script src="assets/documentation-demo-e1e274c72b0131355bd5569b6af5efc3a19aec7d9967ebe0c934b48e52991c83.js"></script>
+
+  <script src="ai-overview.html" type="text/javascript" data-turbolinks-track="reload"></script>
+
+
+      
+  <link rel="stylesheet" href="select2/select2.min.css">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="SerpApi">
+    <meta name="application-name" content="SerpApi">
+  </head>
+  <body>
+    <div id="page-wrap" class="d-flex overflow-hidden">
+      <div class="menu-open-wrapper position-fixed w-100 h-100"></div>
+
+      <nav id="dashboard-nav" class="position-fixed d-flex flex-column h-100">
+  <div class="nav-header d-flex align-items-center pl-3">
+    <div class="hamburger position-absolute col-3 pl-3 pr-3 mr-3">
+      <div class="ham-wrap">
+        <span class="d-block"></span>
+        <span class="d-block"></span>
+        <span class="d-block"></span>
+      </div>
+    </div>
+    <a href="index.html" class="d-flex align-items-center">
+      <img class="position-relative" height="100%" alt="SerpApi" src="assets/serpapi-text-logo-621a467e3b1e907622c18a6ac81455032e9784d6a86e81a1b4f6407d3f0120a6.svg" />
+    </a>
+  </div>
+  
+  <ul class="dashboard-nav-wrap m-0 p-0">    
+
+    <li class="dashboard-menu-top-title pl-3 pt-3 pb-3 font-weight-bold text-uppercase">
+  <p class="overflow-hidden m-0 bold-500">Api Dashboard</p>
+</li>
+
+
+
+  <li class="position-relative pl-0 ">
+    <a href="dashboard.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-home"></i>
+
+        <span>Your Account</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="manage-api-key.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-key"></i>
+
+            <span>Api Key</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="credit-card.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-credit-card"></i>
+
+            <span>Billing Information</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="change-plan.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-sync-alt"></i>
+
+            <span>Change Plan</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="users/edit.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-user-cog"></i>
+
+            <span>Edit Profile</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="extra-credits.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star"></i>
+
+            <span>Extra Credits</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="invoices.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-file-invoice"></i>
+
+            <span>Invoices</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="plan.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-cube"></i>
+
+            <span>Manage Plan</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="team-members.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-users"></i>
+
+            <span>Team</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="searches.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-database"></i>
+
+        <span>Your Searches</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="https://serpapi.com/searches/reports" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-chart-bar"></i>
+
+            <span>API Absolute Numbers</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="https://serpapi.com/searches/time-taken" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-clock"></i>
+
+            <span>API Response Times</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="https://serpapi.com/searches/success-rate" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-clipboard-check"></i>
+
+            <span>API Success Rates</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+
+
+    <li class="dashboard-menu-top-title pl-3 pt-3 pb-3 font-weight-bold text-uppercase">
+  <p class="overflow-hidden m-0 bold-500">Api Documentation</p>
+</li>
+
+
+
+  <li class="position-relative pl-0 ">
+    <a href="search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2  fab fa-google"></i>
+
+        <span>Google Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden expand-sub-menu expanded">
+
+      <li class="position-relative active-menu-item" style="padding-left:12px;">
+        <a href="ai-overview.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-robot"></i>
+
+            <span>AI Overview</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-ads.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="direct-answer-box-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-exclamation-square"></i>
+
+            <span>Answer Box</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="available-on.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-projector"></i>
+
+            <span>Available On</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="broaden-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Broaden Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="buying-guide.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book-open"></i>
+
+            <span>Buying Guide</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="complementary-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-plus"></i>
+
+            <span>Complementary Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="dmca-messages.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-gavel"></i>
+
+            <span>DMCA Messages</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="discover-more-places.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map-marker-alt"></i>
+
+            <span>Discover More Places</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-discussions-forums.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-comments"></i>
+
+            <span>Discussions and Forums</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="events-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-calendar-alt"></i>
+
+            <span>Events Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="find-results-on.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search"></i>
+
+            <span>Find Results On</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-grammar-check.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book"></i>
+
+            <span>Grammar Check</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="immersive-result.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-telescope"></i>
+
+            <span>Immersive Products</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-inline-images.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Inline Images</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="inline-people-also-search-for.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search"></i>
+
+            <span>Inline People Also Search For</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="inline-products.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-tags"></i>
+
+            <span>Inline Products</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="inline-shopping.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Inline Shopping</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="inline-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Inline Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-jobs-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-briefcase"></i>
+
+            <span>Jobs Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="knowledge-graph.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-head-side-brain"></i>
+
+            <span>Knowledge Graph</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="local-ads.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Local Ads</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="local-news.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-radio"></i>
+
+            <span>Local News</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="local-pack.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map"></i>
+
+            <span>Local Pack</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="menu-highlights.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-robot"></i>
+
+            <span>Menu Highlights</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="news-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>News Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="pagination.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-file-import"></i>
+
+            <span>Pagination</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="perspectives.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-lightbulb-on"></i>
+
+            <span>Perspectives</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="places-sites.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-globe"></i>
+
+            <span>Places Sites</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="popular-destinations.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-plane"></i>
+
+            <span>Popular Destinations</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="product-result.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-tags"></i>
+
+            <span>Product Result</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="product-sites.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-store"></i>
+
+            <span>Product Sites</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-questions-and-answers.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-question-square"></i>
+
+            <span>Questions And Answers</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="recipes-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-hat-chef"></i>
+
+            <span>Recipes Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="refine-by.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-filter"></i>
+
+            <span>Refine By</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="refine-this-search.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Refine This Search</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="related-categories.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-th-large"></i>
+
+            <span>Related Categories</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="related-questions.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-project-diagram"></i>
+
+            <span>Related Questions</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="scholarly-articles.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-graduation-cap"></i>
+
+            <span>Scholarly Articles</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="short-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-film-alt"></i>
+
+            <span>Short Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="showtimes-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-camera-movie"></i>
+
+            <span>Showtimes Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="spell-check.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book"></i>
+
+            <span>Spell Check</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="sports-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-running"></i>
+
+            <span>Sports Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="things-to-know.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-lightbulb-on"></i>
+
+            <span>Things To Know</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="top-carousel.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-grip-horizontal"></i>
+
+            <span>Top Carousel</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="top-insights.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-arrow-circle-up"></i>
+
+            <span>Top Insights</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="top-sights.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-landmark"></i>
+
+            <span>Top Sights</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="top-stories.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-arrow-to-top"></i>
+
+            <span>Top Stories</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="twitter-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2  fab fa-twitter"></i>
+
+            <span>Twitter Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="visual-stories.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-window-restore"></i>
+
+            <span>Visual Stories</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-maps-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-globe-americas"></i>
+
+        <span>Google Maps API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-maps-autocomplete-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-magic"></i>
+
+            <span>Autocomplete API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-maps-contributor-reviews-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-user-edit"></i>
+
+            <span>Contributor Reviews API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-maps-directions-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-directions"></i>
+
+            <span>Directions API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="maps-local-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map-marker-alt"></i>
+
+            <span>Local Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-maps-photo-meta-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-x-ray"></i>
+
+            <span>Photo Meta API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-maps-photos-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-images"></i>
+
+            <span>Photos API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="maps-place-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-store-alt"></i>
+
+            <span>Place Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-maps-reviews-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star"></i>
+
+            <span>Reviews API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-jobs-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-briefcase"></i>
+
+        <span>Google Jobs API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-jobs-listing-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-briefcase"></i>
+
+            <span>Listing API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-shopping-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+        <span>Google Shopping API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="shopping-categories.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-th-large"></i>
+
+            <span>Categories</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-shopping-featured-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-stars"></i>
+
+            <span>Featured Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="shopping-filters-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-filter"></i>
+
+            <span>Filters Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-shopping-new-layout.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-sparkles"></i>
+
+            <span>Google Shopping (New Layout)</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="inline-shopping-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-tag"></i>
+
+            <span>Inline Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="nearby-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map"></i>
+
+            <span>Nearby Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="shopping-people-also-search-for.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search"></i>
+
+            <span>People Also Search For</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="related-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-cart-arrow-down"></i>
+
+            <span>Related Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="shopping-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="shopping-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Shopping Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-images-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-images"></i>
+
+        <span>Google Images API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="images-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Images Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-images-related-content-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image-polaroid"></i>
+
+            <span>Related Content API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-images-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-images-shopping-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Shopping Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-images-suggested-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-project-diagram"></i>
+
+            <span>Suggested Searches</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-news-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+        <span>Google News API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-local-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-map-marker-alt"></i>
+
+        <span>Google Local API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-local-ads.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-local-discover-more-places.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-hotel"></i>
+
+            <span>Discover More Places</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="local-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map-marker-alt"></i>
+
+            <span>Local Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-trends-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-chart-line"></i>
+
+        <span>Google Trends API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-trends-autocomplete.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-magic"></i>
+
+            <span>Autocomplete API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-trends-compared-breakdown.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fas fa-chart-network"></i>
+
+            <span>Compared Breakdown By Region</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-trends-interest-by-region.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-globe-americas"></i>
+
+            <span>Interest By Region</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-trends-interest-over-time.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-analytics"></i>
+
+            <span>Interest Over Time</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-trends-related-queries.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Queries</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-trends-related-topics.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-project-diagram"></i>
+
+            <span>Related Topics</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-trends-trending-now.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-user-chart"></i>
+
+            <span>Trending Now API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-trends-trending-now-daily.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-calendar"></i>
+
+            <span>Daily</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-trends-trending-now-realtime.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-sync"></i>
+
+            <span>Realtime</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-autocomplete-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-magic"></i>
+
+        <span>Google Autocomplete API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-light-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2  fab fa-google"></i>
+
+        <span>Google Light Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-light-answer-box.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-exclamation-square"></i>
+
+            <span>Answer Box</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-light-knowledge-graph.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-head-side-brain"></i>
+
+            <span>Knowledge Graph</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-light-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-light-pagination.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-file-import"></i>
+
+            <span>Pagination</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-light-related-questions.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-project-diagram"></i>
+
+            <span>Related Questions</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-light-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-light-spell-check.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book"></i>
+
+            <span>Spell Check</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-light-top-stories.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-arrow-to-top"></i>
+
+            <span>Top Stories</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-about-this-result.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-exclamation-circle"></i>
+
+        <span>Google About This Result</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-lens-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-camera"></i>
+
+        <span>Google Lens API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-lens-image-sources-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-file-search"></i>
+
+            <span>Image Sources API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-finance-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-landmark"></i>
+
+        <span>Google Finance API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-finance-markets.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-analytics"></i>
+
+            <span>Google Finance Markets API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-related-questions-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-question-square"></i>
+
+        <span>Google Related Questions API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-scholar-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-graduation-cap"></i>
+
+        <span>Google Scholar API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-scholar-author-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-user-graduate"></i>
+
+            <span>Author API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-scholar-author-articles.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>Articles</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-scholar-author-citation.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-quote-right"></i>
+
+            <span>Citation</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-scholar-author-cited-by.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-chart-bar"></i>
+
+            <span>Cited By</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-scholar-author-co-authors.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-user-friends"></i>
+
+            <span>Co-Authors</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-scholar-cite-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-quote-right"></i>
+
+            <span>Cite API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-scholar-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-scholar-profiles-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-users"></i>
+
+            <span>Profiles API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-play-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2  fab fa-google-play"></i>
+
+        <span>Google Play Store API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-play-books.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book-alt"></i>
+
+            <span>Books Store API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-play-games.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-gamepad"></i>
+
+            <span>Games Store API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-play-movies.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-film-alt"></i>
+
+            <span>Movies Store API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-play-product-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shapes"></i>
+
+            <span>Play Product API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-play-apps-product.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-th-large"></i>
+
+            <span>Apps</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-play-audiobooks-product.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-headphones"></i>
+
+            <span>Audiobooks</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-play-books-product.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book-alt"></i>
+
+            <span>Books</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-play-movies-product.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-film-alt"></i>
+
+            <span>Movies</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-play-product-reviews.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star"></i>
+
+            <span>Reviews</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="google-play-tv-product.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-tv-retro"></i>
+
+            <span>TV</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-product-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-tags"></i>
+
+        <span>Google Product API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="local-sellers.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-store-alt"></i>
+
+            <span>Local Sellers</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="online-sellers.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-globe"></i>
+
+            <span>Online Sellers</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="product-page.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-barcode"></i>
+
+            <span>Product Page</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="reviews-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star-half-alt"></i>
+
+            <span>Reviews Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="specs-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-info-square"></i>
+
+            <span>Specs Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-immersive-product-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-telescope"></i>
+
+        <span>Google Immersive Product API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-reverse-image.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+        <span>Google Reverse Image API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-events-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-calendar-alt"></i>
+
+        <span>Google Events API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-local-services-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+        <span>Google Local Services API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-local-services-place.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-store-alt"></i>
+
+            <span>Place Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-videos-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+        <span>Google Videos API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-videos-found-in-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-info"></i>
+
+            <span>Found In Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-videos-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-videos-short-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-film-alt"></i>
+
+            <span>Short Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="videos-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-video"></i>
+
+            <span>Videos Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-patents-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-file-certificate"></i>
+
+        <span>Google Patents API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-patents-details-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list"></i>
+
+            <span>Details API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-patents-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-patents-summary.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-info"></i>
+
+            <span>Summary</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-ads-transparency-center-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-eye"></i>
+
+        <span>Google Ads Transparency API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-flights-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-plane-departure"></i>
+
+        <span>Google Flights API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-flights-airports.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-plane-arrival"></i>
+
+            <span>Airports Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-flights-booking-options.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-ticket-alt"></i>
+
+            <span>Booking Options</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-flights-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-plane"></i>
+
+            <span>Flights Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-flights-price-insights.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-dollar-sign"></i>
+
+            <span>Price Insights</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-hotels-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-bed"></i>
+
+        <span>Google Hotels API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-hotels-properties.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-hotel"></i>
+
+            <span>Properties</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="google-hotels-property-details.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-search-dollar"></i>
+
+            <span>Property Details</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-food-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-pizza"></i>
+
+        <span>Google Food API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="google-ai-overview-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-robot"></i>
+
+        <span>Google AI Overview API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="baidu-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <img alt="" class="mr-2" src="demo-redesign/icons/static/baidu.svg%3Fversion=1.2" />
+
+        <span>Baidu Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-ads-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ads Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-answer-box.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-exclamation-square"></i>
+
+            <span>Answer Box</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-news-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>Baidu News API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-documents-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book"></i>
+
+            <span>Documents Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-forum-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-comment-lines"></i>
+
+            <span>Forum Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-inline-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Inline Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-news-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>News Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-people-also-search-for.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search"></i>
+
+            <span>People Also Search For</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-related-topics.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Topics</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-shopping-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Shopping Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-social-media-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-users"></i>
+
+            <span>Social Media Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="baidu-top-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-poll-h"></i>
+
+            <span>Top Searches</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="bing-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <img alt="" class="mr-2" src="demo-redesign/icons/static/bing.svg%3Fversion=1.2" />
+
+        <span>Bing Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-ads.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-answer-box.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-exclamation-square"></i>
+
+            <span>Answer Box</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-news-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>Bing News API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-coupons-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Coupons Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-events-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-calendar-alt"></i>
+
+            <span>Events Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-images-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-images"></i>
+
+            <span>Images API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-inline-images.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Inline Images</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-inline-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Inline Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-knowledge-graph.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-head-side-brain"></i>
+
+            <span>Knowledge Graph</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-local-pack.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map"></i>
+
+            <span>Local Pack</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-maps-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-globe-americas"></i>
+
+            <span>Maps API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-recipes-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-hat-chef"></i>
+
+            <span>Recipes Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-related-questions.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-project-diagram"></i>
+
+            <span>Related Questions</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-shopping-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Shopping API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="bing-shopping-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-short-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Short Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-top-shopping-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Top Shopping Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="bing-videos-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Videos API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="bing-videos-ads-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ads Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="bing-videos-related-search-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search"></i>
+
+            <span>Related Search Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="bing-videos-shopping-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Shopping Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="bing-videos-short-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Short Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="bing-videos-suggested-search-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Suggested Search Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="duckduckgo-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <img alt="" class="mr-2" src="demo-redesign/icons/static/duckduckgo.svg%3Fv=1.1" />
+
+        <span>DuckDuckGo Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-ads.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-inline-images.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Inline Images</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-inline-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Inline Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-knowledge-graph.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-head-side-brain"></i>
+
+            <span>Knowledge Graph</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-maps-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-globe-americas"></i>
+
+            <span>Maps API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="duckduckgo-maps-local-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map-marker-alt"></i>
+
+            <span>Local Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="duckduckgo-maps-place-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-store-alt"></i>
+
+            <span>Place Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-news-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>News API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-news-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>News Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="duckduckgo-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="yahoo-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2  fab fa-yahoo"></i>
+
+        <span>Yahoo! Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-ad-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-answer-box.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-exclamation-square"></i>
+
+            <span>Answer Box</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-images-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Images API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-inline-images.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Inline Images</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-inline-shopping.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-bag"></i>
+
+            <span>Inline Shopping</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-inline-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Inline Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-knowledge-graph.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-head-side-brain"></i>
+
+            <span>Knowledge Graph</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-local-pack.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map"></i>
+
+            <span>Local Pack</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-refine-this-search.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Refine This Search</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-related-questions.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-project-diagram"></i>
+
+            <span>Related Questions</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-related-topics.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star"></i>
+
+            <span>Related Topics</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-related-trending-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-chart-line"></i>
+
+            <span>Related Trending Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-shopping-search-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-shopping-cart"></i>
+
+            <span>Shopping API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="yahoo-shopping-filtering.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-filter"></i>
+
+            <span>Filtering</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="yahoo-shopping-price-bound.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-dollar-sign"></i>
+
+            <span>Price Bound</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="yahoo-shopping-sorting.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-sort"></i>
+
+            <span>Sorting</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-top-stories.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>Top Stories</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-trending-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-fire"></i>
+
+            <span>Trending Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yahoo-videos-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Videos API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="yandex-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2  fab fa-yandex-international"></i>
+
+        <span>Yandex Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yandex-ad-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yandex-images-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Images API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="yandex-reverse-image-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Reverse Image</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yandex-inline-images.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Inline Images</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yandex-inline-videos.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-film-alt"></i>
+
+            <span>Inline Videos</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yandex-knowledge-graph.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-head-side-brain"></i>
+
+            <span>Knowledge Graph</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yandex-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yandex-spell-check.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book"></i>
+
+            <span>Spell Check</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yandex-videos-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Videos API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="ebay-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <img alt="" class="mr-2" src="demo-redesign/icons/static/ebay.svg%3Fversion=1.2" />
+
+        <span>Ebay Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="ebay-line-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-tag"></i>
+
+            <span>Inline Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="ebay-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="ebay-related-items.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-sitemap"></i>
+
+            <span>Related Items</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="ebay-related-searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="youtube-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2  fab fa-youtube"></i>
+
+        <span>YouTube Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-ad-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-category-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-photo-video"></i>
+
+            <span>Category Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-channel-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-user-circle"></i>
+
+            <span>Channel Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-movie-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-popcorn"></i>
+
+            <span>Movie Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-playlist-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-music"></i>
+
+            <span>Playlist Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-related_searches.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related Searches</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-shorts-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-video"></i>
+
+            <span>Shorts Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-video-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-play-circle"></i>
+
+            <span>Video API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="youtube-video-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-film"></i>
+
+            <span>Video Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="walmart-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <img alt="" class="mr-2" src="demo-redesign/icons/static/walmart.svg" />
+
+        <span>Walmart Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="walmart-featured-item.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Featured Item</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="walmart-filters.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-filter"></i>
+
+            <span>Filters</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="walmart-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="walmart-pagination.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-file-import"></i>
+
+            <span>Pagination</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="walmart-product-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-tags"></i>
+
+            <span>Product API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="walmart-product-result.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-barcode"></i>
+
+            <span>Product Result</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:21.6px;">
+        <a href="walmart-reviews-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star-half-alt"></i>
+
+            <span>Reviews Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="walmart-product-reviews-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star"></i>
+
+            <span>Product Reviews API</span>
+          </div>
+        </a>
+      </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+  </ul>
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="walmart-related-queries.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-project-diagram"></i>
+
+            <span>Related Queries</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="walmart-spell-check.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book"></i>
+
+            <span>Spell Check</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="home-depot-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <img alt="" class="mr-2" src="demo-redesign/icons/static/home-depot.svg%3Fversion=1.3" />
+
+        <span>The Home Depot Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="home-depot-filtering.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-filter"></i>
+
+            <span>Filtering</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="home-depot-price-bound.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-dollar-sign"></i>
+
+            <span>Price Bound</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="home-depot-product.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-tags"></i>
+
+            <span>Product API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="home-depot-product-reviews.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star"></i>
+
+            <span>Product Reviews API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="home-depot-sorting.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-sort"></i>
+
+            <span>Sorting</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="home-depot-spell-check.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-book"></i>
+
+            <span>Spell Check</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="apple-app-store.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2  fab fa-app-store"></i>
+
+        <span>Apple App Store API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="apple-product.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-tags"></i>
+
+            <span>Apple Product API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="apple-reviews.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-star"></i>
+
+            <span>Apple Reviews API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="naver-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <img alt="" class="mr-2" src="demo-redesign/icons/static/naver-white.svg" />
+
+        <span>Naver Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="naver-ads.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="naver-booking-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa fa-ticket-alt"></i>
+
+            <span>Booking Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="naver-images-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-image"></i>
+
+            <span>Images</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="knowledge-graph-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-head-side-brain"></i>
+
+            <span>Knowledge graph</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="naver-news-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-newspaper"></i>
+
+            <span>News Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="naver-related-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-search-plus"></i>
+
+            <span>Related results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="naver-video-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-film"></i>
+
+            <span>Video Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="naver-web-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Web Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="yelp-search-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2  fab fa-yelp"></i>
+
+        <span>Yelp Search API</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yelp-ads.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <img alt="" class="mr-2" src="demo-redesign/icons/static/a-secure-d.svg" />
+
+            <span>Ad Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yelp-filters.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-filter"></i>
+
+            <span>Filters</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yelp-organic-results.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-list-alt"></i>
+
+            <span>Organic Results</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yelp-reviews-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fas fa-star"></i>
+
+            <span>Reviews API</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="yelp-place.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fas fa-map-marker-alt"></i>
+
+            <span>Yelp Place API</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="account-api.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-cogs"></i>
+
+        <span>Extra APIs</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="account-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-user"></i>
+
+            <span>Account</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="locations-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-map-marker-alt"></i>
+
+            <span>Locations</span>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="search-archive-api.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-archive"></i>
+
+            <span>Search Archive</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+  <li class="position-relative pl-0 ">
+    <a href="api-errors.html" class="d-flex text-decoration-none align-items-center">
+      <div class="d-inline-flex py-1 align-items-center">
+          <i class="d-flex justify-content-center mr-2 fas fa-exclamation-triangle"></i>
+
+        <span>Errors</span>
+      </div>
+    </a>
+  </li>
+
+
+  <ul class="dashboard-submenu-wrap p-0 overflow-hidden ">
+
+      <li class="position-relative " style="padding-left:12px;">
+        <a href="search-errors.html" class="d-flex text-decoration-none align-items-center">
+          <div class="d-inline-flex py-1 align-items-center">
+              <i class="d-flex justify-content-center mr-2 fas fa-file-exclamation"></i>
+
+            <span>Search Errors</span>
+          </div>
+        </a>
+      </li>
+
+  </ul>
+
+
+
+    <li class="dashboard-menu-top-title pl-3 pt-3 pb-3 font-weight-bold text-uppercase">
+      <p class="overflow-hidden m-0 bold-500">API Studio</p>
+    </li>
+    <li class="dashboard-menu-top demo pl-0 mb-4 ">
+      <a href="demo.html" class="d-flex text-decoration-none align-items-center">
+        <div class="d-inline-flex py-1 align-items-center">
+          <i class="icon fas fa-code"></i><span>Playground</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+      <div id="main-content" class="d-flex flex-column w-100">
+
+          <header class="position-fixed d-flex w-100">
+            <div class="full-width-container w-100 d-flex align-items-center pt-0 pb-0">
+            <div class="hamburger">
+              <div class="ham-wrap">
+                <span class="d-block"></span>
+                <span class="d-block"></span>
+                <span class="d-block"></span>
+              </div>
+            </div>
+            <div class="search-wrapper d-none d-lg-block mr-3">
+              <div data-react-class="Search" data-react-props="{&quot;suggestions&quot;:[{&quot;title&quot;:&quot;Google Search API&quot;,&quot;description&quot;:&quot;/search API endpoint allows you to scrape the results from Google search engine via our SerpApi service.&quot;,&quot;url&quot;:&quot;/search-api&quot;,&quot;breadcrumb&quot;:[&quot;SerpApi&quot;,&quot;search-api&quot;],&quot;type&quot;:&quot;suggestion&quot;},{&quot;title&quot;:&quot;Google Maps API&quot;,&quot;description&quot;:&quot;Our Google Maps API allows you to scrape SERP results from a Google Maps search or places query. The API is accessed through the following endpoint: /search?engine=google_maps.&quot;,&quot;url&quot;:&quot;/google-maps-api&quot;,&quot;breadcrumb&quot;:[&quot;SerpApi&quot;,&quot;google-maps-api&quot;],&quot;type&quot;:&quot;suggestion&quot;},{&quot;title&quot;:&quot;Google Jobs API&quot;,&quot;description&quot;:&quot;Our Google Jobs API allows you to scrape SERP results from a Google Jobs search. The API is accessed through the following endpoint: /search?engine=google_jobs.&quot;,&quot;url&quot;:&quot;/google-jobs-api&quot;,&quot;breadcrumb&quot;:[&quot;SerpApi&quot;,&quot;google-jobs-api&quot;],&quot;type&quot;:&quot;suggestion&quot;},{&quot;title&quot;:&quot;Bing Search API&quot;,&quot;description&quot;:&quot;/search?engine=bing API endpoint allows you to scrape the results from the Bing search engine via our SerpApi service.&quot;,&quot;url&quot;:&quot;/bing-search-api&quot;,&quot;breadcrumb&quot;:[&quot;SerpApi&quot;,&quot;bing-search-api&quot;],&quot;type&quot;:&quot;suggestion&quot;},{&quot;title&quot;:&quot;Youtube Search API&quot;,&quot;description&quot;:&quot;/search?engine=youtube API endpoint allows you to scrape the results from YouTube search engine via our SerpApi service.&quot;,&quot;url&quot;:&quot;/youtube-search-api&quot;,&quot;breadcrumb&quot;:[&quot;SerpApi&quot;,&quot;youtube-search-api&quot;],&quot;type&quot;:&quot;suggestion&quot;}]}" data-react-cache-id="Search-0"></div>
+            </div>
+            <div class="d-flex align-items-center justify-content-end dropdown-container" id="user-top-menu">
+
+    <a class="font-weight-bold text-nowrap mr-3" href="dashboard.html">Sign In</a>
+    <a class="text-decoration-none button button-blue px-4" href="users/sign_up.html">Register</a>
+    
+</div>
+          </div>
+          </header>
+
+        <main class="position-relative">
+          
+
+<div id="documentation" class="full-width-container">
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://serpapi.com/"
+        },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Google Search API",
+              "item": "https://serpapi.com/search-api"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AI Overview"
+            }
+      ]
+    }
+  </script>
+
+
+
+
+
+
+<div class="dashboard-page-header">
+  <div class="d-flex justify-content-between">
+    <h1 class="d-flex align-items-center m-0">
+          <i class="d-flex mr-3 fad fa-robot"></i>
+      <span>Google AI Overview Results API</span>
+    </h1>
+  </div>
+
+
+</div>
+
+
+  <div class="mt-4 mb-5">
+    <p>For some searches, Google search results includes an AI Overview block. SerpApi is able to scrape, extract and make sense of this information.</p>
+    <p>Currently, the AI Overview block is only seen for English searches (<code>hl=en</code>) with a limited range of countries (<code>gl</code>).</p>
+    <p><br><i class='fas fa-info-circle mr-2 opacity-3'></i>Google sometimes requires an additional request to retrieve AI Overview results. See the <a href="ai-overview.html#api-examples-example-with-an-extra-request-required">extra request example</a> and our <a href="google-ai-overview-api.html">Google AI Overview API</a> to understand how to handle these cases.</p>
+  </div>
+
+  <h2 id="api-examples">
+    <a href="ai-overview.html#api-examples" data-turbolinks="false" class="docu-anchor-link position-absolute d-flex align-items-center px-2 opacity-0">
+      <i class="far fa-link"></i>
+    </a>
+    API Examples
+  </h2>
+
+
+<div class="box-wrapper overflow-hidden mb-5" id="api-examples-typical-result">
+  <h3 class="d-flex align-items-center p-3 m-0 h5">
+    <a href="ai-overview.html#api-examples-typical-result" data-turbolinks="false" class="docu-anchor-link position-absolute d-flex align-items-center px-2 opacity-0">
+      <i class="far fa-link"></i>
+    </a>
+    Typical result
+  </h3>
+    <div class="docu-para p-4"><p>Typical result containing paragraphs, lists (with and without title) and a thumbnail.</p></div>
+  <div class="p-4 row m-0">
+      <div class="col-lg-6 mb-2 p-1">
+          <img class="img-fluid html-example-image mb-3" alt="Typical result" src="assets/google/ai_overview/drop-shipping-854e51f190440a054788d5543c7e9b8b00682a32b5d5cca1a4f7a6186452f81c.png" />
+      </div>
+      <div class="col-lg-6 p-1">
+        <div class="integrationsMountPoint" id="integrationsMountPoint-4493"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;q&quot;:&quot;drop shipping&quot;,&quot;highlight&quot;:&quot;ai_overview&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-4493&quot;,&quot;json_container_id&quot;:&quot;sub-pre-9717&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;q=drop+shipping&quot;}" data-react-cache-id="Integrations-0"></div>
+        <br/>
+        <div class="code-wrap">
+          <div class="code-header">
+            <div class="code-title">
+              <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
+            </div>
+            <div class="code-links">
+              <a href="playground%3Fq=drop+shipping&amp;highlight=ai_overview.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+            </div>
+          </div>
+          <pre id="sub-pre-9717" class="sub-pre"><code class="language-json" id="jsonResults">{
+  ...
+  &quot;ai_overview&quot;: {
+    &quot;text_blocks&quot;: [
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;Drop shipping is a retail method where a company sells products online without keeping them in stock. When a customer places an order, the company forwards the order to a supplier, who then ships the product directly to the customer. The company keeps the profits from the sale.&quot;,
+        &quot;snippet_highlighted_words&quot;: [
+          &quot;a retail method where a company sells products online without keeping them in stock&quot;
+        ],
+        &quot;reference_indexes&quot;: [
+          0,
+          2
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;Here are some steps to start a drop shipping business:&quot;,
+        &quot;reference_indexes&quot;: [
+          4
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;list&quot;: [
+          {
+            &quot;snippet&quot;: &quot;Identify a niche: Choose a specific market to target and research competitors.&quot;,
+            &quot;reference_indexes&quot;: [
+              4
+            ]
+          },
+          {
+            &quot;snippet&quot;: &quot;Select a supplier: Find a reliable supplier that has the products you want to sell. You can sign an agreement with a manufacturer, wholesaler, or other retailer.&quot;,
+            &quot;reference_indexes&quot;: [
+              2,
+              4
+            ]
+          },
+          {
+            &quot;snippet&quot;: &quot;Create an online store: Design and build an ecommerce website to showcase your products.&quot;,
+            &quot;reference_indexes&quot;: [
+              4
+            ]
+          },
+          {
+            &quot;snippet&quot;: &quot;Market your business: Use social media ads and engaging content to attract customers.&quot;,
+            &quot;reference_indexes&quot;: [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;Some advantages of drop shipping include:&quot;,
+        &quot;reference_indexes&quot;: [
+          0
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;list&quot;: [
+          {
+            &quot;title&quot;: &quot;No need for inventory storage&quot;,
+            &quot;snippet&quot;: &quot;You don&#39;t need to invest in warehouse space or risk getting stuck with unsold inventory.&quot;,
+            &quot;reference_indexes&quot;: [
+              0
+            ]
+          },
+          {
+            &quot;title&quot;: &quot;More resources for other activities&quot;,
+            &quot;snippet&quot;: &quot;You can allocate more resources to other retail activities such as marketing.&quot;,
+            &quot;reference_indexes&quot;: [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;However, drop shipping businesses have a high failure rate. Some potential issues include:&quot;,
+        &quot;reference_indexes&quot;: [
+          10
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;list&quot;: [
+          {
+            &quot;snippet&quot;: &quot;Uncertainty over where the business operates from and where products are manufactured&quot;,
+            &quot;reference_indexes&quot;: [
+              10
+            ]
+          },
+          {
+            &quot;snippet&quot;: &quot;Inconsistent quality of products&quot;,
+            &quot;reference_indexes&quot;: [
+              10
+            ]
+          },
+          {
+            &quot;snippet&quot;: &quot;Dropshippers may only make between 10% and 30% on average, compared to 50% to 70% for traditional e-commerce retailers&quot;,
+            &quot;reference_indexes&quot;: [
+              8
+            ]
+          }
+        ]
+      }
+    ],
+    &quot;thumbnail&quot;: &quot;https://serpapi.com/searches/66c53c7915afff0a2a48fc6c/images/ada462b58dfff08439da27aa82fde6c082293d76cc6e06be.png&quot;,
+    &quot;references&quot;: [
+      {
+        &quot;title&quot;: &quot;What Is Dropshipping and How Does It Work? (2024) - Shopify&quot;,
+        &quot;link&quot;: &quot;https://www.shopify.com/blog/what-is-dropshipping#:~:text=Dropshipping%20is%20a%20retail%20method,retail%20activities%20such%20as%20marketing.&quot;,
+        &quot;snippet&quot;: &quot;May 22, 2024 — Dropshipping is a retail method where an online store doesn&#39;t keep its products in stock. Instead, when a customer mak...&quot;,
+        &quot;source&quot;: &quot;Shopify&quot;,
+        &quot;index&quot;: 0
+      },
+      {
+        &quot;title&quot;: &quot;Drop shipping - Wikipedia&quot;,
+        &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Drop_shipping#:~:text=Amazon%2C%20the%20online%20shopping%20giant,customer%20using%20packaging%20from%20Amazon.&quot;,
+        &quot;snippet&quot;: &quot;Amazon, the online shopping giant, found early success in a dropshipping business model where they could offer over a million diff...&quot;,
+        &quot;source&quot;: &quot;Wikipedia&quot;,
+        &quot;index&quot;: 1
+      },
+      {
+        &quot;title&quot;: &quot;Drop-Shipping: What you Need to Know Before You Buy or Sell Online&quot;,
+        &quot;link&quot;: &quot;https://www.michigan.gov/consumerprotection/protect-yourself/consumer-alerts/shopping/before-you-buy-or-sell-online&quot;,
+        &quot;source&quot;: &quot;State of Michigan&quot;,
+        &quot;index&quot;: 2
+      },
+      {
+        &quot;title&quot;: &quot;Dropshipping: Does It Actually Work? (Pros + Cons) | BigCommerce&quot;,
+        &quot;link&quot;: &quot;https://www.bigcommerce.com/blog/dropshipping/#:~:text=Is%20dropshipping%20legal?,with%20a%20Dropshipping%20Agreement%20Contract.&quot;,
+        &quot;snippet&quot;: &quot;Is dropshipping legal? Yes, dropshipping is legal. You may run into other legal issues depending on who your supplier is, but drop...&quot;,
+        &quot;source&quot;: &quot;BigCommerce&quot;,
+        &quot;index&quot;: 3
+      },
+      {
+        &quot;title&quot;: &quot;How To Start a Dropshipping Business: 9-Step Guide (2024) - Shopify&quot;,
+        &quot;link&quot;: &quot;https://www.shopify.com/blog/how-to-start-dropshipping&quot;,
+        &quot;snippet&quot;: &quot;Jun 28, 2024 — How do I start a dropshipping business? Identify a niche: Select a specific market to target. Research competitors: An...&quot;,
+        &quot;source&quot;: &quot;Shopify&quot;,
+        &quot;index&quot;: 4
+      },
+      ...
+    ]
+  },
+  ...
+}
+</code></pre>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="box-wrapper overflow-hidden mb-5" id="api-examples-example-with-a-list-containing-thumbnails">
+  <h3 class="d-flex align-items-center p-3 m-0 h5">
+    <a href="ai-overview.html#api-examples-example-with-a-list-containing-thumbnails" data-turbolinks="false" class="docu-anchor-link position-absolute d-flex align-items-center px-2 opacity-0">
+      <i class="far fa-link"></i>
+    </a>
+    Example with a list containing thumbnails
+  </h3>
+  <div class="p-4 row m-0">
+      <div class="col-lg-6 mb-2 p-1">
+          <img class="img-fluid html-example-image mb-3" alt="Example with a list containing thumbnails" src="assets/google/ai_overview/successful-quotes-778f4cb1cde0c377d68445fa71b3915cf098c91332eb098b7c0b39674ef9eaff.png" />
+      </div>
+      <div class="col-lg-6 p-1">
+        <div class="integrationsMountPoint" id="integrationsMountPoint-9725"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;q&quot;:&quot;successful quotes&quot;,&quot;highlight&quot;:&quot;ai_overview&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-9725&quot;,&quot;json_container_id&quot;:&quot;sub-pre-9813&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;q=successful+quotes&quot;}" data-react-cache-id="Integrations-0"></div>
+        <br/>
+        <div class="code-wrap">
+          <div class="code-header">
+            <div class="code-title">
+              <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
+            </div>
+            <div class="code-links">
+              <a href="playground%3Fq=successful+quotes&amp;highlight=ai_overview.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+            </div>
+          </div>
+          <pre id="sub-pre-9813" class="sub-pre"><code class="language-json" id="jsonResults">{
+  ...
+  &quot;ai_overview&quot;: {
+    &quot;text_blocks&quot;: [
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;Here are some quotes about success:&quot;,
+        &quot;reference_indexes&quot;: [
+          1
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;list&quot;: [
+          {
+            &quot;title&quot;: &quot;Albert Einstein&quot;,
+            &quot;thumbnail&quot;: &quot;https://serpapi.com/searches/66c5457015afff0a2878cb08/images/4585b9266b87a391ef0f171532560347a6cfec61ff8315f797ba8afa9c0d9c8975178708294e51b8caa9fb8d67d58629.jpeg&quot;,
+            &quot;snippet&quot;: &quot;\&quot;Strive not to be a success, but rather to be of value\&quot;&quot;,
+            &quot;reference_indexes&quot;: [
+              1
+            ]
+          },
+          {
+            &quot;title&quot;: &quot;Nelson Mandela&quot;,
+            &quot;thumbnail&quot;: &quot;https://serpapi.com/searches/66c5457015afff0a2878cb08/images/4585b9266b87a391ef0f171532560347a6cfec61ff8315f7e12a7180e6485d05cd19174a2fed3bc740822f57ec6aba42.jpeg&quot;,
+            &quot;snippet&quot;: &quot;\&quot;It always seems impossible until it&#39;s done\&quot;&quot;,
+            &quot;reference_indexes&quot;: [
+              1
+            ]
+          },
+          {
+            &quot;title&quot;: &quot;Herman Melville&quot;,
+            &quot;thumbnail&quot;: &quot;https://serpapi.com/searches/66c5457015afff0a2878cb08/images/4585b9266b87a391ef0f171532560347a6cfec61ff8315f78333d67ec3a028c0a7884df42a0dba573a24740ee1f0fe89.jpeg&quot;,
+            &quot;snippet&quot;: &quot;\&quot;It is better to fail in originality than to succeed in imitation\&quot;&quot;,
+            &quot;reference_indexes&quot;: [
+              1,
+              6
+            ]
+          },
+          ...
+        ]
+      }
+    ],
+    &quot;references&quot;: [
+      {
+        &quot;title&quot;: &quot;50 inspiring quotes about success&quot;,
+        &quot;link&quot;: &quot;https://www.canva.com/learn/quotes-about-success/#:~:text=I%20find%20that%20the%20harder%20I%20work%2C,I%20seem%20to%20have.%20%E2%80%94%20Thomas%20Jefferson.&quot;,
+        &quot;snippet&quot;: &quot;I find that the harder I work, the more luck I seem to have. — Thomas Jefferson.&quot;,
+        &quot;source&quot;: &quot;Canva&quot;,
+        &quot;index&quot;: 0
+      },
+      {
+        &quot;title&quot;: &quot;125 Motivational Success Quotes for Business - Team Building&quot;,
+        &quot;link&quot;: &quot;https://teambuilding.com/blog/success-quotes&quot;,
+        &quot;snippet&quot;: &quot;Sep 27, 2022 — What are some good success quotes for work? ... “Strive not to be a success, but rather to be of value.” – Albert Eins...&quot;,
+        &quot;source&quot;: &quot;Team Building&quot;,
+        &quot;index&quot;: 1
+      },
+      {
+        &quot;title&quot;: &quot;Life Quotes: 100+ Motivational Quotes To Inspire Your Positive ...&quot;,
+        &quot;link&quot;: &quot;https://www.forbesindia.com/article/explainers/motivational-quotes/84853/1#:~:text=%22The%20only%20place%20where%20success%20comes%20before,and%20learning%20from%20failure.%22%20%E2%80%94%20Colin%20Powell&quot;,
+        &quot;snippet&quot;: &quot;May 31, 2024 — \&quot;The only place where success comes before work is in the dictionary.\&quot; — Vince Lombardi; \&quot;There are no secrets to succ...&quot;,
+        &quot;source&quot;: &quot;Forbes India&quot;,
+        &quot;index&quot;: 2
+      },
+      ...
+    ]
+  },
+  ...
+}
+</code></pre>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="box-wrapper overflow-hidden mb-5" id="api-examples-example-with-nested-lists">
+  <h3 class="d-flex align-items-center p-3 m-0 h5">
+    <a href="ai-overview.html#api-examples-example-with-nested-lists" data-turbolinks="false" class="docu-anchor-link position-absolute d-flex align-items-center px-2 opacity-0">
+      <i class="far fa-link"></i>
+    </a>
+    Example with nested lists
+  </h3>
+  <div class="p-4 row m-0">
+      <div class="col-lg-6 mb-2 p-1">
+          <img class="img-fluid html-example-image mb-3" alt="Example with nested lists" src="assets/google/ai_overview/nested-list-e8c33a639a009709ee20e2bc796d84e495247898fb12e3d7c6fba1424e0230d6.png" />
+      </div>
+      <div class="col-lg-6 p-1">
+        <div class="integrationsMountPoint" id="integrationsMountPoint-2355"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;q&quot;:&quot;drop shipping&quot;,&quot;highlight&quot;:&quot;ai_overview&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-2355&quot;,&quot;json_container_id&quot;:&quot;sub-pre-8070&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;q=drop+shipping&quot;}" data-react-cache-id="Integrations-0"></div>
+        <br/>
+        <div class="code-wrap">
+          <div class="code-header">
+            <div class="code-title">
+              <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
+            </div>
+            <div class="code-links">
+              <a href="playground%3Fq=drop+shipping&amp;highlight=ai_overview.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+            </div>
+          </div>
+          <pre id="sub-pre-8070" class="sub-pre"><code class="language-json" id="jsonResults">{
+  ...
+  &quot;ai_overview&quot;: {
+    &quot;text_blocks&quot;: [
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;Drop shipping is a business model where a company sells products online without keeping them in stock. When a customer places an order, the company forwards the order and payment to a supplier or manufacturer, who then ships the product directly to the customer.&quot;,
+        &quot;snippet_highlighted_words&quot;: [
+          &quot;a business model where a company sells products online without keeping them in stock&quot;
+        ],
+        &quot;reference_indexes&quot;: [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;Here are some steps to start a dropshipping business:&quot;,
+        &quot;reference_indexes&quot;: [
+          3
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;list&quot;: [
+          {
+            &quot;snippet&quot;: &quot;Choose a niche&quot;,
+            &quot;reference_indexes&quot;: [
+              3
+            ]
+          },
+          {
+            &quot;snippet&quot;: &quot;Find a supplier: When choosing a supplier, you can consider things like:&quot;,
+            &quot;reference_indexes&quot;: [
+              3,
+              6
+            ],
+            &quot;list&quot;: [
+              {
+                &quot;snippet&quot;: &quot;Profit margin: Whether the wholesale price is high enough to make a profit&quot;,
+                &quot;reference_indexes&quot;: [
+                  6
+                ]
+              },
+              {
+                &quot;snippet&quot;: &quot;Handling fees: How these might affect your profit margin&quot;,
+                &quot;reference_indexes&quot;: [
+                  6
+                ]
+              },
+              {
+                &quot;snippet&quot;: &quot;Shipping: Whether the supplier uses a service that provides tracking numbers&quot;,
+                &quot;reference_indexes&quot;: [
+                  6
+                ]
+              },
+              {
+                &quot;snippet&quot;: &quot;Billing: Whether the supplier charges your credit card as soon as you submit an order&quot;,
+                &quot;reference_indexes&quot;: [
+                  6
+                ]
+              }
+            ]
+          },
+          {
+            &quot;snippet&quot;: &quot;Build an online store&quot;,
+            &quot;reference_indexes&quot;: [
+              3
+            ]
+          },
+          ...
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;Some say that dropshipping can be a low-risk business model with lower running costs than other models. This can make it easier to become profitable faster, but the average dropshipper only makes between 10% and 30% compared to 50% to 70% for traditional e-commerce retailers.&quot;,
+        &quot;reference_indexes&quot;: [
+          16,
+          17
+        ]
+      }
+    ],
+    &quot;references&quot;: [
+      {
+        &quot;title&quot;: &quot;What Is Dropshipping and How Does It Work? (2024) - Shopify&quot;,
+        &quot;link&quot;: &quot;https://www.shopify.com/blog/what-is-dropshipping#:~:text=Dropshipping%20is%20a%20retail%20method,retail%20activities%20such%20as%20marketing.&quot;,
+        &quot;snippet&quot;: &quot;May 22, 2024 — Dropshipping is a retail method where an online store doesn&#39;t keep its products in stock. Instead, when a customer mak...&quot;,
+        &quot;source&quot;: &quot;Shopify&quot;,
+        &quot;index&quot;: 0
+      },
+      {
+        &quot;title&quot;: &quot;Drop-Shipping: What you Need to Know Before You Buy or ...&quot;,
+        &quot;link&quot;: &quot;https://www.michigan.gov/consumerprotection/protect-yourself/consumer-alerts/shopping/before-you-buy-or-sell-online#:~:text=Drop%2Dshipping%20is%20when%20a%20person%2C%20or%20company%2C,are%20middlemen%2C%20they%20may%20charge%20more%20money.&quot;,
+        &quot;snippet&quot;: &quot;Drop-shipping is when a person, or company, sells goods on their website that they do not keep in stock. When an order is received...&quot;,
+        &quot;source&quot;: &quot;State of Michigan&quot;,
+        &quot;index&quot;: 1
+      },
+      {
+        &quot;title&quot;: &quot;Is Dropshipping Legal? A Guide to the Legal Risks (2024) - Shopify&quot;,
+        &quot;link&quot;: &quot;https://www.shopify.com/blog/is-dropshipping-legal#:~:text=Yes%2C%20dropshipping%20is%20legal.,products%20directly%20to%20the%20customer.&quot;,
+        &quot;snippet&quot;: &quot;Jun 17, 2024 — Yes, dropshipping is legal. It is a widely used business model in which a retailer does not keep the products it sells...&quot;,
+        &quot;source&quot;: &quot;Shopify&quot;,
+        &quot;index&quot;: 2
+      },
+      ...
+    ]
+  },
+  ...
+}
+</code></pre>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="box-wrapper overflow-hidden mb-5" id="api-examples-example-with-expandable-sections">
+  <h3 class="d-flex align-items-center p-3 m-0 h5">
+    <a href="ai-overview.html#api-examples-example-with-expandable-sections" data-turbolinks="false" class="docu-anchor-link position-absolute d-flex align-items-center px-2 opacity-0">
+      <i class="far fa-link"></i>
+    </a>
+    Example with expandable sections
+  </h3>
+  <div class="p-4 row m-0">
+      <div class="col-lg-6 mb-2 p-1">
+          <img class="img-fluid html-example-image mb-3" alt="Example with expandable sections" src="assets/google/ai_overview/expandable-df55bb996806641b1f96e0ca6dcfb9c53ca436bd4d0ba9f590be4256a4995724.png" />
+      </div>
+      <div class="col-lg-6 p-1">
+        <div class="integrationsMountPoint" id="integrationsMountPoint-1892"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;q&quot;:&quot;drop shipping&quot;,&quot;highlight&quot;:&quot;ai_overview&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-1892&quot;,&quot;json_container_id&quot;:&quot;sub-pre-4083&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;q=drop+shipping&quot;}" data-react-cache-id="Integrations-0"></div>
+        <br/>
+        <div class="code-wrap">
+          <div class="code-header">
+            <div class="code-title">
+              <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
+            </div>
+            <div class="code-links">
+              <a href="playground%3Fq=drop+shipping&amp;highlight=ai_overview.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+            </div>
+          </div>
+          <pre id="sub-pre-4083" class="sub-pre"><code class="language-json" id="jsonResults">{
+  ...
+  &quot;ai_overview&quot;: {
+    &quot;text_blocks&quot;: [
+      {
+        &quot;type&quot;: &quot;paragraph&quot;,
+        &quot;snippet&quot;: &quot;Dropshipping is a retail model where an online store doesn&#39;t keep products in stock, but instead forwards orders to a supplier who then ships the products directly to the customer. This model is popular with business owners because it outsources inventory management and order fulfillment, and can be profitable with lower running costs than other business models.&quot;,
+        &quot;snippet_highlighted_words&quot;: [
+          &quot;a retail model where an online store doesn&#39;t keep products in stock, but instead forwards orders to a supplier who then ships the products directly to the customer&quot;
+        ],
+        &quot;reference_indexes&quot;: [
+          0,
+          4,
+          7,
+          11
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;expandable&quot;,
+        &quot;title&quot;: &quot;Starting a Dropshipping Business&quot;,
+        &quot;subtitle&quot;: &quot;Steps for launching a dropshipping venture&quot;,
+        &quot;text_blocks&quot;: [
+          {
+            &quot;type&quot;: &quot;paragraph&quot;,
+            &quot;snippet&quot;: &quot;Here are some steps to start a dropshipping business:&quot;
+          },
+          {
+            &quot;type&quot;: &quot;list&quot;,
+            &quot;list&quot;: [
+              {
+                &quot;snippet&quot;: &quot;Choose a business concept&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Select products to sell&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Choose suppliers&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Build an online store&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Register your business&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Market your business and products&quot;,
+                &quot;reference_indexes&quot;: [
+                  5
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;type&quot;: &quot;expandable&quot;,
+        &quot;title&quot;: &quot;Dropshipping Suppliers&quot;,
+        &quot;subtitle&quot;: &quot;Examples of companies that offer dropshipping services&quot;,
+        &quot;text_blocks&quot;: [
+          {
+            &quot;type&quot;: &quot;paragraph&quot;,
+            &quot;snippet&quot;: &quot;Some dropshipping suppliers include:&quot;
+          },
+          {
+            &quot;type&quot;: &quot;list&quot;,
+            &quot;list&quot;: [
+              {
+                &quot;snippet&quot;: &quot;Spocket&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;AliExpress Dropshipping&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Modalyst&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;SaleHoo&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Doba&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Wholesale2B&quot;
+              },
+              {
+                &quot;snippet&quot;: &quot;Worldwide Brands&quot;,
+                &quot;reference_indexes&quot;: [
+                  8
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      ...
+    ],
+    &quot;thumbnail&quot;: &quot;https://serpapi.com/searches/66c53cd315afff0a2878caf0/images/20fdf62b7cc11067c251b1374115d7a3e2082bff823672e8.png&quot;,
+    &quot;references&quot;: [
+      {
+        &quot;title&quot;: &quot;What Is Dropshipping and How Does It Work? (2024) - Shopify&quot;,
+        &quot;link&quot;: &quot;https://www.shopify.com/blog/what-is-dropshipping#:~:text=Dropshipping%20is%20a%20retail%20method,the%20product%20to%20the%20customer.&quot;,
+        &quot;snippet&quot;: &quot;May 22, 2024 — Dropshipping is a retail method where an online store doesn&#39;t keep its products in stock. Instead, when a customer mak...&quot;,
+        &quot;source&quot;: &quot;Shopify&quot;,
+        &quot;index&quot;: 0
+      },
+      {
+        &quot;title&quot;: &quot;Drop shipping - Wikipedia&quot;,
+        &quot;link&quot;: &quot;https://en.wikipedia.org/wiki/Drop_shipping#:~:text=Amazon%2C%20the%20online%20shopping%20giant,customer%20using%20packaging%20from%20Amazon.&quot;,
+        &quot;snippet&quot;: &quot;Amazon, the online shopping giant, found early success in a dropshipping business model where they could offer over a million diff...&quot;,
+        &quot;source&quot;: &quot;Wikipedia&quot;,
+        &quot;index&quot;: 1
+      },
+      {
+        &quot;title&quot;: &quot;What Is dropshipping? How does it work in 2024? - Sell on Amazon&quot;,
+        &quot;link&quot;: &quot;https://sell.amazon.com/learn/what-is-dropshipping#:~:text=For%20Amazon%20sellers%2C%20using%20a,and%20identify%20yourself%20as%20such.&quot;,
+        &quot;snippet&quot;: &quot;For Amazon sellers, using a dropshipping service is generally allowed by Amazon dropshipping policy, as long as you&#39;re the seller ...&quot;,
+        &quot;source&quot;: &quot;Sell on Amazon&quot;,
+        &quot;index&quot;: 2
+      },
+      ...
+    ]
+  },
+  ...
+}
+</code></pre>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="box-wrapper overflow-hidden mb-5" id="api-examples-example-with-an-extra-request-required">
+  <h3 class="d-flex align-items-center p-3 m-0 h5">
+    <a href="ai-overview.html#api-examples-example-with-an-extra-request-required" data-turbolinks="false" class="docu-anchor-link position-absolute d-flex align-items-center px-2 opacity-0">
+      <i class="far fa-link"></i>
+    </a>
+    Example with an extra request required
+  </h3>
+    <div class="docu-para p-4"><p>Google can return AI Overview content through a separate request instead of directly in a response. In these cases we return <code>page_token</code> for the associated request and <code>serpapi_link</code> for the corresponding SerpApi search using our <a href='google-ai-overview-api.html'>Google AI Overview API</a>. The resulting JSON structure is the same as the above examples.<br><br>The rendered HTML will show "Can't generate an AI overview right now. Try again later." &mdash; this is expected behaviour and can be ignored.<br><br><i class='fas fa-info-circle mr-2 opacity-3'></i><code>page_token</code> and <code>serpapi_link</code> will expire within 4 minutes of the search and should be used immediately.</p></div>
+  <div class="p-4 row m-0">
+      <div class="col-lg-6 mb-2 p-1">
+          <img class="img-fluid html-example-image mb-3" alt="Example with an extra request required" src="assets/google/ai_overview/error-8c2b6fdbe29caa806e0709a05ce13003d9a54e746f0445d06152d9e479d77df1.png" />
+      </div>
+      <div class="col-lg-6 p-1">
+        <div class="integrationsMountPoint" id="integrationsMountPoint-9687"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;q&quot;:&quot;how does art work in android&quot;,&quot;highlight&quot;:&quot;ai_overview&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-9687&quot;,&quot;json_container_id&quot;:&quot;sub-pre-5258&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;q=how+does+art+work+in+android&quot;}" data-react-cache-id="Integrations-0"></div>
+        <br/>
+        <div class="code-wrap">
+          <div class="code-header">
+            <div class="code-title">
+              <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
+            </div>
+            <div class="code-links">
+              <a href="playground%3Fq=how+does+art+work+in+android&amp;highlight=ai_overview.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+            </div>
+          </div>
+          <pre id="sub-pre-5258" class="sub-pre"><code class="language-json" id="jsonResults">{
+  ...
+  &quot;ai_overview&quot;: {
+    &quot;page_token&quot;: &quot;rWmjgXictZPdkqI4FMcv90nWvWBUtO0e7SpqKiBqHL8ifuENhRADgnwFjHo377JPtU-zAdtunXFqZ6t2U6UkOTkn55xf_t_-9N3A--u3P5w0jehrtcoYq5AwJD6uWOG-atJTYFW3oU8Ty_mSZT6WmKAAiKACTbRanO2unw06Ux93O-dBZ5GZq6m_VuSZ3e2I69WwRHwpoyXHl3BQOh2kp5JFJbGEXSlmm5d1loDu-Ox5BzRxrHY5BGGpuFEyNibFO57QcUerRpX_eb8_tfmiQis4MOZaRYsmSdzw-119WMH0uTKumnt-BPziQB9TRSFIKWYQKHeHyPtpBchAA0QuVj3-U6dFCAigcnHyEDgYTfXO3wJva9nKo80vt0IA2nc5kHzr0ZB5o9vNB4nLBIEuT6RRbF0uQXmQBgTD99JYTwTN9pGMv2rsh9gRIHsw0VbH2zo_Ku8vd65FVKCgqk14X8XqJuGfWjWheZeVWUsMO3F9uNTMZrpqiu3M7kCViaNa92W3mKJPBUGLviOktwihGwf2aD0-U1YZVOTalR7qQagW3VAJICJ51BcFfXROyXMnIPR4fWTA8t6OinJ6-YbFG6Nf3bSrw_KjXD5RYE6PqPBqzvuaD5g3VB0C4HAMQIacnkZ6jTk3tYsAyAO6LrsgBF8BWDPl5ulAcrmjcXlQKsD8hbGhvFKZChB_RQh4edSCHIJyXhAaMvWOXlHoP4z5T_Zl8ABXV1_EZXdAengab2akpZ2yaLJbOGc0vuIK95t_JTnrf0HqckHGb0iVx0hvBMkdVtz-JsiQC_KC1NMLQd4htaD6htS6QQp_GakMGnq7_AgpF-QeyFyQOdJ5gRTp3yP9rwRZkMWXz706sx35HruqlkeeU4u9ujwD09MzEeOTZcv0qCUc-3afvkZJSD4Zrv0q1_vpyS7FUi9kgh1iKqQOFrQoTFLKsJkI_IFEZnASRq6Hha3p-wJ1uFEIA4EG2PRwIriBMA_cFNuClpoppl9Kez8JJdF8YYd4pKvePGUG7O_Ugb8sPwf-4uwaT9vjYVSvRb10arx8Xs2i3uzZH_WV5SrIlL4xaTlKH4VqbwyDhOygbY1OmaqjxdA9U9dtmed2f6e7x3lnvWZav564IjvPxvt6013TcmO8Ao0BMpA8D7F23srrGvDnNivyopLeXWTQ6SxbC1SilmlgepDqm-Zn88ls1uubzab21CwMWXSQan8DmsQweA&quot;,
+    &quot;serpapi_link&quot;: &quot;https://serpapi.com/search.json?engine=google_ai_overview&amp;page_token=rWmjgXictZPdkqI4FMcv90nWvWBUtO0e7SpqKiBqHL8ifuENhRADgnwFjHo377JPtU-zAdtunXFqZ6t2U6UkOTkn55xf_t_-9N3A--u3P5w0jehrtcoYq5AwJD6uWOG-atJTYFW3oU8Ty_mSZT6WmKAAiKACTbRanO2unw06Ux93O-dBZ5GZq6m_VuSZ3e2I69WwRHwpoyXHl3BQOh2kp5JFJbGEXSlmm5d1loDu-Ox5BzRxrHY5BGGpuFEyNibFO57QcUerRpX_eb8_tfmiQis4MOZaRYsmSdzw-119WMH0uTKumnt-BPziQB9TRSFIKWYQKHeHyPtpBchAA0QuVj3-U6dFCAigcnHyEDgYTfXO3wJva9nKo80vt0IA2nc5kHzr0ZB5o9vNB4nLBIEuT6RRbF0uQXmQBgTD99JYTwTN9pGMv2rsh9gRIHsw0VbH2zo_Ku8vd65FVKCgqk14X8XqJuGfWjWheZeVWUsMO3F9uNTMZrpqiu3M7kCViaNa92W3mKJPBUGLviOktwihGwf2aD0-U1YZVOTalR7qQagW3VAJICJ51BcFfXROyXMnIPR4fWTA8t6OinJ6-YbFG6Nf3bSrw_KjXD5RYE6PqPBqzvuaD5g3VB0C4HAMQIacnkZ6jTk3tYsAyAO6LrsgBF8BWDPl5ulAcrmjcXlQKsD8hbGhvFKZChB_RQh4edSCHIJyXhAaMvWOXlHoP4z5T_Zl8ABXV1_EZXdAengab2akpZ2yaLJbOGc0vuIK95t_JTnrf0HqckHGb0iVx0hvBMkdVtz-JsiQC_KC1NMLQd4htaD6htS6QQp_GakMGnq7_AgpF-QeyFyQOdJ5gRTp3yP9rwRZkMWXz706sx35HruqlkeeU4u9ujwD09MzEeOTZcv0qCUc-3afvkZJSD4Zrv0q1_vpyS7FUi9kgh1iKqQOFrQoTFLKsJkI_IFEZnASRq6Hha3p-wJ1uFEIA4EG2PRwIriBMA_cFNuClpoppl9Kez8JJdF8YYd4pKvePGUG7O_Ugb8sPwf-4uwaT9vjYVSvRb10arx8Xs2i3uzZH_WV5SrIlL4xaTlKH4VqbwyDhOygbY1OmaqjxdA9U9dtmed2f6e7x3lnvWZav564IjvPxvt6013TcmO8Ao0BMpA8D7F23srrGvDnNivyopLeXWTQ6SxbC1SilmlgepDqm-Zn88ls1uubzab21CwMWXSQan8DmsQweA&quot;
+  },
+  ...
+}
+</code></pre>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="box-wrapper overflow-hidden mb-5" id="api-examples-example-with-error-message">
+  <h3 class="d-flex align-items-center p-3 m-0 h5">
+    <a href="ai-overview.html#api-examples-example-with-error-message" data-turbolinks="false" class="docu-anchor-link position-absolute d-flex align-items-center px-2 opacity-0">
+      <i class="far fa-link"></i>
+    </a>
+    Example with error message
+  </h3>
+  <div class="p-4 row m-0">
+      <div class="col-lg-6 mb-2 p-1">
+          <img class="img-fluid html-example-image mb-3" alt="Example with error message" src="assets/google/ai_overview/error-8c2b6fdbe29caa806e0709a05ce13003d9a54e746f0445d06152d9e479d77df1.png" />
+      </div>
+      <div class="col-lg-6 p-1">
+        <div class="integrationsMountPoint" id="integrationsMountPoint-7959"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;q&quot;:&quot;drop shipping&quot;,&quot;highlight&quot;:&quot;ai_overview&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-7959&quot;,&quot;json_container_id&quot;:&quot;sub-pre-4549&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;q=drop+shipping&quot;}" data-react-cache-id="Integrations-0"></div>
+        <br/>
+        <div class="code-wrap">
+          <div class="code-header">
+            <div class="code-title">
+              <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
+            </div>
+            <div class="code-links">
+              <a href="playground%3Fq=drop+shipping&amp;highlight=ai_overview.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+            </div>
+          </div>
+          <pre id="sub-pre-4549" class="sub-pre"><code class="language-json" id="jsonResults">{
+  ...
+  &quot;ai_overview&quot;: {
+    &quot;error&quot;: &quot;Can&#39;t generate an AI overview right now. Try again later.&quot;
+  },
+  ...
+}
+</code></pre>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+  <div class="box-wrapper overflow-hidden mb-5" id="api-examples-json-structure-overview">
+  <h3 class="d-flex align-items-center p-3 m-0 h5">
+    <a href="ai-overview.html#api-examples-json-structure-overview" data-turbolinks="false" class="docu-anchor-link position-absolute d-flex align-items-center px-2 opacity-0">
+      <i class="far fa-link"></i>
+    </a>
+    JSON structure overview
+  </h3>
+  <div class="p-4">
+    <pre class="dir-str sub-pre"><code class="language-json" id="jsonResults">{
+  ...
+  &quot;ai_overview&quot;: {
+    // When separate request is required for the AI Overview content
+    &quot;page_token&quot;: &quot;String - Token for the AI Overview block&quot;,
+    &quot;serpapi_link&quot;: &quot;String - URL to the corresponding SerpApi search&quot;,
+    // When the AI Overview block is embeded in the search results
+    &quot;text_blocks&quot;: [
+      {
+        &quot;type&quot;: &quot;String - Type of the text block. Can be &#39;paragraph&#39;, &#39;list&#39;, &#39;expandable&#39;&quot;,
+        &quot;snippet&quot;: &quot;String - Snippet of the text block&quot;,
+        &quot;snippet_highlighted_words&quot;: &quot;Array of strings - Highlighted words in the snippet&quot;,
+        &quot;reference_indexes&quot;: &quot;Array of integers - Indexes of the references in the root &#39;references&#39; field&quot;,
+        &quot;thumbnail&quot;: &quot;String - URL to the thumbnail image&quot;,
+        // Only for &#39;list&#39; type
+        &quot;list&quot;: [
+          {
+            &quot;title&quot;: &quot;String - Title of the list item&quot;,
+            &quot;snippet&quot;: &quot;String - Snippet of the list item&quot;,
+            &quot;reference_indexes&quot;: &quot;Array of integers - Indexes of the references in the root &#39;references&#39; field&quot;,
+            &quot;thumbnail&quot;: &quot;String - URL to the thumbnail image&quot;,
+            // Nested lists
+            &quot;list&quot;: [
+              {
+                &quot;snippet&quot;: &quot;String - Snippet of the nested list item&quot;,
+                &quot;reference_indexes&quot;: &quot;Array of integers - Indexes of the references in the root &#39;references&#39; field&quot;,
+              },
+              ...
+            ]
+          },
+          ...
+        ],
+        // Only for &#39;expandable&#39; type
+        &quot;text_blocks&quot;: [
+          // The same structure as the parent &#39;text_blocks&#39; field
+        ]
+      },
+      {
+    ],
+    &quot;thumbnail&quot;: &quot;String - URL to the thumbnail image&quot;,
+    &quot;references&quot;: [
+      {
+        &quot;title&quot;: &quot;String - Title of the reference&quot;,
+        &quot;link&quot;: &quot;String - URL to the reference&quot;,
+        &quot;snippet&quot;: &quot;String - Snippet of the reference&quot;,
+        &quot;source&quot;: &quot;String - Source of the reference&quot;,
+        &quot;index&quot;: &quot;Integer - Index of the reference&quot;
+      },
+      ...
+    ],
+    &quot;error&quot;: &quot;String - Error message if the AI Overview results are not available&quot;,
+  },
+  ...
+}
+</code></pre>
+  </div>
+</div>
+
+
+</div>
+
+        </main>
+
+        <footer>
+          <ul class="global-nav-wrap">
+            <li class="menu-status"><a href="status.html">Api Status</a>&nbsp;&#8231;</li><!--
+            --><li class="menu-github"><a href="https://github.com/serpapi">GitHub</a>&nbsp;&#8231;</li><!--
+            --><li class="menu-github"><a href="legal.html">Legal</a>&nbsp;&#8231;</li><!--
+            --><li class="menu-github"><a href="security.html">Security</a>&nbsp;&#8231;</li><!--
+            --><li class="menu-github"><a href="libraries.html">Libraries</a>&nbsp;&#8231;</li><!--
+            --><li class="menu-github"><a href="release-notes.html">Release Notes</a>&nbsp;&#8231;</li><!--
+            --><li class="menu-support"><a href="https://github.com/serpapi/public-roadmap">Public Roadmap</a>&nbsp;&#8231;</li><!--
+            --><li class="menu-support"><a href="mailto:support@serpapi.com">Support</a></li>
+          </ul>
+          <p>&copy; 2016-2024 SerpApi, LLC.</p>
+        </footer>
+      </div>
+    </div>
+    <script src="sorttable/sorttable.js" type="text/javascript"></script>
+    <script async src="https://cse.google.com/cse.js?cx=001719131702135749571:4g7ltml4pvl"></script>
+
+      
+  <script src="select2/select2.min.js"></script>
+
+
+    <script>
+    window.intercomSettings = {
+      app_id: "yzck75jr"
+    };
+</script>
+
+<script>
+  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/yzck75jr';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+      <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-669N8EJ8QH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-669N8EJ8QH');
+
+    var overrideReferrer = false;
+    if (overrideReferrer) {
+      gtag('set', 'page_referrer', 'https://serpapi.com');
+    }
+  </script>
+
+  </body>
+</html>

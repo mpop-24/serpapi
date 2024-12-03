@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CAPTCHAs And CAPTCHA Solving</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome-all.min.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/tippy-v6.2.6-animations-scale.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/tippy-v6.2.6-themes-light-border.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/built/tocbot.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom-style.css%3Fv=391e5c6f0f.css" />
+
+    <meta name="description" content="This blog post is about CAPTCHA challenges in web scraping and how CAPTCHA solving works.">
+    <link rel="icon" href="../content/images/size/w256h256/2021/07/serpapi-favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://serpapi.com/blog/captchas-and-captcha-solving/amp/">
+    
+    <meta property="og:site_name" content="SerpApi">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="CAPTCHAs And CAPTCHA Solving">
+    <meta property="og:description" content="This blog post is about CAPTCHA challenges in web scraping and how CAPTCHA solving works.">
+    <meta property="og:url" content="https://serpapi.com/blog/captchas-and-captcha-solving/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta property="article:published_time" content="2024-11-20T17:58:45.000Z">
+    <meta property="article:modified_time" content="2024-11-21T00:38:22.000Z">
+    <meta property="article:tag" content="Web Scraping">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/serpapicom/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CAPTCHAs And CAPTCHA Solving">
+    <meta name="twitter:description" content="This blog post is about CAPTCHA challenges in web scraping and how CAPTCHA solving works.">
+    <meta name="twitter:url" content="https://serpapi.com/blog/captchas-and-captcha-solving/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Sonika Arora">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Web Scraping">
+    <meta name="twitter:site" content="@serp_api">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "SerpApi",
+        "url": "https://serpapi.com/blog/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://serpapi.com/blog/content/images/2021/07/SerpApi-text-logo-1.svg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Sonika Arora",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://serpapi.com/blog/content/images/size/w1200/2024/07/IMG_6671.jpeg",
+            "width": 1200,
+            "height": 1200
+        },
+        "url": "https://serpapi.com/blog/author/sonika/",
+        "sameAs": []
+    },
+    "headline": "CAPTCHAs And CAPTCHA Solving",
+    "url": "https://serpapi.com/blog/captchas-and-captcha-solving/",
+    "datePublished": "2024-11-20T17:58:45.000Z",
+    "dateModified": "2024-11-21T00:38:22.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&ixlib=rb-4.0.3&q=80&w=2000",
+        "width": 1200,
+        "height": 675
+    },
+    "keywords": "Web Scraping",
+    "description": "This blog post is about CAPTCHA challenges in web scraping and how CAPTCHA solving works. ",
+    "mainEntityOfPage": "https://serpapi.com/blog/captchas-and-captcha-solving/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.101">
+    <link rel="alternate" type="application/rss+xml" title="SerpApi" href="../rss/index.html">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.46/umd/portal.min.js" data-i18n="true" data-ghost="https://serpapi.com/blog/" data-key="1e54f77934a4faee4e0262e408" data-api="https://serpapi.ghost.io/blog/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="1e54f77934a4faee4e0262e408" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://serpapi.ghost.io/blog/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://serpapi.com/blog/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=391e5c6f0f"></script>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=391e5c6f0f.css">
+    <script defer src="../public/member-attribution.min.js%3Fv=391e5c6f0f"></script><style>:root {--ghost-accent-color: #377FEA;}</style>
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-669N8EJ8QH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-669N8EJ8QH', {
+    page_location: location.href,
+    send_page_view: true,
+  });
+</script>
+<!-- Google Analytics -->
+</head>
+<body class="post-template tag-web-scraping">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head ">
+  <nav class="gh-head-inner inner gh-container">
+    <div class="gh-head-brand">
+        <a class="gh-head-logo d-inline-block" href="../../index.html">
+          <img src="../assets/images/SerpApi-gentle-white.png%3Fv=391e5c6f0f" alt="SerpApi" />
+        </a>
+        <a class="gh-burger d-none" role="button">
+            <div class="gh-burger-box">
+                <div class="gh-burger-inner"></div>
+            </div>
+        </a>
+    </div>
+    <div class="gh-head-menu d-block">
+      <ul class="nav dropdown-container">
+          <li class="nav-documentation enable-dropdown" data-template="documentation-dropdown-template"><a href="../../search-api.html">Documentation</a></li>
+          <li class="nav-integrations enable-dropdown" data-template="integrations-dropdown-template"><a href="../../integrations.html">Integrations</a></li>
+          <li class="nav-item mr-2 enable-dropdown" data-template="features-dropdown-template"><a class="nav-link" href="../../index.html#features">Features</a></li>
+          <li class="nav-pricing"><a href="../../pricing.html">Pricing</a></li>
+          <li class="nav-use-cases enable-dropdown" data-template="use-cases-dropdown-template"><a href="../../use-cases.html">Use cases</a></li>
+          <li class="nav-team"><a href="../../team.html">Team</a></li>
+          <li class="nav-faq"><a href="../../faq.html">FAQ</a></li>
+          <li class="nav-contact-us"><a href="../../index.html#contact">Contact us</a></li>
+      </ul>
+        <!-- <ul class="nav">
+    <li class="nav-search-api"><a href="https://serpapi.com/">Search API</a></li>
+    <li class="nav-scraping-playground"><a href="https://serpapi.com/playground">Scraping Playground</a></li>
+</ul>
+ -->
+    </div>
+    <div class="gh-head-actions d-flex">
+      <a class="sign-in" href="../../dashboard.html"><span>Sign In</span></a>
+      <a class="gh-head-button font-weight-bold" href="../../users/sign_up.html"><span>Register</span></a>
+    </div>
+  </nav>
+</header>
+
+<template id="documentation-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">APIs</h5>
+      <p>Explore all search engines we support.</p>
+    </div>
+    <ul class="p-0 columns-3">
+      <li>
+        <a href="../../search-api.html">
+          <i class="mr-2 fab fa-google"></i>Google Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-maps-api.html">
+          <i class="mr-2 fas fa-globe-americas"></i>Google Maps API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-jobs-api.html">
+          <i class="mr-2 fas fa-briefcase"></i>Google Jobs API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-shopping-api.html">
+          <i class="mr-2 fas fa-shopping-cart"></i>Google Shopping API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-images-api.html">
+          <i class="mr-2 fas fa-images"></i>Google Images API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-news-api.html">
+          <i class="mr-2 fas fa-newspaper"></i>Google News API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-local-api.html">
+          <i class="mr-2 fas fa-map-marker-alt"></i>Google Local API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-trends-api.html">
+          <i class="mr-2 fas fa-chart-line"></i>Google Trends API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-autocomplete-api.html">
+          <i class="mr-2 fas fa-magic"></i>Google Autocomplete API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-about-this-result.html">
+          <i class="mr-2 fas fa-exclamation-circle"></i>Google About This Result
+        </a>
+      </li>
+      <li>
+        <a href="../../google-lens-api.html">
+          <i class="mr-2 fas fa-camera"></i>Google Lens API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-finance-api.html">
+          <i class="mr-2 fas fa-landmark"></i>Google Finance API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-related-questions-api.html">
+          <i class="mr-2 fas fa-question-square"></i>Google Related Questions API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-scholar-api.html">
+          <i class="mr-2 fas fa-graduation-cap"></i>Google Scholar API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-play-api.html">
+          <i class="mr-2 fab fa-google-play"></i>Google Play Store API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-product-api.html">
+          <i class="mr-2 fas fa-tags"></i>Google Product API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-immersive-product-api.html">
+          <i class="mr-2 fas fa-telescope"></i>Google Immersive Product API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-reverse-image.html">
+          <i class="mr-2 fas fa-image"></i>Google Reverse Image API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-events-api.html">
+          <i class="mr-2 fas fa-calendar-alt"></i>Google Events API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-local-services-api.html">
+          <img class="mr-2" alt="" src="../assets/images/a-secure-d-gray.svg%3Fv=391e5c6f0f">Google Local Services API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-videos-api.html">
+          <i class="mr-2 fas fa-video"></i>Google Videos API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-health-insurance-api.html">
+          <i class="mr-2 fas fa-shield-check"></i>Google Health Insurance API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-patents-api.html">
+          <i class="mr-2 fas fa-file-certificate"></i>Google Patents API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-ads-transparency-center-api.html">
+          <i class="mr-2 fas fa-eye"></i>Google Ads Transparency Center API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-flights-api.html">
+          <i class="mr-2 fas fa-plane-departure"></i>Google Flights API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-hotels-api.html">
+          <i class="mr-2 fas fa-bed"></i>Google Hotels API
+        </a>
+      </li>
+      <li>
+        <a href="../../baidu-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/baidu-gray.svg%3Fv=391e5c6f0f">Baidu Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../bing-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/bing-gray.svg%3Fv=391e5c6f0f">Bing Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../duckduckgo-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/duckduckgo-gray.svg%3Fv=391e5c6f0f">DuckDuckGo Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yahoo-search-api.html">
+          <i class="mr-2 fab fa-yahoo"></i>Yahoo! Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yandex-search-api.html">
+          <i class="mr-2 fab fa-yandex-international"></i>Yandex Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../ebay-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/ebay-gray.svg%3Fv=391e5c6f0f">Ebay Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../youtube-search-api.html">
+          <i class="mr-2 fab fa-youtube"></i>YouTube Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../walmart-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/walmart-gray.svg%3Fv=391e5c6f0f">Walmart Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../home-depot-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/home-depot-gray.svg%3Fv=391e5c6f0f">The Home Depot Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../apple-app-store.html">
+          <i class="mr-2 fab fa-app-store"></i>Apple App Store API
+        </a>
+      </li>
+      <li>
+        <a href="../../naver-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/naver-grey.svg%3Fv=391e5c6f0f">Naver Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yelp-search-api.html">
+          <i class="mr-2 fab fa-yelp"></i>Yelp Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../account-api.html">
+          <i class="mr-2 fas fa-cogs"></i>Extra APIs
+        </a>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <ul class="p-0 columns-3">
+      <li><a href="../../status.html"><i class="mr-2 fas fa-heartbeat"></i>API Status</a></li>
+      <li><a href="../../libraries.html"><i class="mr-2 fas fa-brackets-curly"></i>Libraries</a></li>
+      <li><a href="../../demo.html"><i class="mr-2 fas fa-code"></i>Playground</a></li>
+    </ul>
+  </footer>
+</template>
+
+<template id="integrations-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">Easy Integrations</h5>
+      <p>Start integration with your preferred language.</p>
+    </div>
+    <ul class="p-0 columns-2">
+      <li>
+        <a class="d-inline-block" href="../../integrations/node.html">
+          <i class="mr-2 fab fa-node-js"></i>NodeJS
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/typescript.html">
+          <img alt="typescript's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-typescript-gray.svg">TypeScript
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/ruby.html">
+          <img alt="ruby's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-ruby-gray.svg">Ruby
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/php.html">
+          <i class="mr-2 fab fa-php"></i>PHP
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/java.html">
+          <i class="mr-2 fab fa-java"></i>Java
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/rust.html">
+          <i class="mr-2 fab fa-rust"></i>Rust
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/python.html">
+          <i class="mr-2 fab fa-python"></i>Python
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/go.html">
+          <img alt="go's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-golang-gray.svg">Golang
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/dotnet.html">
+            <img alt="dotnet's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-dotnet-gray.svg">.Net
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/swift.html">
+          <i class="mr-2 fab fa-swift"></i>Swift
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/cpp.html">
+          <img alt="cpp's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-cpp-gray.svg">C++
+        </a>
+      </li>
+    </ul>
+  </main>
+</template>
+
+<template id="features-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">Features</h5>
+      <p>Dive deeper into our advanced features.</p>
+    </div>
+    <ul class="p-0 columns-1">
+      <li><a href="../../ludicrous-speed.html"><i class="mr-2 fas fa-rabbit-fast"></i>Ludicrous Speed</a></li>
+    </ul>
+  </main>
+</template>
+
+<template id="use-cases-dropdown-template">
+  <div class="tippy-content" data-state="visible" style="transition-duration: 300ms;">
+    <main>
+      <div class="title">
+        <h5 class="mb-1 font-weight-bold">Use Cases</h5>
+        <p>Use SERP data to automate your business needs.</p>
+      </div>
+      <ul class="p-0 columns-2">
+          <li><a href="../../use-cases/seo.html"><i class="mr-2 fas fa-search"></i>SEO</a></li>
+          <li><a href="../../use-cases/local-seo.html"><i class="mr-2 fas fa-search-location"></i>Local SEO</a></li>
+          <li><a href="../../use-cases/background-check-automation.html"><i class="mr-2 fas fa-user-check"></i>Background Check Automation</a></li>
+          <li><a href="../../use-cases/machine-learning-and-artificial-intelligence.html"><i class="mr-2 fas fa-user-robot"></i>AI Models</a></li>
+          <li><a href="../../use-cases/news-monitoring.html"><i class="mr-2 fas fa-newspaper"></i>News Monitoring</a></li>
+          <li><a href="../../use-cases/voice-assistant.html"><i class="mr-2 fas fa-microphone"></i>Voice Assistant</a></li>
+      </ul>
+    </main>
+  </div>
+</template>
+    <main>
+        
+
+
+
+<link rel="stylesheet" type="text/css" href="https://serpapi.com/blog/assets/css/pri-secure-sm.css?v=391e5c6f0f" />
+
+<article class="article post tag-web-scraping post-full-content">
+
+    <header class="article-header gh-canvas">
+
+        <section class="article-tag">
+            <a href="https://serpapi.com/blog/tag/web-scraping/">Web Scraping</a>
+        </section>
+
+        <h1 class="article-title">CAPTCHAs And CAPTCHA Solving</h1>
+
+        <p class="article-excerpt">This blog post is about CAPTCHA challenges in web scraping and how CAPTCHA solving works. </p>
+
+        <div class="article-byline">
+            <section class="article-byline-content">
+                <ul class="author-list">
+                    <li class="author-list-item">
+                        <a href="../author/sonika/index.html" class="author-avatar">
+                            <img class="author-profile-image" src="../content/images/size/w100/2024/07/IMG_6671.jpeg" alt="Sonika Arora" />
+                        </a>
+                    </li>
+                </ul>
+                <div class="article-byline-meta">
+                    <h4 class="author-name"><a href="../author/sonika/index.html">Sonika Arora</a></h4>
+                    <div class="byline-meta-content">
+                        <time class="byline-meta-date" datetime="2024-11-20">Nov 20, 2024</time>
+                        <span class="byline-reading-time"><span class="bull">&bull;</span> 9 min read</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <div class="inner-article-wrap">
+        <aside class="serpapi-toc-container toc-container gh-canvas">
+            <p>TABLE OF CONTENTS</p>
+            <div class="toc"></div>
+        </aside>
+
+        <section class="gh-content gh-canvas post-full-content post-content">
+            <p>If you’ve ever tried to scrape data from a website, you’ve likely encountered a CAPTCHA. Those commonly seen "I’m not a robot" checkboxes or image puzzles can stop web scraping efforts in their tracks. For businesses and developers relying on automated data collection via scraping, CAPTCHAs pose a significant barrier. </p><p>CAPTCHAs are specifically designed to block automated systems from accessing data on websites. While this is a valid way to prevent spam and protect against malicious activity, it also creates challenges for legitimate scraping, such as gathering insights from search engine results or competitor analysis. Let's dive into what CAPTCHAs mean, and how CAPTCHA solvers work to help overcome these challenges.</p><h2 id="what-is-a-captcha">What is a CAPTCHA?</h2><p>CAPTCHA is an acronym that stands for "Completely Automated Public Turing test to tell Computers and Humans Apart." A CAPTCHA test is designed to determine if an online user is really a human (and not a bot). Users often encounter CAPTCHA and reCAPTCHA tests on the Internet when browsing websites, or search engines, especially if the browser suspects bot-like activity.</p><p>Although CAPTCHAs are designed to block automated bots, CAPTCHAs are themselves automated. They're programmed to pop up in certain places on a website, and they automatically pass or fail users. This typically includes a quick step that requires users to enter a code or words, click images, or complete a small test to gain access to the website.</p><div class="kg-card kg-toggle-card" data-kg-toggle-state="close">
+            <div class="kg-toggle-heading">
+                <h4 class="kg-toggle-heading-text"><span style="white-space: pre-wrap;">What is a Turing test? How are CAPTCHAs related to the Turing test?</span></h4>
+                <button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
+                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="kg-toggle-content"><p><span style="white-space: pre-wrap;">A Turing test measures a computer's ability to mimic human behavior. Proposed by Alan Turing in 1950, a computer passes if its responses are indistinguishable from a human’s, regardless of whether they are correct or not.</span></p><p><span style="white-space: pre-wrap;">In contrast, a CAPTCHA (often called a "Public Turing test") is designed to do the opposite: it determines whether a user is human or a bot by giving tasks that humans can easily perform but machines struggle with, such as identifying text or images.</span></p></div>
+        </div><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/image-11-1.png" class="kg-image" alt="" loading="lazy" width="1200" height="451" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image-11-1.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/image-11-1.png 1000w, https://serpapi.com/blog/content/images/2024/11/image-11-1.png 1200w" sizes="(min-width: 720px) 720px"></figure><h2 id="how-does-a-captcha-work">How does a CAPTCHA work?</h2><p>A CAPTCHA works by presenting a test or puzzle that is easy for humans to solve but difficult for bots to solve. A website presents a CAPTCHA test to the user in the form of an image, audio file, or a simple question that requires a response. The user completes the test by providing the correct response. This response is then sent back to the website for verification using advanced algorithms to determine whether the response is likely to have been provided by a human or a bot. If the response is deemed to be from a bot, the user is denied access to the website or service.</p><p>There are many different types of CAPTCHAs:</p><ul><li><strong>Text Based CAPTCHA</strong></li></ul><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/image-12.png" class="kg-image" alt="" loading="lazy" width="244" height="207"></figure><p>This type of CAPTCHA presents a sequence of distorted letters or numbers that users must enter into a text box. The characters are intentionally altered to make them challenging for computers to interpret, yet recognizable for humans. Common examples include Google's reCAPTCHA, which features distorted text, and Cloudflare's CAPTCHA, which presents basic arithmetic problems.</p><ul><li><strong>Image Based CAPTCHA</strong></li></ul><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/image-13-1-1.png" class="kg-image" alt="" loading="lazy" width="203" height="300"></figure><p>An image-based CAPTCHA presents an image containing a specific object or shape, and the user must identify or select that object within the image. These CAPTCHAs are challenging for bots to solve because they require sophisticated image recognition capabilities. Variations of image-based CAPTCHAs may include tasks such as selecting images that feature certain objects from a grid, rearranging jigsaw-like pieces to form the original picture, clicking on images that must be rotated to a correct orientation, or other similar interactive challenges.</p><ul><li><strong>Math or Word Problems Based CAPTCHA</strong></li></ul><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/image-14-1.png" class="kg-image" alt="" loading="lazy" width="200" height="170"></figure><p>These CAPTCHAs require users to solve a simple math problem or answer a trivia question to prove that they are human.</p><div class="kg-card kg-callout-card kg-callout-card-blue"><div class="kg-callout-emoji">💡</div><div class="kg-callout-text"><b><strong style="white-space: pre-wrap;">Fun Fact</strong></b>: Some websites use social media sign-in options, such as Facebook or Google, to verify that the user is a real person. This type of verification relies on the assumption that bots are less likely to have social media accounts.</div></div><h2 id="what-triggers-captchas">What triggers CAPTCHAs?</h2><p>Some websites have CAPTCHAs in place as a preventive measure against bots. In other cases, a CAPTCHA may be triggered if the user's behavior appears to mimic that of a bot—such as making an unusually high number of page requests or clicking links at a rate that exceeds typical user patterns.</p><p>Here are suspicious examples of behaviours that might trigger a CAPTCHA test:</p><ul><li>IP Tracking: A user’s IP has been identified as a bot.</li><li>Resource Loading: A user doesn’t load styles, banners, or images.</li><li>Sign in: The user isn’t signed in to any account when accessing the site.</li><li>Bot-Like Behavior: Weird clicking patterns, little mouse movement, and perfectly-centered checkbox clicking can all trigger a CAPTCHA test.</li><li>No Browsing History: Real humans do more than try to log in to the same page over and over again.</li></ul><h2 id="what-is-recaptcha">What is reCAPTCHA?</h2><p>reCAPTCHA is a free service Google offers in place of traditional CAPTCHAs. reCAPTCHA technology was developed by researchers at Carnegie Mellon University, then acquired by Google in 2009.</p><p>reCAPTCHA is advanced compared to the typical CAPTCHA tests. Like CAPTCHA, some reCAPTCHAs require users to enter images of text that computers have trouble deciphering. Unlike regular CAPTCHAs, reCAPTCHA gets data from real-world artifacts: pictures of streets, text from books or newspapers, etc.</p><p>It uses multiple other signals to distinguish bot behavior from human behaviour, such as: </p><ul><li>Image recognition</li><li>Checkbox</li><li>General user behavior assessment (no user interaction at all)</li></ul><p>Many reCAPTCHA tests simply prompt the user to check a box next to the statement, "I'm not a robot." However, the test is not the actual action of clicking the checkbox – it's everything leading up to the checkbox click.</p><figure class="kg-card kg-image-card"><img src="https://cf-assets.www.cloudflare.com/slt3lc6tev37/79wsjD0Xy7FmmYvR0sCncy/5b732b7e26adb7d6c06d943d14dc4acd/not-a-robot.png" class="kg-image" alt="Not a Robot captcha" loading="lazy" width="620" height="183"></figure><h2 id="how-do-captcha-solvers-work">How do CAPTCHA solvers work?</h2><p>For text-based CAPTCHAs, solvers use Optional Character Recognition (OCR) technology to extract characters from the distorted image. OCR works by identifying the shapes of letters and numbers, comparing them against pre-defined character sets, and filtering out noise and distortion to recognize the correct text. </p><p>For image recognition CAPTCHAs (like "select all images with traffic lights"), solvers often rely on Convolutional Neural Networks (CNNs), a type of deep learning model that excels at image classification. These models can be trained on large datasets of images to recognize and classify objects in pictures. There are multiple pre trained models available via APIs such as TensorFlow, PyTorch, or Google Vision which can be help with image recognition.</p><p>Solving Google's reCAPTCHA can look a bit different. Since it looks for human-like behaviour in the background, solvers need to simulate human mouse movements and clicks to trigger the checkbox. In this case, solvers leverage techniques like simulating user behavior through scripts. The checkbox itself may not require solving a puzzle, but interactions are designed to be human-like to pass Google's bot detection. </p><p>Solving an image-based reCAPTCHA is more challenging and requires more sophisticated techniques, often using a combination of automated image recognition models and human labor in the background. In some cases, solvers may use a mix of automated systems and crowdsourced labor where the system presents the challenge to humans who solve it in exchange for payment, in addition some automated steps. This process is known as Human-in-the-loop CAPTCHA solving. </p><div class="kg-card kg-callout-card kg-callout-card-blue"><div class="kg-callout-emoji">💡</div><div class="kg-callout-text"><b><strong style="white-space: pre-wrap;">Fun Fact</strong></b>: Companies continually try to make CAPTCHAs which are harder to solve. Text-based CAPTCHAs use various levels of distortion (like wavy text, overlapping characters, or background noise) to make recognition more difficult. Some newer CAPTCHAs even add 3D elements or dynamic challenges (like dragging objects to solve a puzzle) that are more challenging for automated systems to solve effectively.</div></div><h2 id="impact-of-captchas-on-web-scraping">Impact of CAPTCHAs on Web Scraping</h2><p>Web scraping involves collecting large volumes of information from websites and search engines, which often triggers CAPTCHAs because of the usage of proxies and automated processes. While web scraping can be a valuable technique for gathering insights, it often faces obstacles such as CAPTCHAs, which are designed to ensure only humans can interact with a site. This creates a challenge for legitimate scraping efforts that aim to gather data without violating terms of service or overloading servers. So, often, web scrapers need to find ways to circumvent these protections through techniques such as using CAPTCHA-solving services, employing machine learning algorithms to recognize CAPTCHA patterns, or utilizing browser automation tools that simulate human behavior. This ongoing struggle between CAPTCHA systems and web scraping highlights the constant battle between security measures and the need for data extraction. </p><h2 id="how-serpapi-handles-captcha-challenges">How SerpApi handles CAPTCHA challenges</h2><p>SerpApi uses reliable, CAPTCHA-solving mechanisms, allowing businesses to efficiently scrape search engine results while bypassing CAPTCHAs in a compliant and ethical manner. We prioritize adhering to legal and ethical guidelines in our operations, ensuring that we use industry standard CAPTCHA-solving methods and best practices. SerpApi offers a legitimate, hassle-free solution for companies that need accurate, real-time data without the risks associated with manual scraping methods or unreliable third-party services.</p><p>Many <a href="https://gologin.com/blog/best-captcha-solving-service/" rel="noreferrer">third party CAPTCHA solving services</a> exist which support multiple languages. Using them allows you to bypass all possible CAPTCHAs depending on the target website. These can be used along with proxies to avoid most or all blocks. </p><p>By taking the hassle of CAPTCHA solving off your hands, SerpApi lets you focus on what matters: gathering valuable, structured data from search engines. </p><h2 id="why-use-serpapi">Why Use SerpApi?</h2><p>Here at <a href="../../index.html" rel="noreferrer">SerpApi</a>, we only perform web scraping on search engines providing publicly available data. The API calls replicate real-time searches with no login or authorization required. We are committed to maintaining legal and ethical web scraping practices and providing our customers with peace of mind.&nbsp;</p><p>SerpApi streamlines the process of web-scraping for you. We take care of proxies and any CAPTCHAs that may be encountered, so that you don't have to worry about your searches being blocked. If you were to implement your own scraper using tools like BeautifulSoup and Requests, you'd need to determine your own solution for this. SerpApi manages the intricacies of scraping and returns structured JSON results. This allows you to save time and effort by avoiding the need to build your own Google scraper or rely on other web scraping tools.</p><p>We also do all the work to maintain all of our parsers and adapt them to respond to changes on Google's side. This is important, as Google is constantly experimenting with new layouts, new elements, and other changes. By taking care of this for you on our side, we eliminate a lot of time and complexity from your workflow. We are dedicated to providing the most performant APIs, a legal shield protecting your right to scrape public data, and premium customer service.</p><div class="kg-card kg-callout-card kg-callout-card-grey"><div class="kg-callout-emoji">📊</div><div class="kg-callout-text">Check out our status graph for all our APIs here: <a href="../../status.html">https://serpapi.com/status</a></div></div><p>To begin using SerpApi, create a&nbsp;<a href="../../users/sign_up.html" rel="noreferrer">free account on serpapi.com</a>. You'll receive one hundred free search credits each month to explore the API. For usage requirements beyond that, you can view all our plans here after logging in: <a href="../../change-plan.html">https://serpapi.com/change-plan</a>.</p><h2 id="related-posts">Related Posts</h2><p>You may interested in reading more about the complexities of web scraping:</p><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/blog/how-to-scrape-google-search-results-serps-2023-guide/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">How to Scrape Google Search Results (SERPs) - 2024 Guide</div><div class="kg-bookmark-description">Google, Bing, Yahoo search results, also known as SERPs (search engine results pages), can be a valuable source of information for businesses, researchers, and individuals. However, manually collecting this data can be time-consuming and tedious. Fortunately, the more straightforward solution is using a SERP API(web scraper), web scraping tools</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-16.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Andy L</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/Screen-Shot-2022-05-30-at-22.17.37.png" alt="" onerror="this.style.display = 'none'"></div></a></figure><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/blog/safeguarding-web-scraping-activities-with-serpapi-protecting-privacy-and-security/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Safeguarding Web Scraping Activities with SerpApi: Protecting Privacy and Security</div><div class="kg-bookmark-description">In this article, we will explore how SerpApi safeguards web scraping activities, ensuring the privacy and security of users’ data. Introduction Web scraping has become an integral part of data acquisition in various domains, enabling businesses, researchers, and developers to gather valuable information from the web. However, conducting web scraping</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-15.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Alaa Abdulridha</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/legalshield-1.png" alt="" onerror="this.style.display = 'none'"></div></a></figure><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/blog/scraping-public-pages-legality/#legality-of-web-scraping-at-serpapi"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Scraping public pages is legal in the US (2024)</div><div class="kg-bookmark-description">Disclaimer: SerpApi, including any of its employees or contractors, does not provide legal advice. The content of this blog post is for informational purposes only and should not be considered as legal counsel. For specific legal issues, consult with a qualified attorney. You can legally scrape public pages in the</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-17.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Paige Butler</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/tingey-injury-law-firm-yCdPU73kGSc-unsplash-1.jpg" alt="" onerror="this.style.display = 'none'"></div></a></figure><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/blog/13-ways-to-scrape-any-data-from-any-website/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">13 ways to scrape any public data from any website</div><div class="kg-bookmark-description">This blog is to show different approaches to extract any type of public data from any website with Python code examples.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-5.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Dmitriy Zub</span></div></div></a></figure><p>Thank you for reading this blog post. If you have any questions, please feel free to&nbsp;<a href="mailto:contact@serpapi.com" rel="noreferrer">reach out to us</a>. </p>
+        </section>
+    </div>
+
+
+
+</article>
+
+<section class="footer-cta">
+    <div class="inner">
+        <h2><span class="font-weight-bold">Free Plan</span> <span class="small-font">· 100 searches / month</span></h2>
+        <a class="footer-cta-button d-inline-block" href="../../users/sign_up%3Fplan=free.html">
+            Get started<i class="fas fa-rocket-launch"></i>
+        </a>
+    </div>
+</section>
+
+<aside class="read-more-wrap">
+    <div class="read-more inner">
+
+
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../build-a-no-code-news-web-app-using-serpapi-and-bubble/index.html">
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600"
+            alt="Build a No Code News Web App Using SerpApi and Bubble"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../build-a-no-code-news-web-app-using-serpapi-and-bubble/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Build a No Code News Web App Using SerpApi and Bubble</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>A tutorial about how to build a news web app using Bubble&#39;s no code web app builder and SerpApi&#39;s Google News API and display data scraped from Google News.</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/sonika/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2024/07/IMG_6671.jpeg" alt="Sonika Arora" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/sonika/index.html">Sonika Arora</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-12-02">Dec 2, 2024</time> <span class="bull">&bull;</span> 8 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../how-to-scrape-google-local-services-results/index.html">
+        <img class="post-card-image"
+            srcset="../content/images/size/w300/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.png 300w,
+                   ../content/images/size/w600/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngg 600w,
+                  ../content/images/size/w1000/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngng 1000w,
+                 ../content/images/size/w2000/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngpng 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="../content/images/size/w600/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.png"
+            alt="How to Scrape Google Local Services Results"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../how-to-scrape-google-local-services-results/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">How to Scrape Google Local Services Results</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>If you search on Google with &quot;Plumber near me&quot; or &quot;electricians in New York&quot;, you will receive a list of all local services ads near you. Imagine that we can scrape all local services, including their business details like names, ratings, reviews,... Even years in business</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/andy/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2023/02/Screen-Shot-2022-05-30-at-22.17.37.png" alt="Andy L" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/andy/index.html">Andy L</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-11-14">Nov 14, 2024</time> <span class="bull">&bull;</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../google-ads-competitor-analysis-system-spying-with-api/index.html">
+        <img class="post-card-image"
+            srcset="../content/images/size/w300/2024/10/google-ads-competitor-analysis-1.webp 300w,
+                   ../content/images/size/w600/2024/10/google-ads-competitor-analysis-1.webpp 600w,
+                  ../content/images/size/w1000/2024/10/google-ads-competitor-analysis-1.webpbp 1000w,
+                 ../content/images/size/w2000/2024/10/google-ads-competitor-analysis-1.webpebp 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="../content/images/size/w600/2024/10/google-ads-competitor-analysis-1.webp"
+            alt="Google Ads Competitor Analysis System: Spying with API"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../google-ads-competitor-analysis-system-spying-with-api/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Google Ads Competitor Analysis System: Spying with API</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>Learn your competitor&#39;s Google ads strategy via SERP results, ads transparency center, and more. You can do this programmatically!</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/hilman/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2023/10/profile-picture.png" alt="Hilman Ramadhan" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/hilman/index.html">Hilman Ramadhan</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-11-13">Nov 13, 2024</time> <span class="bull">&bull;</span> 4 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+    </div>
+</aside>
+
+
+
+
+    </main>
+
+    <footer class="site-footer outer d-block">
+  <div class="grid-wrapper container p-0 mb-5">
+    <div class="docu-wrapper">
+      <h1 class="column-wrapper columns-3">Documentation</h1>
+      <ul class="column-wrapper columns-3 m-0 justify-content-between">
+        <li class="py-1">
+          <a href="../../search-api.html">
+            <i class="text-center mr-2 fab fa-google"></i>Google Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-maps-api.html">
+            <i class="text-center mr-2 fas fa-globe-americas"></i>Google Maps API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-jobs-api.html">
+            <i class="text-center mr-2 fas fa-briefcase"></i>Google Jobs API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-shopping-api.html">
+            <i class="text-center mr-2 fas fa-shopping-cart"></i>Google Shopping API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-images-api.html">
+            <i class="text-center mr-2 fas fa-images"></i>Google Images API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-news-api.html">
+            <i class="text-center mr-2 fas fa-newspaper"></i>Google News API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-local-api.html">
+            <i class="text-center mr-2 fas fa-map-marker-alt"></i>Google Local API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-trends-api.html">
+            <i class="text-center mr-2 fas fa-chart-line"></i>Google Trends API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-autocomplete-api.html">
+            <i class="text-center mr-2 fas fa-magic"></i>Google Autocomplete API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-about-this-result.html">
+            <i class="text-center mr-2 fas fa-exclamation-circle"></i>Google About This Result
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-lens-api.html">
+            <i class="text-center mr-2 fas fa-camera"></i>Google Lens API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-finance-api.html">
+            <i class="text-center mr-2 fas fa-landmark"></i>Google Finance API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-related-questions-api.html">
+            <i class="text-center mr-2 fas fa-question-square"></i>Google Related Questions API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-scholar-api.html">
+            <i class="text-center mr-2 fas fa-graduation-cap"></i>Google Scholar API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-play-api.html">
+            <i class="text-center mr-2 fab fa-google-play"></i>Google Play Store API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-product-api.html">
+            <i class="text-center mr-2 fas fa-tags"></i>Google Product API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-immersive-product-api.html">
+            <i class="text-center mr-2 fas fa-telescope"></i>Google Immersive Product API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-reverse-image.html">
+            <i class="text-center mr-2 fas fa-image"></i>Google Reverse Image API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-events-api.html">
+            <i class="text-center mr-2 fas fa-calendar-alt"></i>Google Events API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-local-services-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/a-secure-d.svg%3Fv=391e5c6f0f">Google Local Services API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-videos-api.html">
+            <i class="text-center mr-2 fas fa-video"></i>Google Videos API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-health-insurance-api.html">
+            <i class="text-center mr-2 fas fa-shield-check"></i>Google Health Insurance API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-patents-api.html">
+            <i class="text-center mr-2 fas fa-file-certificate"></i>Google Patents API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-ads-transparency-center-api.html">
+            <i class="text-center mr-2 fas fa-eye"></i>Google Ads Transparency Center API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-flights-api.html">
+            <i class="text-center mr-2 fas fa-plane-departure"></i>Google Flights API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-hotels-api.html">
+            <i class="text-center mr-2 fas fa-bed"></i>Google Hotels API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../baidu-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/baidu.svg%3Fversion=1.2%3Fv=391e5c6f0f">Baidu Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../bing-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/bing.svg%3Fversion=1.2%3Fv=391e5c6f0f">Bing Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../duckduckgo-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/duckduckgo.svg%3Fv=1.1%3Fv=391e5c6f0f">DuckDuckGo Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yahoo-search-api.html">
+            <i class="text-center mr-2 fab fa-yahoo"></i>Yahoo! Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yandex-search-api.html">
+            <i class="text-center mr-2 fab fa-yandex-international"></i>Yandex Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../ebay-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/ebay.svg%3Fversion=1.2%3Fv=391e5c6f0f">Ebay Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../youtube-search-api.html">
+            <i class="text-center mr-2 fab fa-youtube"></i>YouTube Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../walmart-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/walmart.svg%3Fv=391e5c6f0f">Walmart Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../home-depot-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/home-depot.svg%3Fversion=1.3%3Fv=391e5c6f0f">The Home Depot Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../apple-app-store.html">
+            <i class="text-center mr-2 fab fa-app-store"></i>Apple App Store API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../naver-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/naver-white.svg%3Fv=391e5c6f0f">Naver Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yelp-search-api.html">
+            <i class="text-center mr-2 fab fa-yelp"></i>Yelp Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../account-api.html">
+            <i class="text-center mr-2 fas fa-cogs"></i>Extra APIs
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-between about-and-contact">
+      <div>
+        <h1>About</h1>
+        <ul class="list-unstyled m-0">
+          <li class="py-1"><a href="../../index.html">Home</a></li>
+          <li class="py-1"><a href="../../integrations.html">Integrations</a></li>
+          <li class="py-1"><a href="../../index.html#features">Features</a></li>
+          <li class="py-1"><a href="../../pricing.html">Pricing</a></li>
+          <li class="py-1"><a href="../../use-cases.html">Use cases</a></li>
+          <li class="py-1"><a href="../../team.html">Team</a></li>
+          <li class="py-1"><a href="../../careers.html">Careers</a></li>
+          <li class="py-1"><a href="../../faq.html">FAQ</a></li>
+          <li class="py-1"><a href="../../legal.html">Legal</a></li>
+          <li class="py-1"><a href="../../security.html">Security</a></li>
+          <li class="py-1"><a href="../../index.html#contact">Contact us</a></li>
+          <li class="py-1"><a href="../index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Contact</h1>
+        <ul class="list-unstyled m-0">
+          <li class="py-1">SerpApi, LLC</li>
+          <li class="py-1">5540 N Lamar Blvd #12</li>
+          <li class="py-1">Austin, TX 78751</li>
+          <li>&nbsp;</li>
+          <li class="py-1">+1 (512) 666-8245</li>
+          <li class="py-1"><a href="mailto:contact@serpapi.com">contact@serpapi.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="our-values container p-0 d-flex my-5 py-5 justify-content-between ">
+    <div class="w-100">
+      <h1 class="pb-3 d-flex justify-content-between">
+        <span>Our Values</span>
+        <a href="../../index.html">
+          <img alt="SerpApi" src="../assets/images/serpapi-text-logo.svg%3Fv=391e5c6f0f">
+        </a>
+      </h1>
+      <p>We value full transparency and painful honesty both in our internal and external communications. We believe a world with complete and open transparency is a better world.</p>
+    </div>
+  </div>
+
+  <div class="container p-0">
+    <div class="col-md-12 d-lg-flex align-items-end p-0 justify-content-between">
+      <p class="copyrights mt-5 mb-2 mb-sm-0"><i class="fas fa-heart"></i>Built with love in Austin, TX. © <span id="current-year"></span> SerpApi, LLC.</p>
+      <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+      </script>
+      <ul class="social list-unstyled d-flex flex-wrap ml-auto m-0">
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://github.com/serpapi/" target="_blank" data-tippy-content="GitHub"><i class="fab fa-github"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://medium.com/serpapi" target="_blank" data-tippy-content="Medium"><i class="fab fa-medium"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://www.youtube.com/channel/UCUgIHlYBOD3yA3yDIRhg_mg" target="_blank" data-tippy-content="YouTube"><i class="fab fa-youtube"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://twitter.com/serp_api" target="_blank" data-tippy-content="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://www.facebook.com/serpapicom/" target="_blank" data-tippy-content="Facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="enable-tooltip" rel="nofollow" href="https://www.instagram.com/serpapicom/" target="_blank" data-tippy-content="Instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+
+<script src="../assets/built/casper.js%3Fv=391e5c6f0f"></script>
+<script>
+  $(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+
+    /* Enable Tooltip
+    *
+    * Add a class `enable-tooltip` to element
+    */
+    tippy('.enable-tooltip', {
+      arrow: true,
+      animateFill: false,
+      delay: [100, 0],
+    });
+
+    /* Enable Dropdown
+    *
+    * 1. Add a class `enable-dropdown` to element to enable dropdown
+    * 2. Add a class `dropdown-container` to element parent
+    * 2. Create html template that will go into the dropdown (e.g. <template id="dropdown_template_id">...</template>)
+    * 3. Add `data-template="dropdown_template_id"` to the same element
+    */
+    tippy('.enable-dropdown', {
+      content(reference) {
+        const id = reference.getAttribute('data-template'),
+              template = document.getElementById(id);
+        return template.innerHTML;
+      },
+      theme: 'light-border',
+      allowHTML: true,
+      interactive: true,
+      animation: 'scale',
+      placement: 'bottom',
+      hideOnClick: false,
+    });
+
+    $('pre').addClass('line-numbers');
+    Prism.highlightAll();
+
+    mediumZoom('.article img');
+
+    // Table of content side menu
+    tocbot.init({
+      tocSelector: '.toc',
+      contentSelector: '.post-content',
+      hasInnerContainers: true,
+      extraLinkClasses: 'serpapi-toc-link',
+      extraListClasses: 'serpapi-toc-list',
+    });
+
+    if ($(".toc").is(":empty")) {
+      $(".serpapi-toc-container").remove();
+      $(".post-content").removeClass("post-full-content");
+    } else {
+      $(".serpapi-toc-container").css("opacity", "1");
+    }
+  });
+</script>
+
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+</body>
+</html>

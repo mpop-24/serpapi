@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Bulk Image Search: Getting Started</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome-all.min.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/tippy-v6.2.6-animations-scale.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/tippy-v6.2.6-themes-light-border.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/built/tocbot.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom-style.css%3Fv=391e5c6f0f.css" />
+
+    <link rel="icon" href="../content/images/size/w256h256/2021/07/serpapi-favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://serpapi.com/blog/bulk-image-search/amp/">
+    
+    <meta property="og:site_name" content="SerpApi">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Bulk Image Search: Getting Started">
+    <meta property="og:description" content="Introducing the Bulk Image Search tool - a simple, no-code web app to utilize SerpApi&#x27;s Google Lens API. Whether you&#x27;re a researcher, marketer, or someone who performs many visual searches, the Bulk Image Search tool streamlines visual searches and helps you get the insights you need faster. Keep reading to">
+    <meta property="og:url" content="https://serpapi.com/blog/bulk-image-search/">
+    <meta property="og:image" content="https://serpapi.com/blog/content/images/size/w1200/2024/11/SCR-20241107-nxxv.png">
+    <meta property="article:published_time" content="2024-11-12T18:33:51.000Z">
+    <meta property="article:modified_time" content="2024-11-13T23:40:52.000Z">
+    <meta property="article:tag" content="Google Lens">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/serpapicom/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bulk Image Search: Getting Started">
+    <meta name="twitter:description" content="Introducing the Bulk Image Search tool - a simple, no-code web app to utilize SerpApi&#x27;s Google Lens API. Whether you&#x27;re a researcher, marketer, or someone who performs many visual searches, the Bulk Image Search tool streamlines visual searches and helps you get the insights you need faster. Keep reading to">
+    <meta name="twitter:url" content="https://serpapi.com/blog/bulk-image-search/">
+    <meta name="twitter:image" content="https://serpapi.com/blog/content/images/size/w1200/2024/11/SCR-20241107-nxxv.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Nathan Skiles">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Google Lens">
+    <meta name="twitter:site" content="@serp_api">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="876">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "SerpApi",
+        "url": "https://serpapi.com/blog/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://serpapi.com/blog/content/images/2021/07/SerpApi-text-logo-1.svg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Nathan Skiles",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://serpapi.com/blog/content/images/2024/08/avi.jpg",
+            "width": 720,
+            "height": 720
+        },
+        "url": "https://serpapi.com/blog/author/nathan/",
+        "sameAs": []
+    },
+    "headline": "Bulk Image Search: Getting Started",
+    "url": "https://serpapi.com/blog/bulk-image-search/",
+    "datePublished": "2024-11-12T18:33:51.000Z",
+    "dateModified": "2024-11-13T23:40:52.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://serpapi.com/blog/content/images/size/w1200/2024/11/SCR-20241107-nxxv.png",
+        "width": 1200,
+        "height": 876
+    },
+    "keywords": "Google Lens",
+    "description": "Introducing the Bulk Image Search tool - a simple, no-code web app to utilize SerpApi&#x27;s Google Lens API. Whether you&#x27;re a researcher, marketer, or someone who performs many visual searches, the Bulk Image Search tool streamlines visual searches and helps you get the insights you need faster. Keep reading to learn how to get started.\n\n\nWhat Does It Do?\n\n * Upload images to Imgur in bulk\n * Scrape multiple Google Lens search results simultaneously\n * Download search results in your preferred forma",
+    "mainEntityOfPage": "https://serpapi.com/blog/bulk-image-search/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.101">
+    <link rel="alternate" type="application/rss+xml" title="SerpApi" href="../rss/index.html">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.46/umd/portal.min.js" data-i18n="true" data-ghost="https://serpapi.com/blog/" data-key="1e54f77934a4faee4e0262e408" data-api="https://serpapi.ghost.io/blog/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="1e54f77934a4faee4e0262e408" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://serpapi.ghost.io/blog/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://serpapi.com/blog/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=391e5c6f0f"></script>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=391e5c6f0f.css">
+    <script defer src="../public/member-attribution.min.js%3Fv=391e5c6f0f"></script><style>:root {--ghost-accent-color: #377FEA;}</style>
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-669N8EJ8QH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-669N8EJ8QH', {
+    page_location: location.href,
+    send_page_view: true,
+  });
+</script>
+<!-- Google Analytics -->
+</head>
+<body class="post-template tag-google-lens">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head ">
+  <nav class="gh-head-inner inner gh-container">
+    <div class="gh-head-brand">
+        <a class="gh-head-logo d-inline-block" href="../../index.html">
+          <img src="../assets/images/SerpApi-gentle-white.png%3Fv=391e5c6f0f" alt="SerpApi" />
+        </a>
+        <a class="gh-burger d-none" role="button">
+            <div class="gh-burger-box">
+                <div class="gh-burger-inner"></div>
+            </div>
+        </a>
+    </div>
+    <div class="gh-head-menu d-block">
+      <ul class="nav dropdown-container">
+          <li class="nav-documentation enable-dropdown" data-template="documentation-dropdown-template"><a href="../../search-api.html">Documentation</a></li>
+          <li class="nav-integrations enable-dropdown" data-template="integrations-dropdown-template"><a href="../../integrations.html">Integrations</a></li>
+          <li class="nav-item mr-2 enable-dropdown" data-template="features-dropdown-template"><a class="nav-link" href="../../index.html#features">Features</a></li>
+          <li class="nav-pricing"><a href="../../pricing.html">Pricing</a></li>
+          <li class="nav-use-cases enable-dropdown" data-template="use-cases-dropdown-template"><a href="../../use-cases.html">Use cases</a></li>
+          <li class="nav-team"><a href="../../team.html">Team</a></li>
+          <li class="nav-faq"><a href="../../faq.html">FAQ</a></li>
+          <li class="nav-contact-us"><a href="../../index.html#contact">Contact us</a></li>
+      </ul>
+        <!-- <ul class="nav">
+    <li class="nav-search-api"><a href="https://serpapi.com/">Search API</a></li>
+    <li class="nav-scraping-playground"><a href="https://serpapi.com/playground">Scraping Playground</a></li>
+</ul>
+ -->
+    </div>
+    <div class="gh-head-actions d-flex">
+      <a class="sign-in" href="../../dashboard.html"><span>Sign In</span></a>
+      <a class="gh-head-button font-weight-bold" href="../../users/sign_up.html"><span>Register</span></a>
+    </div>
+  </nav>
+</header>
+
+<template id="documentation-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">APIs</h5>
+      <p>Explore all search engines we support.</p>
+    </div>
+    <ul class="p-0 columns-3">
+      <li>
+        <a href="../../search-api.html">
+          <i class="mr-2 fab fa-google"></i>Google Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-maps-api.html">
+          <i class="mr-2 fas fa-globe-americas"></i>Google Maps API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-jobs-api.html">
+          <i class="mr-2 fas fa-briefcase"></i>Google Jobs API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-shopping-api.html">
+          <i class="mr-2 fas fa-shopping-cart"></i>Google Shopping API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-images-api.html">
+          <i class="mr-2 fas fa-images"></i>Google Images API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-news-api.html">
+          <i class="mr-2 fas fa-newspaper"></i>Google News API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-local-api.html">
+          <i class="mr-2 fas fa-map-marker-alt"></i>Google Local API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-trends-api.html">
+          <i class="mr-2 fas fa-chart-line"></i>Google Trends API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-autocomplete-api.html">
+          <i class="mr-2 fas fa-magic"></i>Google Autocomplete API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-about-this-result.html">
+          <i class="mr-2 fas fa-exclamation-circle"></i>Google About This Result
+        </a>
+      </li>
+      <li>
+        <a href="../../google-lens-api.html">
+          <i class="mr-2 fas fa-camera"></i>Google Lens API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-finance-api.html">
+          <i class="mr-2 fas fa-landmark"></i>Google Finance API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-related-questions-api.html">
+          <i class="mr-2 fas fa-question-square"></i>Google Related Questions API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-scholar-api.html">
+          <i class="mr-2 fas fa-graduation-cap"></i>Google Scholar API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-play-api.html">
+          <i class="mr-2 fab fa-google-play"></i>Google Play Store API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-product-api.html">
+          <i class="mr-2 fas fa-tags"></i>Google Product API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-immersive-product-api.html">
+          <i class="mr-2 fas fa-telescope"></i>Google Immersive Product API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-reverse-image.html">
+          <i class="mr-2 fas fa-image"></i>Google Reverse Image API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-events-api.html">
+          <i class="mr-2 fas fa-calendar-alt"></i>Google Events API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-local-services-api.html">
+          <img class="mr-2" alt="" src="../assets/images/a-secure-d-gray.svg%3Fv=391e5c6f0f">Google Local Services API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-videos-api.html">
+          <i class="mr-2 fas fa-video"></i>Google Videos API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-health-insurance-api.html">
+          <i class="mr-2 fas fa-shield-check"></i>Google Health Insurance API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-patents-api.html">
+          <i class="mr-2 fas fa-file-certificate"></i>Google Patents API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-ads-transparency-center-api.html">
+          <i class="mr-2 fas fa-eye"></i>Google Ads Transparency Center API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-flights-api.html">
+          <i class="mr-2 fas fa-plane-departure"></i>Google Flights API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-hotels-api.html">
+          <i class="mr-2 fas fa-bed"></i>Google Hotels API
+        </a>
+      </li>
+      <li>
+        <a href="../../baidu-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/baidu-gray.svg%3Fv=391e5c6f0f">Baidu Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../bing-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/bing-gray.svg%3Fv=391e5c6f0f">Bing Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../duckduckgo-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/duckduckgo-gray.svg%3Fv=391e5c6f0f">DuckDuckGo Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yahoo-search-api.html">
+          <i class="mr-2 fab fa-yahoo"></i>Yahoo! Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yandex-search-api.html">
+          <i class="mr-2 fab fa-yandex-international"></i>Yandex Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../ebay-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/ebay-gray.svg%3Fv=391e5c6f0f">Ebay Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../youtube-search-api.html">
+          <i class="mr-2 fab fa-youtube"></i>YouTube Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../walmart-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/walmart-gray.svg%3Fv=391e5c6f0f">Walmart Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../home-depot-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/home-depot-gray.svg%3Fv=391e5c6f0f">The Home Depot Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../apple-app-store.html">
+          <i class="mr-2 fab fa-app-store"></i>Apple App Store API
+        </a>
+      </li>
+      <li>
+        <a href="../../naver-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/naver-grey.svg%3Fv=391e5c6f0f">Naver Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yelp-search-api.html">
+          <i class="mr-2 fab fa-yelp"></i>Yelp Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../account-api.html">
+          <i class="mr-2 fas fa-cogs"></i>Extra APIs
+        </a>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <ul class="p-0 columns-3">
+      <li><a href="../../status.html"><i class="mr-2 fas fa-heartbeat"></i>API Status</a></li>
+      <li><a href="../../libraries.html"><i class="mr-2 fas fa-brackets-curly"></i>Libraries</a></li>
+      <li><a href="../../demo.html"><i class="mr-2 fas fa-code"></i>Playground</a></li>
+    </ul>
+  </footer>
+</template>
+
+<template id="integrations-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">Easy Integrations</h5>
+      <p>Start integration with your preferred language.</p>
+    </div>
+    <ul class="p-0 columns-2">
+      <li>
+        <a class="d-inline-block" href="../../integrations/node.html">
+          <i class="mr-2 fab fa-node-js"></i>NodeJS
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/typescript.html">
+          <img alt="typescript's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-typescript-gray.svg">TypeScript
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/ruby.html">
+          <img alt="ruby's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-ruby-gray.svg">Ruby
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/php.html">
+          <i class="mr-2 fab fa-php"></i>PHP
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/java.html">
+          <i class="mr-2 fab fa-java"></i>Java
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/rust.html">
+          <i class="mr-2 fab fa-rust"></i>Rust
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/python.html">
+          <i class="mr-2 fab fa-python"></i>Python
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/go.html">
+          <img alt="go's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-golang-gray.svg">Golang
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/dotnet.html">
+            <img alt="dotnet's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-dotnet-gray.svg">.Net
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/swift.html">
+          <i class="mr-2 fab fa-swift"></i>Swift
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/cpp.html">
+          <img alt="cpp's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-cpp-gray.svg">C++
+        </a>
+      </li>
+    </ul>
+  </main>
+</template>
+
+<template id="features-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">Features</h5>
+      <p>Dive deeper into our advanced features.</p>
+    </div>
+    <ul class="p-0 columns-1">
+      <li><a href="../../ludicrous-speed.html"><i class="mr-2 fas fa-rabbit-fast"></i>Ludicrous Speed</a></li>
+    </ul>
+  </main>
+</template>
+
+<template id="use-cases-dropdown-template">
+  <div class="tippy-content" data-state="visible" style="transition-duration: 300ms;">
+    <main>
+      <div class="title">
+        <h5 class="mb-1 font-weight-bold">Use Cases</h5>
+        <p>Use SERP data to automate your business needs.</p>
+      </div>
+      <ul class="p-0 columns-2">
+          <li><a href="../../use-cases/seo.html"><i class="mr-2 fas fa-search"></i>SEO</a></li>
+          <li><a href="../../use-cases/local-seo.html"><i class="mr-2 fas fa-search-location"></i>Local SEO</a></li>
+          <li><a href="../../use-cases/background-check-automation.html"><i class="mr-2 fas fa-user-check"></i>Background Check Automation</a></li>
+          <li><a href="../../use-cases/machine-learning-and-artificial-intelligence.html"><i class="mr-2 fas fa-user-robot"></i>AI Models</a></li>
+          <li><a href="../../use-cases/news-monitoring.html"><i class="mr-2 fas fa-newspaper"></i>News Monitoring</a></li>
+          <li><a href="../../use-cases/voice-assistant.html"><i class="mr-2 fas fa-microphone"></i>Voice Assistant</a></li>
+      </ul>
+    </main>
+  </div>
+</template>
+    <main>
+        
+
+
+
+<link rel="stylesheet" type="text/css" href="https://serpapi.com/blog/assets/css/pri-secure-sm.css?v=391e5c6f0f" />
+
+<article class="article post tag-google-lens post-full-content">
+
+    <header class="article-header gh-canvas">
+
+        <section class="article-tag">
+            <a href="https://serpapi.com/blog/tag/google-lens/">Google Lens</a>
+        </section>
+
+        <h1 class="article-title">Bulk Image Search: Getting Started</h1>
+
+
+        <div class="article-byline">
+            <section class="article-byline-content">
+                <ul class="author-list">
+                    <li class="author-list-item">
+                        <a href="../author/nathan/index.html" class="author-avatar">
+                            <img class="author-profile-image" src="../content/images/size/w100/2024/08/avi.jpg" alt="Nathan Skiles" />
+                        </a>
+                    </li>
+                </ul>
+                <div class="article-byline-meta">
+                    <h4 class="author-name"><a href="../author/nathan/index.html">Nathan Skiles</a></h4>
+                    <div class="byline-meta-content">
+                        <time class="byline-meta-date" datetime="2024-11-12">Nov 12, 2024</time>
+                        <span class="byline-reading-time"><span class="bull">&bull;</span> 7 min read</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <div class="inner-article-wrap">
+        <aside class="serpapi-toc-container toc-container gh-canvas">
+            <p>TABLE OF CONTENTS</p>
+            <div class="toc"></div>
+        </aside>
+
+        <section class="gh-content gh-canvas post-full-content post-content">
+            <p>Introducing the Bulk Image Search tool - a simple, no-code web app to utilize SerpApi's Google Lens API. Whether you're a researcher, marketer, or someone who performs many visual searches, the Bulk Image Search tool streamlines visual searches and helps you get the insights you need faster. Keep reading to learn how to get started.</p><h2 id="what-does-it-do"><strong>What Does It Do?</strong></h2><ul><li>Upload images to Imgur in bulk</li><li>Scrape multiple Google Lens search results simultaneously</li><li>Download search results in your preferred format (CSV, JSON, or Excel)</li><li>Access images from your Imgur account</li></ul><h2 id="serpapi-introduction">SerpApi Introduction</h2><p>SerpApi is a web scraping company that allows developers to extract search engine results and data from various search engines, including Google, Bing, Yahoo, Baidu, Yandex, and others. It provides a simple way to access search engine data programmatically without dealing directly with the complexities of web scraping.</p><h3 id="google-lens-api">Google Lens API</h3><p>This tool uses SerpApi's Google Lens API to scrape search results from Google Lens search results (<a href="https://lens.google/">https://lens.google/</a>) when performing an image search. The results related to the image could contain visual matches, video, text, and other data. Search results can be returned from specific countries or in specific languages.</p><p>The Google Lens API currently only supports images with URLs, meaning the image must be hosted publicly to be searched. SerpApi has an open feature request to enable file uploads, and you can follow along with it's progress here:</p><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://github.com/serpapi/public-roadmap/issues/948"><div class="kg-bookmark-content"><div class="kg-bookmark-title">[Google Lens API] Support image search via file upload · Issue #948 · serpapi/public-roadmap</div><div class="kg-bookmark-description">To-do Implement Google Lens and Reverse Image search via file upload Document that async=1 is not available for these requests Experimental implementation: serpapi/SerpApi#2412</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/pinned-octocat-093da3e6fa40.svg" alt=""><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">serpapi</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://opengraph.githubassets.com/b6c215475c133a158748a6a09ae94e380c1c5a55e63004d806f99dd526ceb5c8/serpapi/public-roadmap/issues/948" alt="" onerror="this.style.display = 'none'"></div></a></figure><h3 id="use-cases">Use Cases</h3><p>The Google Lens API can be leveraged for various use cases across different industries. Here are a few examples:</p><p><strong>Visual Search for E-commerce</strong></p><ul><li>Identify similar products or alternatives based on an image of a product</li><li>Monitor competitor pricing and product offerings by searching for their images</li></ul><p><strong>Academic and Scientific Research</strong></p><ul><li>Identify plant and animal species from images</li><li>Reverse image search to find the original source of an image</li><li>Find similar images for training AI models</li></ul><p><strong>Trend Analysis</strong></p><ul><li>Detect emerging visual styles, designs, or themes across industries</li><li>Monitor changes in product packaging, advertising, or website designs over time</li><li>Gather insights on popular visual motifs, objects, or scenes</li></ul><p>The Google Lens API is a versatile and powerful tool for developers, researchers, marketers, and anyone who needs to extract insights from visual data at scale. By leveraging programmatic access to this visual search functionality, users can streamline their workflows.</p><p>You can test the Google Lens API in SerpApi's playground environment found here:</p><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="../../playground%3Fengine=google_lens.html"><div class="kg-bookmark-content"><div class="kg-bookmark-title">SerpApi Playground - SerpApi</div><div class="kg-bookmark-description">Test SerpApi’s Google Search, Google Maps, YouTube, Bing, Walmart, Ebay, Baidu, Yandex and more APIs for free in the interactive playground!</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/apple-touch-icon-8.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">SerpApi</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/serpapi-text-logo-621a467e3b1e907622c18a6ac81455032e9784d6a86e81a1b4f6407d3f0120a6-7.svg" alt="" onerror="this.style.display = 'none'"></div></a></figure><h2 id="quick-setup"><strong>Quick Setup</strong></h2><p>1 - Sign up for free accounts:</p><ul><li>An <a href="https://imgur.com/">Imgur account</a>, for storing your images.</li><li>A <a href="../../users/sign_up.html">SerpApi account</a>, is needed to perform searches. SerpApi provides a free plan with 100 successful searches included every month.</li></ul><p>2 - Log in to Bulk Image Search with your Imgur account</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://serpapi.com/blog/content/images/2024/11/image-2.png" class="kg-image" alt="" loading="lazy" width="1714" height="1119" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image-2.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/image-2.png 1000w, https://serpapi.com/blog/content/images/size/w1600/2024/11/image-2.png 1600w, https://serpapi.com/blog/content/images/2024/11/image-2.png 1714w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Log in</span></figcaption></figure><p>3 - Add your <a href="../../dashboard.html">SerpApi API key</a> to the <a href="https://bulkimagesearch.com/settings">settings page</a>.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://serpapi.com/blog/content/images/2024/11/image-3.png" class="kg-image" alt="" loading="lazy" width="1713" height="1116" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image-3.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/image-3.png 1000w, https://serpapi.com/blog/content/images/size/w1600/2024/11/image-3.png 1600w, https://serpapi.com/blog/content/images/2024/11/image-3.png 1713w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Save SerpApi Key</span></figcaption></figure><h2 id="using-the-tool"><strong>Using the Tool</strong></h2><p>In this section, we will walk through performing a bulk image search. The tool has three simple steps: uploading your images, configuring your search parameters, and reviewing your results.</p><h3 id="upload-images"><strong>Upload Images</strong></h3><p>Head to the upload page page to get started. You can upload up to 50 images with a maximum single image size of 4.5MB:</p><p><a href="https://bulkimagesearch.com/upload">https://bulkimagesearch.com/upload</a></p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://serpapi.com/blog/content/images/2024/11/image-4.png" class="kg-image" alt="" loading="lazy" width="1709" height="1117" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image-4.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/image-4.png 1000w, https://serpapi.com/blog/content/images/size/w1600/2024/11/image-4.png 1600w, https://serpapi.com/blog/content/images/2024/11/image-4.png 1709w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Upload image</span></figcaption></figure><h3 id="search-images"><strong>Search Images</strong></h3><p>After adding images to your Imgur account, navigate to the <a href="https://bulkimagesearch.com/search">search page</a> to select all the images you would like to search for, set your search parameters, and choose the format you want the results returned in.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://serpapi.com/blog/content/images/2024/11/image-5.png" class="kg-image" alt="" loading="lazy" width="1706" height="1120" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image-5.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/image-5.png 1000w, https://serpapi.com/blog/content/images/size/w1600/2024/11/image-5.png 1600w, https://serpapi.com/blog/content/images/2024/11/image-5.png 1706w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Search page</span></figcaption></figure><h3 id="get-your-results"><strong>Get Your Results</strong></h3><p>Click the "Search" button to start your search. Before your searches are processed, you'll be asked to confirm the maximum number of credits that will be used.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://serpapi.com/blog/content/images/2024/11/image-6.png" class="kg-image" alt="" loading="lazy" width="1704" height="1106" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image-6.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/image-6.png 1000w, https://serpapi.com/blog/content/images/size/w1600/2024/11/image-6.png 1600w, https://serpapi.com/blog/content/images/2024/11/image-6.png 1704w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Search Confirmation</span></figcaption></figure><p>Note that if you perform a search with the same parameters within an hour, SerpApi will serve cached results that do not count against your monthly search quota. To bypass search caching, select the "No Cache" search option.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://serpapi.com/blog/content/images/2024/11/image-7.png" class="kg-image" alt="" loading="lazy" width="1985" height="939" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image-7.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/image-7.png 1000w, https://serpapi.com/blog/content/images/size/w1600/2024/11/image-7.png 1600w, https://serpapi.com/blog/content/images/2024/11/image-7.png 1985w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Search Results</span></figcaption></figure><h2 id="manual-method">Manual Method</h2><p>Now that I've shown you how easy it is to use the Bulk Image Search tool let's discuss what it would take to accomplish this manually using scripts (or as close as possible).</p><h3 id="image-hosting">Image Hosting</h3><p>One common issue I see while trying to use the Google Lens API is searching for images hosted via AWS S3 buckets. For whatever reason, Google Lens has trouble processing AWS URLs, making choosing an image hosting option a bit tricky.</p><p>For this reason, I typically suggest users host their images on Imgur (<a href="https://imgur.com/"><strong>https://imgur.com/</strong></a>), as the issues mentioned above do not exist for Imgur URLs.</p><p>Imgur uses OAuth 2.0 for Authorization of requests; while I won't walk through the complete configuration, below are some resources for getting up and running with the Imgur API:</p><ul><li><a href="https://apidocs.imgur.com/#authorization-and-oauth">Imgur Authorization and OAuth Docs</a></li><li><a href="https://github.com/Imgur/imgurpython">Official Imgur Python library</a></li><li><a href="https://github.com/eirikb/gifie">Example HTML5/JavaScript app</a></li></ul><h3 id="image-uploading">Image Uploading</h3><p>Once Authorization is set up, uploading images to Imgur is as easy as POSTing form data to the following endpoint:</p><p><a href="https://api.imgur.com/3/image"><code>https://api.imgur.com/3/image</code></a></p><p>Below is an example from <a href="https://apidocs.imgur.com/#c85c9dfc-7487-4de2-9ecd-66f727cf3139">Imgur's docs</a> from uploading an image:</p><pre><code class="language-javascript">var request = require('request');
+var fs = require('fs');
+var options = {
+  'method': 'POST',
+  'url': 'https://api.imgur.com/3/image',
+  'headers': {
+    'Authorization': 'Client-ID {{clientId}}'
+  },
+  formData: {
+    'image': {
+      'value': fs.createReadStream('/home/flakrim/Downloads/GHJQTpX.jpeg'),
+      'options': {
+        'filename': 'GHJQTpX.jpeg',
+        'contentType': null
+      }
+    },
+    'type': 'image',
+    'title': 'Simple upload',
+    'description': 'This is a simple image upload in Imgur'
+  }
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
+</code></pre>
+<h3 id="image-search">Image Search</h3><p>After uploading your images to Imgur and storing the image's URL, you can start fetching search results from the Google Lens API. I recommend using one of SerpApi's integrations for many popular programming languages:</p><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="../../integrations.html"><div class="kg-bookmark-content"><div class="kg-bookmark-title">SerpApi: Integrations</div><div class="kg-bookmark-description">Easy integration. SerpApi provides integrations in multiple languages. Start integration using your preferred language.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/apple-touch-icon-6.png" alt=""><span class="kg-bookmark-author">SerpApi</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/SerpApi-gentle-white-dc708ed0b09596cd08db74108b88af298123eeb384e872716b61d2a0ba1a1e03.png" alt="" onerror="this.style.display = 'none'"></div></a></figure><p>Using these integrations will allow you to export code directly from SerpApi's playground:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://serpapi.com/blog/content/images/2024/11/image-10.png" class="kg-image" alt="" loading="lazy" width="1260" height="1222" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image-10.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/image-10.png 1000w, https://serpapi.com/blog/content/images/2024/11/image-10.png 1260w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Export to code</span></figcaption></figure><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" href="https://serpapi.com/playground?engine=google_lens&amp;url=https%3A%2F%2Fi.imgur.com%2FHBrB8p0.png"><div class="kg-bookmark-content"><div class="kg-bookmark-title">SerpApi Playground - SerpApi</div><div class="kg-bookmark-description">Test SerpApi’s Google Search, Google Maps, YouTube, Bing, Walmart, Ebay, Baidu, Yandex and more APIs for free in the interactive playground!</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/apple-touch-icon-7.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">SerpApi</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/serpapi-text-logo-621a467e3b1e907622c18a6ac81455032e9784d6a86e81a1b4f6407d3f0120a6-6.svg" alt="" onerror="this.style.display = 'none'"></div></a><figcaption><p><span style="white-space: pre-wrap;">Google Lens API Playground</span></p></figcaption></figure><p>To get a better sense of how to write a script that performs image searches, check out these other blog posts:</p><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" href="https://serpapi.com/blog/how-to-scrape-google-lens-results/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">How to Scrape Google Lens Results</div><div class="kg-bookmark-description">Google Lens is a powerful search tool. Google uses the latest technology to analyze images and provide useful information. Google Lens can recognize text, objects, people, plants, animals, etc. You can use Google Lens to search for information about a product, or similar images. SerpApi is the leading SERP API</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-10.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Andy L</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/google-lens-scraper-illustration.webp" alt="" onerror="this.style.display = 'none'"></div></a><figcaption><p><span style="white-space: pre-wrap;">How to Scrape Google Lens Results</span></p></figcaption></figure><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" href="https://serpapi.com/blog/web-scraping-google-lens-results-with-nodejs/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Web scraping Google Lens Results with Nodejs</div><div class="kg-bookmark-description">A step-by-step tutorial on creating a Google Lens Results web scraper in Nodejs.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-11.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Mikhail Zub</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/SAM_92531.JPG" alt="" onerror="this.style.display = 'none'"></div></a><figcaption><p><span style="white-space: pre-wrap;">Web scraping Google Lens Results with Nodejs</span></p></figcaption></figure><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" href="https://serpapi.com/blog/scrape-google-lens/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Scrape Google Lens with Python</div><div class="kg-bookmark-description">This blog post is a step-by-step tutorial to scraping Google Lens using Python.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-12.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Artur Chukhrai</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/photo_2022-07-28_20-49-00.jpg" alt="" onerror="this.style.display = 'none'"></div></a><figcaption><p><span style="white-space: pre-wrap;">Scrape Google Lens with Python</span></p></figcaption></figure><figure class="kg-card kg-bookmark-card kg-card-hascaption"><a class="kg-bookmark-container" href="https://serpapi.com/blog/get-image-sources-through-google-lens/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Get Image Sources through Google Lens</div><div class="kg-bookmark-description">If you are looking to scrape Google Images, we already have a blog post that covers it. Google Lens is known for it’s mobile app, widely available on iOS and Android. It’s popular because of the image recognition functionality which provides information and context about objects, text, and</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-13.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Terry Tan</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/photo-1453728013993-6d66e9c9123a" alt="" onerror="this.style.display = 'none'"></div></a><figcaption><p><span style="white-space: pre-wrap;">Get Image Sources through Google Lens</span></p></figcaption></figure><h2 id="ready-to-try-it"><strong>Ready to Try It?</strong></h2><p>The Bulk Image Search tool solves all of these problems for you. It handles authentication with Imgur, uploading images to Imgur, batching requests to SerpApi, and returning more useful spreadsheet-ready formats (CSV and XSLX). </p><p>Visit&nbsp;<a href="https://bulkimagesearch.com/">https://bulkimagesearch.com/</a>&nbsp;to start searching your images in bulk.</p><h2 id="frequently-asked-questions">Frequently Asked Questions</h2><h3 id="is-my-api-key-safe">Is my API key safe?</h3><p>Yes, your API key is encrypted and never stored in plaintext. It is only used to perform searches on your behalf. API keys are not stored in a database or server.</p><h3 id="how-do-i-handle-suspicious-download-warnings">How do I handle "suspicious download" warnings?</h3><p>Chrome may flag the ZIP file as suspicious when downloading bulk search results. You can safely proceed by clicking "download suspicious file" in Chrome's download bar.</p><h3 id="i-have-a-question-or-issue-not-answered-here">I have a question or issue not answered here</h3><p>For any additional questions or concerns, please get in touch with me at <a href="mailto:nathan@serpapi.com">nathan@serpapi.com</a>.</p>
+        </section>
+    </div>
+
+
+
+</article>
+
+<section class="footer-cta">
+    <div class="inner">
+        <h2><span class="font-weight-bold">Free Plan</span> <span class="small-font">· 100 searches / month</span></h2>
+        <a class="footer-cta-button d-inline-block" href="../../users/sign_up%3Fplan=free.html">
+            Get started<i class="fas fa-rocket-launch"></i>
+        </a>
+    </div>
+</section>
+
+<aside class="read-more-wrap">
+    <div class="read-more inner">
+
+
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../build-a-no-code-news-web-app-using-serpapi-and-bubble/index.html">
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600"
+            alt="Build a No Code News Web App Using SerpApi and Bubble"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../build-a-no-code-news-web-app-using-serpapi-and-bubble/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Build a No Code News Web App Using SerpApi and Bubble</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>A tutorial about how to build a news web app using Bubble&#39;s no code web app builder and SerpApi&#39;s Google News API and display data scraped from Google News.</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/sonika/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2024/07/IMG_6671.jpeg" alt="Sonika Arora" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/sonika/index.html">Sonika Arora</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-12-02">Dec 2, 2024</time> <span class="bull">&bull;</span> 8 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../captchas-and-captcha-solving/index.html">
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600"
+            alt="CAPTCHAs And CAPTCHA Solving"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../captchas-and-captcha-solving/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">CAPTCHAs And CAPTCHA Solving</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>This blog post is about CAPTCHA challenges in web scraping and how CAPTCHA solving works.</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/sonika/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2024/07/IMG_6671.jpeg" alt="Sonika Arora" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/sonika/index.html">Sonika Arora</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-11-20">Nov 20, 2024</time> <span class="bull">&bull;</span> 9 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../how-to-scrape-google-local-services-results/index.html">
+        <img class="post-card-image"
+            srcset="../content/images/size/w300/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.png 300w,
+                   ../content/images/size/w600/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngg 600w,
+                  ../content/images/size/w1000/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngng 1000w,
+                 ../content/images/size/w2000/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngpng 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="../content/images/size/w600/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.png"
+            alt="How to Scrape Google Local Services Results"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../how-to-scrape-google-local-services-results/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">How to Scrape Google Local Services Results</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>If you search on Google with &quot;Plumber near me&quot; or &quot;electricians in New York&quot;, you will receive a list of all local services ads near you. Imagine that we can scrape all local services, including their business details like names, ratings, reviews,... Even years in business</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/andy/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2023/02/Screen-Shot-2022-05-30-at-22.17.37.png" alt="Andy L" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/andy/index.html">Andy L</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-11-14">Nov 14, 2024</time> <span class="bull">&bull;</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+    </div>
+</aside>
+
+
+
+
+    </main>
+
+    <footer class="site-footer outer d-block">
+  <div class="grid-wrapper container p-0 mb-5">
+    <div class="docu-wrapper">
+      <h1 class="column-wrapper columns-3">Documentation</h1>
+      <ul class="column-wrapper columns-3 m-0 justify-content-between">
+        <li class="py-1">
+          <a href="../../search-api.html">
+            <i class="text-center mr-2 fab fa-google"></i>Google Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-maps-api.html">
+            <i class="text-center mr-2 fas fa-globe-americas"></i>Google Maps API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-jobs-api.html">
+            <i class="text-center mr-2 fas fa-briefcase"></i>Google Jobs API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-shopping-api.html">
+            <i class="text-center mr-2 fas fa-shopping-cart"></i>Google Shopping API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-images-api.html">
+            <i class="text-center mr-2 fas fa-images"></i>Google Images API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-news-api.html">
+            <i class="text-center mr-2 fas fa-newspaper"></i>Google News API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-local-api.html">
+            <i class="text-center mr-2 fas fa-map-marker-alt"></i>Google Local API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-trends-api.html">
+            <i class="text-center mr-2 fas fa-chart-line"></i>Google Trends API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-autocomplete-api.html">
+            <i class="text-center mr-2 fas fa-magic"></i>Google Autocomplete API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-about-this-result.html">
+            <i class="text-center mr-2 fas fa-exclamation-circle"></i>Google About This Result
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-lens-api.html">
+            <i class="text-center mr-2 fas fa-camera"></i>Google Lens API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-finance-api.html">
+            <i class="text-center mr-2 fas fa-landmark"></i>Google Finance API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-related-questions-api.html">
+            <i class="text-center mr-2 fas fa-question-square"></i>Google Related Questions API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-scholar-api.html">
+            <i class="text-center mr-2 fas fa-graduation-cap"></i>Google Scholar API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-play-api.html">
+            <i class="text-center mr-2 fab fa-google-play"></i>Google Play Store API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-product-api.html">
+            <i class="text-center mr-2 fas fa-tags"></i>Google Product API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-immersive-product-api.html">
+            <i class="text-center mr-2 fas fa-telescope"></i>Google Immersive Product API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-reverse-image.html">
+            <i class="text-center mr-2 fas fa-image"></i>Google Reverse Image API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-events-api.html">
+            <i class="text-center mr-2 fas fa-calendar-alt"></i>Google Events API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-local-services-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/a-secure-d.svg%3Fv=391e5c6f0f">Google Local Services API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-videos-api.html">
+            <i class="text-center mr-2 fas fa-video"></i>Google Videos API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-health-insurance-api.html">
+            <i class="text-center mr-2 fas fa-shield-check"></i>Google Health Insurance API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-patents-api.html">
+            <i class="text-center mr-2 fas fa-file-certificate"></i>Google Patents API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-ads-transparency-center-api.html">
+            <i class="text-center mr-2 fas fa-eye"></i>Google Ads Transparency Center API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-flights-api.html">
+            <i class="text-center mr-2 fas fa-plane-departure"></i>Google Flights API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-hotels-api.html">
+            <i class="text-center mr-2 fas fa-bed"></i>Google Hotels API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../baidu-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/baidu.svg%3Fversion=1.2%3Fv=391e5c6f0f">Baidu Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../bing-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/bing.svg%3Fversion=1.2%3Fv=391e5c6f0f">Bing Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../duckduckgo-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/duckduckgo.svg%3Fv=1.1%3Fv=391e5c6f0f">DuckDuckGo Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yahoo-search-api.html">
+            <i class="text-center mr-2 fab fa-yahoo"></i>Yahoo! Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yandex-search-api.html">
+            <i class="text-center mr-2 fab fa-yandex-international"></i>Yandex Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../ebay-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/ebay.svg%3Fversion=1.2%3Fv=391e5c6f0f">Ebay Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../youtube-search-api.html">
+            <i class="text-center mr-2 fab fa-youtube"></i>YouTube Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../walmart-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/walmart.svg%3Fv=391e5c6f0f">Walmart Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../home-depot-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/home-depot.svg%3Fversion=1.3%3Fv=391e5c6f0f">The Home Depot Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../apple-app-store.html">
+            <i class="text-center mr-2 fab fa-app-store"></i>Apple App Store API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../naver-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/naver-white.svg%3Fv=391e5c6f0f">Naver Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yelp-search-api.html">
+            <i class="text-center mr-2 fab fa-yelp"></i>Yelp Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../account-api.html">
+            <i class="text-center mr-2 fas fa-cogs"></i>Extra APIs
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-between about-and-contact">
+      <div>
+        <h1>About</h1>
+        <ul class="list-unstyled m-0">
+          <li class="py-1"><a href="../../index.html">Home</a></li>
+          <li class="py-1"><a href="../../integrations.html">Integrations</a></li>
+          <li class="py-1"><a href="../../index.html#features">Features</a></li>
+          <li class="py-1"><a href="../../pricing.html">Pricing</a></li>
+          <li class="py-1"><a href="../../use-cases.html">Use cases</a></li>
+          <li class="py-1"><a href="../../team.html">Team</a></li>
+          <li class="py-1"><a href="../../careers.html">Careers</a></li>
+          <li class="py-1"><a href="../../faq.html">FAQ</a></li>
+          <li class="py-1"><a href="../../legal.html">Legal</a></li>
+          <li class="py-1"><a href="../../security.html">Security</a></li>
+          <li class="py-1"><a href="../../index.html#contact">Contact us</a></li>
+          <li class="py-1"><a href="../index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Contact</h1>
+        <ul class="list-unstyled m-0">
+          <li class="py-1">SerpApi, LLC</li>
+          <li class="py-1">5540 N Lamar Blvd #12</li>
+          <li class="py-1">Austin, TX 78751</li>
+          <li>&nbsp;</li>
+          <li class="py-1">+1 (512) 666-8245</li>
+          <li class="py-1"><a href="mailto:contact@serpapi.com">contact@serpapi.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="our-values container p-0 d-flex my-5 py-5 justify-content-between ">
+    <div class="w-100">
+      <h1 class="pb-3 d-flex justify-content-between">
+        <span>Our Values</span>
+        <a href="../../index.html">
+          <img alt="SerpApi" src="../assets/images/serpapi-text-logo.svg%3Fv=391e5c6f0f">
+        </a>
+      </h1>
+      <p>We value full transparency and painful honesty both in our internal and external communications. We believe a world with complete and open transparency is a better world.</p>
+    </div>
+  </div>
+
+  <div class="container p-0">
+    <div class="col-md-12 d-lg-flex align-items-end p-0 justify-content-between">
+      <p class="copyrights mt-5 mb-2 mb-sm-0"><i class="fas fa-heart"></i>Built with love in Austin, TX. © <span id="current-year"></span> SerpApi, LLC.</p>
+      <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+      </script>
+      <ul class="social list-unstyled d-flex flex-wrap ml-auto m-0">
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://github.com/serpapi/" target="_blank" data-tippy-content="GitHub"><i class="fab fa-github"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://medium.com/serpapi" target="_blank" data-tippy-content="Medium"><i class="fab fa-medium"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://www.youtube.com/channel/UCUgIHlYBOD3yA3yDIRhg_mg" target="_blank" data-tippy-content="YouTube"><i class="fab fa-youtube"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://twitter.com/serp_api" target="_blank" data-tippy-content="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://www.facebook.com/serpapicom/" target="_blank" data-tippy-content="Facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="enable-tooltip" rel="nofollow" href="https://www.instagram.com/serpapicom/" target="_blank" data-tippy-content="Instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+
+<script src="../assets/built/casper.js%3Fv=391e5c6f0f"></script>
+<script>
+  $(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+
+    /* Enable Tooltip
+    *
+    * Add a class `enable-tooltip` to element
+    */
+    tippy('.enable-tooltip', {
+      arrow: true,
+      animateFill: false,
+      delay: [100, 0],
+    });
+
+    /* Enable Dropdown
+    *
+    * 1. Add a class `enable-dropdown` to element to enable dropdown
+    * 2. Add a class `dropdown-container` to element parent
+    * 2. Create html template that will go into the dropdown (e.g. <template id="dropdown_template_id">...</template>)
+    * 3. Add `data-template="dropdown_template_id"` to the same element
+    */
+    tippy('.enable-dropdown', {
+      content(reference) {
+        const id = reference.getAttribute('data-template'),
+              template = document.getElementById(id);
+        return template.innerHTML;
+      },
+      theme: 'light-border',
+      allowHTML: true,
+      interactive: true,
+      animation: 'scale',
+      placement: 'bottom',
+      hideOnClick: false,
+    });
+
+    $('pre').addClass('line-numbers');
+    Prism.highlightAll();
+
+    mediumZoom('.article img');
+
+    // Table of content side menu
+    tocbot.init({
+      tocSelector: '.toc',
+      contentSelector: '.post-content',
+      hasInnerContainers: true,
+      extraLinkClasses: 'serpapi-toc-link',
+      extraListClasses: 'serpapi-toc-list',
+    });
+
+    if ($(".toc").is(":empty")) {
+      $(".serpapi-toc-container").remove();
+      $(".post-content").removeClass("post-full-content");
+    } else {
+      $(".serpapi-toc-container").css("opacity", "1");
+    }
+  });
+</script>
+
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+</body>
+</html>

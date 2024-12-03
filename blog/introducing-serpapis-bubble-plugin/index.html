@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Introducing SerpApi&#x27;s Bubble Plugin</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome-all.min.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/tippy-v6.2.6-animations-scale.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/tippy-v6.2.6-themes-light-border.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/built/tocbot.css%3Fv=391e5c6f0f.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom-style.css%3Fv=391e5c6f0f.css" />
+
+    <meta name="description" content="No-code SerpApi integration in your web app is now super easy with SerpApi’s Bubble Plugin">
+    <link rel="icon" href="../content/images/size/w256h256/2021/07/serpapi-favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://serpapi.com/blog/introducing-serpapis-bubble-plugin/amp/">
+    
+    <meta property="og:site_name" content="SerpApi">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Introducing SerpApi&#x27;s Bubble Plugin">
+    <meta property="og:description" content="No-code SerpApi integration in your web app is now super easy with SerpApi’s Bubble Plugin">
+    <meta property="og:url" content="https://serpapi.com/blog/introducing-serpapis-bubble-plugin/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1642132652803-01f9738d0446?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fGJ1YmJsZS5pb3xlbnwwfHx8fDE3MzA5MzcwMzZ8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta property="article:published_time" content="2024-11-08T01:21:54.000Z">
+    <meta property="article:modified_time" content="2024-11-08T01:21:54.000Z">
+    <meta property="article:tag" content="No Code">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/serpapicom/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Introducing SerpApi&#x27;s Bubble Plugin">
+    <meta name="twitter:description" content="No-code SerpApi integration in your web app is now super easy with SerpApi’s Bubble Plugin">
+    <meta name="twitter:url" content="https://serpapi.com/blog/introducing-serpapis-bubble-plugin/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1642132652803-01f9738d0446?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fGJ1YmJsZS5pb3xlbnwwfHx8fDE3MzA5MzcwMzZ8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Sonika Arora">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="No Code">
+    <meta name="twitter:site" content="@serp_api">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "SerpApi",
+        "url": "https://serpapi.com/blog/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://serpapi.com/blog/content/images/2021/07/SerpApi-text-logo-1.svg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Sonika Arora",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://serpapi.com/blog/content/images/size/w1200/2024/07/IMG_6671.jpeg",
+            "width": 1200,
+            "height": 1200
+        },
+        "url": "https://serpapi.com/blog/author/sonika/",
+        "sameAs": []
+    },
+    "headline": "Introducing SerpApi&#x27;s Bubble Plugin",
+    "url": "https://serpapi.com/blog/introducing-serpapis-bubble-plugin/",
+    "datePublished": "2024-11-08T01:21:54.000Z",
+    "dateModified": "2024-11-08T01:21:54.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1642132652803-01f9738d0446?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGJ1YmJsZS5pb3xlbnwwfHx8fDE3MzA5MzcwMzZ8MA&ixlib=rb-4.0.3&q=80&w=2000",
+        "width": 1200,
+        "height": 600
+    },
+    "keywords": "No Code",
+    "description": "No-code SerpApi integration in your web app is now super easy with SerpApi’s Bubble Plugin",
+    "mainEntityOfPage": "https://serpapi.com/blog/introducing-serpapis-bubble-plugin/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.101">
+    <link rel="alternate" type="application/rss+xml" title="SerpApi" href="../rss/index.html">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.46/umd/portal.min.js" data-i18n="true" data-ghost="https://serpapi.com/blog/" data-key="1e54f77934a4faee4e0262e408" data-api="https://serpapi.ghost.io/blog/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="1e54f77934a4faee4e0262e408" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://serpapi.ghost.io/blog/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://serpapi.com/blog/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=391e5c6f0f"></script>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=391e5c6f0f.css">
+    <script defer src="../public/member-attribution.min.js%3Fv=391e5c6f0f"></script><style>:root {--ghost-accent-color: #377FEA;}</style>
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-669N8EJ8QH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-669N8EJ8QH', {
+    page_location: location.href,
+    send_page_view: true,
+  });
+</script>
+<!-- Google Analytics -->
+</head>
+<body class="post-template tag-no-code">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head ">
+  <nav class="gh-head-inner inner gh-container">
+    <div class="gh-head-brand">
+        <a class="gh-head-logo d-inline-block" href="../../index.html">
+          <img src="../assets/images/SerpApi-gentle-white.png%3Fv=391e5c6f0f" alt="SerpApi" />
+        </a>
+        <a class="gh-burger d-none" role="button">
+            <div class="gh-burger-box">
+                <div class="gh-burger-inner"></div>
+            </div>
+        </a>
+    </div>
+    <div class="gh-head-menu d-block">
+      <ul class="nav dropdown-container">
+          <li class="nav-documentation enable-dropdown" data-template="documentation-dropdown-template"><a href="../../search-api.html">Documentation</a></li>
+          <li class="nav-integrations enable-dropdown" data-template="integrations-dropdown-template"><a href="../../integrations.html">Integrations</a></li>
+          <li class="nav-item mr-2 enable-dropdown" data-template="features-dropdown-template"><a class="nav-link" href="../../index.html#features">Features</a></li>
+          <li class="nav-pricing"><a href="../../pricing.html">Pricing</a></li>
+          <li class="nav-use-cases enable-dropdown" data-template="use-cases-dropdown-template"><a href="../../use-cases.html">Use cases</a></li>
+          <li class="nav-team"><a href="../../team.html">Team</a></li>
+          <li class="nav-faq"><a href="../../faq.html">FAQ</a></li>
+          <li class="nav-contact-us"><a href="../../index.html#contact">Contact us</a></li>
+      </ul>
+        <!-- <ul class="nav">
+    <li class="nav-search-api"><a href="https://serpapi.com/">Search API</a></li>
+    <li class="nav-scraping-playground"><a href="https://serpapi.com/playground">Scraping Playground</a></li>
+</ul>
+ -->
+    </div>
+    <div class="gh-head-actions d-flex">
+      <a class="sign-in" href="../../dashboard.html"><span>Sign In</span></a>
+      <a class="gh-head-button font-weight-bold" href="../../users/sign_up.html"><span>Register</span></a>
+    </div>
+  </nav>
+</header>
+
+<template id="documentation-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">APIs</h5>
+      <p>Explore all search engines we support.</p>
+    </div>
+    <ul class="p-0 columns-3">
+      <li>
+        <a href="../../search-api.html">
+          <i class="mr-2 fab fa-google"></i>Google Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-maps-api.html">
+          <i class="mr-2 fas fa-globe-americas"></i>Google Maps API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-jobs-api.html">
+          <i class="mr-2 fas fa-briefcase"></i>Google Jobs API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-shopping-api.html">
+          <i class="mr-2 fas fa-shopping-cart"></i>Google Shopping API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-images-api.html">
+          <i class="mr-2 fas fa-images"></i>Google Images API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-news-api.html">
+          <i class="mr-2 fas fa-newspaper"></i>Google News API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-local-api.html">
+          <i class="mr-2 fas fa-map-marker-alt"></i>Google Local API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-trends-api.html">
+          <i class="mr-2 fas fa-chart-line"></i>Google Trends API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-autocomplete-api.html">
+          <i class="mr-2 fas fa-magic"></i>Google Autocomplete API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-about-this-result.html">
+          <i class="mr-2 fas fa-exclamation-circle"></i>Google About This Result
+        </a>
+      </li>
+      <li>
+        <a href="../../google-lens-api.html">
+          <i class="mr-2 fas fa-camera"></i>Google Lens API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-finance-api.html">
+          <i class="mr-2 fas fa-landmark"></i>Google Finance API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-related-questions-api.html">
+          <i class="mr-2 fas fa-question-square"></i>Google Related Questions API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-scholar-api.html">
+          <i class="mr-2 fas fa-graduation-cap"></i>Google Scholar API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-play-api.html">
+          <i class="mr-2 fab fa-google-play"></i>Google Play Store API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-product-api.html">
+          <i class="mr-2 fas fa-tags"></i>Google Product API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-immersive-product-api.html">
+          <i class="mr-2 fas fa-telescope"></i>Google Immersive Product API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-reverse-image.html">
+          <i class="mr-2 fas fa-image"></i>Google Reverse Image API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-events-api.html">
+          <i class="mr-2 fas fa-calendar-alt"></i>Google Events API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-local-services-api.html">
+          <img class="mr-2" alt="" src="../assets/images/a-secure-d-gray.svg%3Fv=391e5c6f0f">Google Local Services API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-videos-api.html">
+          <i class="mr-2 fas fa-video"></i>Google Videos API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-health-insurance-api.html">
+          <i class="mr-2 fas fa-shield-check"></i>Google Health Insurance API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-patents-api.html">
+          <i class="mr-2 fas fa-file-certificate"></i>Google Patents API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-ads-transparency-center-api.html">
+          <i class="mr-2 fas fa-eye"></i>Google Ads Transparency Center API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-flights-api.html">
+          <i class="mr-2 fas fa-plane-departure"></i>Google Flights API
+        </a>
+      </li>
+      <li>
+        <a href="../../google-hotels-api.html">
+          <i class="mr-2 fas fa-bed"></i>Google Hotels API
+        </a>
+      </li>
+      <li>
+        <a href="../../baidu-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/baidu-gray.svg%3Fv=391e5c6f0f">Baidu Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../bing-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/bing-gray.svg%3Fv=391e5c6f0f">Bing Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../duckduckgo-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/duckduckgo-gray.svg%3Fv=391e5c6f0f">DuckDuckGo Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yahoo-search-api.html">
+          <i class="mr-2 fab fa-yahoo"></i>Yahoo! Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yandex-search-api.html">
+          <i class="mr-2 fab fa-yandex-international"></i>Yandex Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../ebay-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/ebay-gray.svg%3Fv=391e5c6f0f">Ebay Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../youtube-search-api.html">
+          <i class="mr-2 fab fa-youtube"></i>YouTube Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../walmart-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/walmart-gray.svg%3Fv=391e5c6f0f">Walmart Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../home-depot-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/home-depot-gray.svg%3Fv=391e5c6f0f">The Home Depot Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../apple-app-store.html">
+          <i class="mr-2 fab fa-app-store"></i>Apple App Store API
+        </a>
+      </li>
+      <li>
+        <a href="../../naver-search-api.html">
+          <img class="mr-2" alt="" src="../assets/images/naver-grey.svg%3Fv=391e5c6f0f">Naver Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../yelp-search-api.html">
+          <i class="mr-2 fab fa-yelp"></i>Yelp Search API
+        </a>
+      </li>
+      <li>
+        <a href="../../account-api.html">
+          <i class="mr-2 fas fa-cogs"></i>Extra APIs
+        </a>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <ul class="p-0 columns-3">
+      <li><a href="../../status.html"><i class="mr-2 fas fa-heartbeat"></i>API Status</a></li>
+      <li><a href="../../libraries.html"><i class="mr-2 fas fa-brackets-curly"></i>Libraries</a></li>
+      <li><a href="../../demo.html"><i class="mr-2 fas fa-code"></i>Playground</a></li>
+    </ul>
+  </footer>
+</template>
+
+<template id="integrations-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">Easy Integrations</h5>
+      <p>Start integration with your preferred language.</p>
+    </div>
+    <ul class="p-0 columns-2">
+      <li>
+        <a class="d-inline-block" href="../../integrations/node.html">
+          <i class="mr-2 fab fa-node-js"></i>NodeJS
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/typescript.html">
+          <img alt="typescript's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-typescript-gray.svg">TypeScript
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/ruby.html">
+          <img alt="ruby's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-ruby-gray.svg">Ruby
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/php.html">
+          <i class="mr-2 fab fa-php"></i>PHP
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/java.html">
+          <i class="mr-2 fab fa-java"></i>Java
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/rust.html">
+          <i class="mr-2 fab fa-rust"></i>Rust
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/python.html">
+          <i class="mr-2 fab fa-python"></i>Python
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/go.html">
+          <img alt="go's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-golang-gray.svg">Golang
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/dotnet.html">
+            <img alt="dotnet's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-dotnet-gray.svg">.Net
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/swift.html">
+          <i class="mr-2 fab fa-swift"></i>Swift
+        </a>
+      </li>
+      <li>
+        <a class="d-inline-block" href="../../integrations/cpp.html">
+          <img alt="cpp's icon" class="mr-2 align-text-top" src="../../assets/integrations/ic-cpp-gray.svg">C++
+        </a>
+      </li>
+    </ul>
+  </main>
+</template>
+
+<template id="features-dropdown-template">
+  <main>
+    <div class="title">
+      <h5 class="mb-1 font-weight-bold">Features</h5>
+      <p>Dive deeper into our advanced features.</p>
+    </div>
+    <ul class="p-0 columns-1">
+      <li><a href="../../ludicrous-speed.html"><i class="mr-2 fas fa-rabbit-fast"></i>Ludicrous Speed</a></li>
+    </ul>
+  </main>
+</template>
+
+<template id="use-cases-dropdown-template">
+  <div class="tippy-content" data-state="visible" style="transition-duration: 300ms;">
+    <main>
+      <div class="title">
+        <h5 class="mb-1 font-weight-bold">Use Cases</h5>
+        <p>Use SERP data to automate your business needs.</p>
+      </div>
+      <ul class="p-0 columns-2">
+          <li><a href="../../use-cases/seo.html"><i class="mr-2 fas fa-search"></i>SEO</a></li>
+          <li><a href="../../use-cases/local-seo.html"><i class="mr-2 fas fa-search-location"></i>Local SEO</a></li>
+          <li><a href="../../use-cases/background-check-automation.html"><i class="mr-2 fas fa-user-check"></i>Background Check Automation</a></li>
+          <li><a href="../../use-cases/machine-learning-and-artificial-intelligence.html"><i class="mr-2 fas fa-user-robot"></i>AI Models</a></li>
+          <li><a href="../../use-cases/news-monitoring.html"><i class="mr-2 fas fa-newspaper"></i>News Monitoring</a></li>
+          <li><a href="../../use-cases/voice-assistant.html"><i class="mr-2 fas fa-microphone"></i>Voice Assistant</a></li>
+      </ul>
+    </main>
+  </div>
+</template>
+    <main>
+        
+
+
+
+<link rel="stylesheet" type="text/css" href="https://serpapi.com/blog/assets/css/pri-secure-sm.css?v=391e5c6f0f" />
+
+<article class="article post tag-no-code post-full-content">
+
+    <header class="article-header gh-canvas">
+
+        <section class="article-tag">
+            <a href="https://serpapi.com/blog/tag/no-code/">No Code</a>
+        </section>
+
+        <h1 class="article-title">Introducing SerpApi&#x27;s Bubble Plugin</h1>
+
+        <p class="article-excerpt">No-code SerpApi integration in your web app is now super easy with SerpApi’s Bubble Plugin</p>
+
+        <div class="article-byline">
+            <section class="article-byline-content">
+                <ul class="author-list">
+                    <li class="author-list-item">
+                        <a href="../author/sonika/index.html" class="author-avatar">
+                            <img class="author-profile-image" src="../content/images/size/w100/2024/07/IMG_6671.jpeg" alt="Sonika Arora" />
+                        </a>
+                    </li>
+                </ul>
+                <div class="article-byline-meta">
+                    <h4 class="author-name"><a href="../author/sonika/index.html">Sonika Arora</a></h4>
+                    <div class="byline-meta-content">
+                        <time class="byline-meta-date" datetime="2024-11-07">Nov 7, 2024</time>
+                        <span class="byline-reading-time"><span class="bull">&bull;</span> 7 min read</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <div class="inner-article-wrap">
+        <aside class="serpapi-toc-container toc-container gh-canvas">
+            <p>TABLE OF CONTENTS</p>
+            <div class="toc"></div>
+        </aside>
+
+        <section class="gh-content gh-canvas post-full-content post-content">
+            <p>We are happy to announce the release of <a href="https://bubble.io/plugin/serpapi-1729633936842x520153829122244600" rel="noreferrer">SerpApi's plugin on Bubble.io</a>. This makes it easier than ever to integrate SerpApi along with other parts of your app without having to write any code.</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-04-at-4.34.49-PM.png" class="kg-image" alt="" loading="lazy" width="1924" height="1046" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/Screenshot-2024-11-04-at-4.34.49-PM.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/Screenshot-2024-11-04-at-4.34.49-PM.png 1000w, https://serpapi.com/blog/content/images/size/w1600/2024/11/Screenshot-2024-11-04-at-4.34.49-PM.png 1600w, https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-04-at-4.34.49-PM.png 1924w" sizes="(min-width: 720px) 720px"></figure><p>Bubble.io is a no-code development platform that allows users to build web applications without needing to write any code. It provides a visual interface where you can drag and drop elements to design your app's UI, define workflows for functionality, and manage a database to store information. Bubble describes it best themselves - "Whether you're launching a startup or building for your existing business, bubble makes it simple. No coding needed—just drag, drop, and launch."</p><p>All you need to get started is:</p><ul><li>A Bubble account: Get Started on <a href="https://bubble.io/ " rel="noreferrer">Bubble</a></li><li>Your SerpApi API key: If you don't already have a SerpApi API key, <a href="../../users/sign_up.html" rel="noreferrer">register</a> an account and then find your API key after logging in on the <a href="../../manage-api-key.html" rel="noreferrer">Manage API Key Page</a> </li></ul><div class="kg-card kg-callout-card kg-callout-card-blue"><div class="kg-callout-emoji">💡</div><div class="kg-callout-text">You can get your private SerpApi API Key from&nbsp;<a href="../../manage-api-key.html" rel="noreferrer">this page</a>&nbsp;[Login Required]</div></div><h2 id="setting-up-the-plugin">Setting Up The Plugin</h2><p>Making your first API request in&nbsp;<a href="https://bubble.io/" rel="noreferrer">Bubble.io</a>&nbsp;involves connecting your Bubble app to external services and fetching data or triggering actions from other platforms.</p><p>The first step is to ensure that we have the <a href="https://bubble.io/plugin/serpapi-1729633936842x520153829122244600" rel="noreferrer">SerpApi plugin</a> installed. So head over to the plugins section on the left column and install&nbsp;the <a href="https://bubble.io/plugin/serpapi-1729633936842x520153829122244600" rel="noreferrer">SerpApi plugin</a>.</p><p>Then, create a new project on Bubble.io and enter the blank project page. Head to the Installed Plugins page for your app (by clicking on the "Plugin" tab on the navigation bar on the left) and add your private SerpApi API key there:</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-04-at-4.44.00-PM.png" class="kg-image" alt="" loading="lazy" width="2000" height="728" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/Screenshot-2024-11-04-at-4.44.00-PM.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/Screenshot-2024-11-04-at-4.44.00-PM.png 1000w, https://serpapi.com/blog/content/images/size/w1600/2024/11/Screenshot-2024-11-04-at-4.44.00-PM.png 1600w, https://serpapi.com/blog/content/images/size/w2400/2024/11/Screenshot-2024-11-04-at-4.44.00-PM.png 2400w" sizes="(min-width: 720px) 720px"></figure><p>Now, let's head over to the Bubble Design page (by clicking on the "Design" tab on the navigation bar on the left). Here, we can start designing the app, adding the different screen elements and configuring workflows for when a button is clicked, or a field is populated by the user, etc.</p><h2 id="example-app-built-using-serpapis-bubble-plugin">Example App Built Using SerpApi's Bubble plugin</h2><p>Let's consider the same example I discussed in my <a href="https://serpapi.com/blog/how-to-scrape-google-search-results-in-bubble-io-using-serpapi/" rel="noreferrer">previous blog post about scraping Google search results in Bubble.io using an HTTP GET request</a> - It is a simple example of accepting a topic from the user and displaying all the related questions from Google's page. For example, when we query "Schools in Austin", Google returns some related questions:</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/image.png" class="kg-image" alt="" loading="lazy" width="819" height="877" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/image.png 600w, https://serpapi.com/blog/content/images/2024/11/image.png 819w" sizes="(min-width: 720px) 720px"></figure><p>Let's create a simple page to display this data. We need one field to take an input from the user, a button that the user can click to get the questions, and one text box to display the results. We can design a simple interface like this: </p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-07-at-5.20.03-PM.png" class="kg-image" alt="" loading="lazy" width="366" height="490"></figure><p>As seen in my <a href="https://serpapi.com/blog/how-to-scrape-google-search-results-in-bubble-io-using-serpapi/" rel="noreferrer">previous blog post about scraping Google search results in Bubble.io using an HTTP GET request</a>, we had to do quite a bit of setup for the API request to use it in our webapp. Now, since we have a SerpApi plugin ready to use, we can skip all the API set up parts and directly use it in the web app. </p><p>There are only 2 parts we need to configure:</p><ol><li>What happens when the button is pressed?</li><li>What is displayed in the text box?</li></ol><h2 id="making-a-serpapi-request-using-our-plugin">Making a SerpApi request using our plugin</h2><p>When the button is pressed, we can configure a workflow by clicking on "Edit Workflow":</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/10/Screenshot-2024-10-15-at-3.29.32-PM-2-1.png" class="kg-image" alt="" loading="lazy" width="481" height="299"></figure><p>This will take us to the workflow editor. There, we will set up a workflow to send a request to the Google Search API we configured with the input from the user and the other parameters. This is what the step looks like:</p><p>Add an action -&gt; Plugins -&gt; SerpApi Google Search API</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-04-at-4.40.47-PM.png" class="kg-image" alt="" loading="lazy" width="768" height="818" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/Screenshot-2024-11-04-at-4.40.47-PM.png 600w, https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-04-at-4.40.47-PM.png 768w" sizes="(min-width: 720px) 720px"></figure><p>Following this, we can configure the values for the parameters as applicable. Make sure&nbsp;<code>q</code>&nbsp;is set to the value of the user's input. Please note: The default parameter values are placeholders, and you will have to edit them for them to be used in the API call.</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-04-at-4.57.36-PM.png" class="kg-image" alt="" loading="lazy" width="1068" height="1006" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/Screenshot-2024-11-04-at-4.57.36-PM.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/Screenshot-2024-11-04-at-4.57.36-PM.png 1000w, https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-04-at-4.57.36-PM.png 1068w" sizes="(min-width: 720px) 720px"></figure><p>Now, let's add the next step to change the state of the result box and populate it with the resulting questions. Possible fields from the response will show up in the dropdown, and you can select the relevant one. </p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-06-at-3.52.58-PM.png" class="kg-image" alt="" loading="lazy" width="379" height="568"></figure><p>For this example, I have chosen this because I want to get each questions from the <code>related_questions</code> array in the response:</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-06-at-10.15.16-AM.png" class="kg-image" alt="" loading="lazy" width="1196" height="796" srcset="https://serpapi.com/blog/content/images/size/w600/2024/11/Screenshot-2024-11-06-at-10.15.16-AM.png 600w, https://serpapi.com/blog/content/images/size/w1000/2024/11/Screenshot-2024-11-06-at-10.15.16-AM.png 1000w, https://serpapi.com/blog/content/images/2024/11/Screenshot-2024-11-06-at-10.15.16-AM.png 1196w" sizes="(min-width: 720px) 720px"></figure><p>Here, it's important to understand how we got to the value formula. To understand this, we have to understand the structure of the response. So, let's head over to our playground to visualize the response:</p><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/playground?q=schools+in+Austin&amp;location=Austin%2C+Texas%2C+United+States&amp;gl=us&amp;hl=en&amp;google_domain=google.com&amp;newPara=chips+as_sitesearch+highlight+stick+lr+as_qdr+votes+site+safe+google_domain+si+form+filter+as_epq+client+ie+oe+pws+ibp+source+rlz+ijn"><div class="kg-bookmark-content"><div class="kg-bookmark-title">SerpApi Playground - SerpApi</div><div class="kg-bookmark-description">Test SerpApi’s Google Search, Google Maps, YouTube, Bing, Walmart, Ebay, Baidu, Yandex and more APIs for free in the interactive playground!</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="../../apple-touch-icon.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">SerpApi</span></div></div><div class="kg-bookmark-thumbnail"><img src="../../assets/serpapi-text-logo-621a467e3b1e907622c18a6ac81455032e9784d6a86e81a1b4f6407d3f0120a6.svg" alt="" onerror="this.style.display = 'none'"></div></a></figure><p>There you can view the different elements of the response, and pick the parameters based on the data that you are interested in showing in your app. In the example above, I have chosen to display each question from the&nbsp;<code>related_questions</code>&nbsp;part of the API response. Once, you have an idea of what to pick, you can click on the "value" field in the Bubble state setting tool shown above, and select the relevant values. Here it is set to: "Result of Step 1 (API call)'s body's&nbsp;<code>related_questions</code>: each item's&nbsp;<code>question</code>".</p><p>Now, we are ready to configure the properties for the text box which will display the results. I have named this text box "resulting questions". Here is how this can be configured:</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/10/Screenshot-2024-10-17-at-11.34.08-AM.png" class="kg-image" alt="" loading="lazy" width="664" height="365" srcset="https://serpapi.com/blog/content/images/size/w600/2024/10/Screenshot-2024-10-17-at-11.34.08-AM.png 600w, https://serpapi.com/blog/content/images/2024/10/Screenshot-2024-10-17-at-11.34.08-AM.png 664w"></figure><p>We can configure a couple things such as choosing which format we want to display the result in. I have decided to display the result as text.</p><div class="kg-card kg-callout-card kg-callout-card-blue"><div class="kg-callout-emoji">💡</div><div class="kg-callout-text">To ensure that the questions are formatted correctly, try adding a delimiter in the "format as text" section above - a new line or comma works well as a delimiter and helps you display the questions in an organized way</div></div><h2 id="previewing-and-testing-your-app">Previewing and Testing Your App</h2><p>Now that our UI is ready, the workflows have been configured and the API is set up and ready to use, we can preview the app and test it using Bubble's preview link on the top right:</p><figure class="kg-card kg-image-card"><img src="https://serpapi.com/blog/content/images/2024/10/Screenshot-2024-10-17-at-12.02.49-PM-1-1.png" class="kg-image" alt="" loading="lazy" width="382" height="65"></figure><p>Here are some queries to try out your app with:</p><ul><li>Schools in Austin</li><li>Coffee</li><li>Bread</li></ul><p>Or, you can test it with any other queries which have the&nbsp;<code>related_questions</code>&nbsp;block shown in Google results.</p><p>Following this, you can deploy the app and view it in action!</p><div class="kg-card kg-callout-card kg-callout-card-blue"><div class="kg-callout-emoji">💡</div><div class="kg-callout-text">You may see 0 results popping up in the result box if your query does not have a<code spellcheck="false" style="white-space: pre-wrap;">related_questions</code>block in the Google Search result. Optionally, to handle this case, you can add a conditional step in your button's workflow to check if no results are returned, and display a message like "No related questions found".</div></div><p>Here is a demo of the example app we set up in this blog post:</p><figure class="kg-card kg-video-card kg-width-regular" data-kg-thumbnail="https://serpapi.com/blog/content/media/2024/11/Screen-Recording-2024-10-17-at-12.56.23-PM_thumb.jpg" data-kg-custom-thumbnail="">
+            <div class="kg-video-container">
+                <video src="https://serpapi.com/blog/content/media/2024/11/Screen-Recording-2024-10-17-at-12.56.23-PM.mp4" poster="https://img.spacergif.org/v1/948x688/0a/spacer.png" width="948" height="688" playsinline="" preload="metadata" style="background: transparent url('https://serpapi.com/blog/content/media/2024/11/Screen-Recording-2024-10-17-at-12.56.23-PM_thumb.jpg') 50% 50% / cover no-repeat;"></video>
+                <div class="kg-video-overlay">
+                    <button class="kg-video-large-play-icon" aria-label="Play video">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M23.14 10.608 2.253.164A1.559 1.559 0 0 0 0 1.557v20.887a1.558 1.558 0 0 0 2.253 1.392L23.14 13.393a1.557 1.557 0 0 0 0-2.785Z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="kg-video-player-container">
+                    <div class="kg-video-player">
+                        <button class="kg-video-play-icon" aria-label="Play video">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M23.14 10.608 2.253.164A1.559 1.559 0 0 0 0 1.557v20.887a1.558 1.558 0 0 0 2.253 1.392L23.14 13.393a1.557 1.557 0 0 0 0-2.785Z"></path>
+                            </svg>
+                        </button>
+                        <button class="kg-video-pause-icon kg-video-hide" aria-label="Pause video">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <rect x="3" y="1" width="7" height="22" rx="1.5" ry="1.5"></rect>
+                                <rect x="14" y="1" width="7" height="22" rx="1.5" ry="1.5"></rect>
+                            </svg>
+                        </button>
+                        <span class="kg-video-current-time">0:00</span>
+                        <div class="kg-video-time">
+                            /<span class="kg-video-duration">0:30</span>
+                        </div>
+                        <input type="range" class="kg-video-seek-slider" max="100" value="0">
+                        <button class="kg-video-playback-rate" aria-label="Adjust playback speed">1×</button>
+                        <button class="kg-video-unmute-icon" aria-label="Unmute">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M15.189 2.021a9.728 9.728 0 0 0-7.924 4.85.249.249 0 0 1-.221.133H5.25a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h1.794a.249.249 0 0 1 .221.133 9.73 9.73 0 0 0 7.924 4.85h.06a1 1 0 0 0 1-1V3.02a1 1 0 0 0-1.06-.998Z"></path>
+                            </svg>
+                        </button>
+                        <button class="kg-video-mute-icon kg-video-hide" aria-label="Mute">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M16.177 4.3a.248.248 0 0 0 .073-.176v-1.1a1 1 0 0 0-1.061-1 9.728 9.728 0 0 0-7.924 4.85.249.249 0 0 1-.221.133H5.25a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h.114a.251.251 0 0 0 .177-.073ZM23.707 1.706A1 1 0 0 0 22.293.292l-22 22a1 1 0 0 0 0 1.414l.009.009a1 1 0 0 0 1.405-.009l6.63-6.631A.251.251 0 0 1 8.515 17a.245.245 0 0 1 .177.075 10.081 10.081 0 0 0 6.5 2.92 1 1 0 0 0 1.061-1V9.266a.247.247 0 0 1 .073-.176Z"></path>
+                            </svg>
+                        </button>
+                        <input type="range" class="kg-video-volume-slider" max="100" value="100">
+                    </div>
+                </div>
+            </div>
+            
+        </figure><h2 id="build-more-with-bubble">Build More With Bubble</h2><p>Currently, our Bubble plugin supports Google Search API. We'll be updating it very soon to include our other APIs as well, and we encourage you to keep an eye out for those updates. If you would like us to prioritize adding support for another API, please let us know. You can do that by emailing contact@serpapi.com or opening a ticket on our&nbsp;<a href="https://github.com/serpapi/public-roadmap/issues" rel="noreferrer">Public Roadmap</a>.</p><p>Making API calls and not doing anything with the data isn't very interesting and useful. Bubble also allows for integrated database management, making it easy to organize and use data directly within the platform. Through a vast library of plugins, you can extend your app's functionality by integrating third-party services like payment gateways, maps, and other APIs as well. I encourage you to check out our plugin <a href="https://bubble.io/plugin/serpapi-1729633936842x520153829122244600" rel="noreferrer">here</a> and their plugins <a href="https://bubble.io/plugins" rel="noreferrer">here</a>.</p><p>I hope you found this tutorial helpful. If you have any questions, don't hesitate to reach out to me at sonika@serpapi.com.</p><h2 id="related-links-and-posts">Related Links and Posts</h2><ul><li><a href="../../search-api.html" rel="noreferrer">SerpApi's Google Search Engine Results API</a></li><li><a href="../../demo.html" rel="noreferrer">SerpApi's Playground</a></li><li><a href="https://bubble.io/plugin/serpapi-1729633936842x520153829122244600" rel="noreferrer">SerpApi's Bubble Plugin</a></li><li><a href="https://bubble.io/home/apps" rel="noreferrer">Bubble Apps Homepage</a>&nbsp;[Login Required]</li><li><a href="https://bubble.io/plugins" rel="noreferrer">Other Bubble Plugins</a></li></ul><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/blog/how-to-scrape-google-search-results-in-bubble-io-using-serpapi/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">How to Scrape Google Search Results in Bubble.io using SerpApi</div><div class="kg-bookmark-description">Learn about how to scrape Google search results in Bubble.io using SerpApi’s Google Search API without writing any code</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-6.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Sonika Arora</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/photo-1642132652803-01f9738d0446" alt="" onerror="this.style.display = 'none'"></div></a></figure><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/blog/announcing-serpapis-make-app/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Announcing SerpApi’s Make App</div><div class="kg-bookmark-description">We are pleased to announce the release of our Custom App on Make.com. This makes it easier than ever to integrate SerpApi with other systems without having to write any code.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-7.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Alex Barron</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/Logo-RGB-Color@2x-1.png" alt="" onerror="this.style.display = 'none'"></div></a></figure><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/blog/connect-serp-api-with-google-sheet-no-code/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Connect SERP API with Google Sheets (No Code)</div><div class="kg-bookmark-description">Here is how to connect SERP API (SerpApi) to Google Sheets using a no-code solution</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-8.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Hilman Ramadhan</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/connect-serp-api-with-google-sheet-1.webp" alt="" onerror="this.style.display = 'none'"></div></a></figure><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://serpapi.com/blog/making-a-hotel-price-tracker-with-google-hotels-and-n8n/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Making a Hotel Price Tracker with Google Hotels and n8n</div><div class="kg-bookmark-description">How to build a no-code hotel price tracker with SerpApi’s Google Hotels API and n8n.io.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://serpapi.com/blog/content/images/icon/serpapi-favicon-9.png" alt=""><span class="kg-bookmark-author">SerpApi</span><span class="kg-bookmark-publisher">Alex Barron</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://serpapi.com/blog/content/images/thumbnail/photo-1670791928387-b95ee7283814" alt="" onerror="this.style.display = 'none'"></div></a></figure>
+        </section>
+    </div>
+
+
+
+</article>
+
+<section class="footer-cta">
+    <div class="inner">
+        <h2><span class="font-weight-bold">Free Plan</span> <span class="small-font">· 100 searches / month</span></h2>
+        <a class="footer-cta-button d-inline-block" href="../../users/sign_up%3Fplan=free.html">
+            Get started<i class="fas fa-rocket-launch"></i>
+        </a>
+    </div>
+</section>
+
+<aside class="read-more-wrap">
+    <div class="read-more inner">
+
+
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../build-a-no-code-news-web-app-using-serpapi-and-bubble/index.html">
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDYzfHxuZXdzfGVufDB8fHx8MTczMzE4MzM5OXww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600"
+            alt="Build a No Code News Web App Using SerpApi and Bubble"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../build-a-no-code-news-web-app-using-serpapi-and-bubble/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Build a No Code News Web App Using SerpApi and Bubble</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>A tutorial about how to build a news web app using Bubble&#39;s no code web app builder and SerpApi&#39;s Google News API and display data scraped from Google News.</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/sonika/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2024/07/IMG_6671.jpeg" alt="Sonika Arora" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/sonika/index.html">Sonika Arora</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-12-02">Dec 2, 2024</time> <span class="bull">&bull;</span> 8 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../captchas-and-captcha-solving/index.html">
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1684862030284-6b24307ebd4a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDF8fENBUFRDSEF8ZW58MHx8fHwxNzMxOTYxNzgwfDA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600"
+            alt="CAPTCHAs And CAPTCHA Solving"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../captchas-and-captcha-solving/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">CAPTCHAs And CAPTCHA Solving</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>This blog post is about CAPTCHA challenges in web scraping and how CAPTCHA solving works.</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/sonika/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2024/07/IMG_6671.jpeg" alt="Sonika Arora" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/sonika/index.html">Sonika Arora</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-11-20">Nov 20, 2024</time> <span class="bull">&bull;</span> 9 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="../how-to-scrape-google-local-services-results/index.html">
+        <img class="post-card-image"
+            srcset="../content/images/size/w300/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.png 300w,
+                   ../content/images/size/w600/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngg 600w,
+                  ../content/images/size/w1000/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngng 1000w,
+                 ../content/images/size/w2000/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.pngpng 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="../content/images/size/w600/2024/11/img-S0CtbwgtnVzDFUArxl1eyOMx.png"
+            alt="How to Scrape Google Local Services Results"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../how-to-scrape-google-local-services-results/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">How to Scrape Google Local Services Results</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>If you search on Google with &quot;Plumber near me&quot; or &quot;electricians in New York&quot;, you will receive a list of all local services ads near you. Imagine that we can scrape all local services, including their business details like names, ratings, reviews,... Even years in business</p>
+            </section>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="../author/andy/index.html" class="static-avatar">
+                        <img class="author-profile-image" src="../content/images/size/w100/2023/02/Screen-Shot-2022-05-30-at-22.17.37.png" alt="Andy L" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="../author/andy/index.html">Andy L</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-11-14">Nov 14, 2024</time> <span class="bull">&bull;</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+    </div>
+</aside>
+
+
+
+
+    </main>
+
+    <footer class="site-footer outer d-block">
+  <div class="grid-wrapper container p-0 mb-5">
+    <div class="docu-wrapper">
+      <h1 class="column-wrapper columns-3">Documentation</h1>
+      <ul class="column-wrapper columns-3 m-0 justify-content-between">
+        <li class="py-1">
+          <a href="../../search-api.html">
+            <i class="text-center mr-2 fab fa-google"></i>Google Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-maps-api.html">
+            <i class="text-center mr-2 fas fa-globe-americas"></i>Google Maps API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-jobs-api.html">
+            <i class="text-center mr-2 fas fa-briefcase"></i>Google Jobs API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-shopping-api.html">
+            <i class="text-center mr-2 fas fa-shopping-cart"></i>Google Shopping API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-images-api.html">
+            <i class="text-center mr-2 fas fa-images"></i>Google Images API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-news-api.html">
+            <i class="text-center mr-2 fas fa-newspaper"></i>Google News API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-local-api.html">
+            <i class="text-center mr-2 fas fa-map-marker-alt"></i>Google Local API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-trends-api.html">
+            <i class="text-center mr-2 fas fa-chart-line"></i>Google Trends API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-autocomplete-api.html">
+            <i class="text-center mr-2 fas fa-magic"></i>Google Autocomplete API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-about-this-result.html">
+            <i class="text-center mr-2 fas fa-exclamation-circle"></i>Google About This Result
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-lens-api.html">
+            <i class="text-center mr-2 fas fa-camera"></i>Google Lens API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-finance-api.html">
+            <i class="text-center mr-2 fas fa-landmark"></i>Google Finance API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-related-questions-api.html">
+            <i class="text-center mr-2 fas fa-question-square"></i>Google Related Questions API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-scholar-api.html">
+            <i class="text-center mr-2 fas fa-graduation-cap"></i>Google Scholar API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-play-api.html">
+            <i class="text-center mr-2 fab fa-google-play"></i>Google Play Store API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-product-api.html">
+            <i class="text-center mr-2 fas fa-tags"></i>Google Product API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-immersive-product-api.html">
+            <i class="text-center mr-2 fas fa-telescope"></i>Google Immersive Product API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-reverse-image.html">
+            <i class="text-center mr-2 fas fa-image"></i>Google Reverse Image API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-events-api.html">
+            <i class="text-center mr-2 fas fa-calendar-alt"></i>Google Events API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-local-services-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/a-secure-d.svg%3Fv=391e5c6f0f">Google Local Services API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-videos-api.html">
+            <i class="text-center mr-2 fas fa-video"></i>Google Videos API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-health-insurance-api.html">
+            <i class="text-center mr-2 fas fa-shield-check"></i>Google Health Insurance API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-patents-api.html">
+            <i class="text-center mr-2 fas fa-file-certificate"></i>Google Patents API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-ads-transparency-center-api.html">
+            <i class="text-center mr-2 fas fa-eye"></i>Google Ads Transparency Center API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-flights-api.html">
+            <i class="text-center mr-2 fas fa-plane-departure"></i>Google Flights API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../google-hotels-api.html">
+            <i class="text-center mr-2 fas fa-bed"></i>Google Hotels API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../baidu-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/baidu.svg%3Fversion=1.2%3Fv=391e5c6f0f">Baidu Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../bing-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/bing.svg%3Fversion=1.2%3Fv=391e5c6f0f">Bing Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../duckduckgo-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/duckduckgo.svg%3Fv=1.1%3Fv=391e5c6f0f">DuckDuckGo Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yahoo-search-api.html">
+            <i class="text-center mr-2 fab fa-yahoo"></i>Yahoo! Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yandex-search-api.html">
+            <i class="text-center mr-2 fab fa-yandex-international"></i>Yandex Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../ebay-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/ebay.svg%3Fversion=1.2%3Fv=391e5c6f0f">Ebay Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../youtube-search-api.html">
+            <i class="text-center mr-2 fab fa-youtube"></i>YouTube Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../walmart-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/walmart.svg%3Fv=391e5c6f0f">Walmart Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../home-depot-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/home-depot.svg%3Fversion=1.3%3Fv=391e5c6f0f">The Home Depot Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../apple-app-store.html">
+            <i class="text-center mr-2 fab fa-app-store"></i>Apple App Store API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../naver-search-api.html">
+            <img class="d-inline-block mr-2" alt="" src="../assets/images/naver-white.svg%3Fv=391e5c6f0f">Naver Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../yelp-search-api.html">
+            <i class="text-center mr-2 fab fa-yelp"></i>Yelp Search API
+          </a>
+        </li>
+        <li class="py-1">
+          <a href="../../account-api.html">
+            <i class="text-center mr-2 fas fa-cogs"></i>Extra APIs
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-between about-and-contact">
+      <div>
+        <h1>About</h1>
+        <ul class="list-unstyled m-0">
+          <li class="py-1"><a href="../../index.html">Home</a></li>
+          <li class="py-1"><a href="../../integrations.html">Integrations</a></li>
+          <li class="py-1"><a href="../../index.html#features">Features</a></li>
+          <li class="py-1"><a href="../../pricing.html">Pricing</a></li>
+          <li class="py-1"><a href="../../use-cases.html">Use cases</a></li>
+          <li class="py-1"><a href="../../team.html">Team</a></li>
+          <li class="py-1"><a href="../../careers.html">Careers</a></li>
+          <li class="py-1"><a href="../../faq.html">FAQ</a></li>
+          <li class="py-1"><a href="../../legal.html">Legal</a></li>
+          <li class="py-1"><a href="../../security.html">Security</a></li>
+          <li class="py-1"><a href="../../index.html#contact">Contact us</a></li>
+          <li class="py-1"><a href="../index.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Contact</h1>
+        <ul class="list-unstyled m-0">
+          <li class="py-1">SerpApi, LLC</li>
+          <li class="py-1">5540 N Lamar Blvd #12</li>
+          <li class="py-1">Austin, TX 78751</li>
+          <li>&nbsp;</li>
+          <li class="py-1">+1 (512) 666-8245</li>
+          <li class="py-1"><a href="mailto:contact@serpapi.com">contact@serpapi.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="our-values container p-0 d-flex my-5 py-5 justify-content-between ">
+    <div class="w-100">
+      <h1 class="pb-3 d-flex justify-content-between">
+        <span>Our Values</span>
+        <a href="../../index.html">
+          <img alt="SerpApi" src="../assets/images/serpapi-text-logo.svg%3Fv=391e5c6f0f">
+        </a>
+      </h1>
+      <p>We value full transparency and painful honesty both in our internal and external communications. We believe a world with complete and open transparency is a better world.</p>
+    </div>
+  </div>
+
+  <div class="container p-0">
+    <div class="col-md-12 d-lg-flex align-items-end p-0 justify-content-between">
+      <p class="copyrights mt-5 mb-2 mb-sm-0"><i class="fas fa-heart"></i>Built with love in Austin, TX. © <span id="current-year"></span> SerpApi, LLC.</p>
+      <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+      </script>
+      <ul class="social list-unstyled d-flex flex-wrap ml-auto m-0">
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://github.com/serpapi/" target="_blank" data-tippy-content="GitHub"><i class="fab fa-github"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://medium.com/serpapi" target="_blank" data-tippy-content="Medium"><i class="fab fa-medium"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://www.youtube.com/channel/UCUgIHlYBOD3yA3yDIRhg_mg" target="_blank" data-tippy-content="YouTube"><i class="fab fa-youtube"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://twitter.com/serp_api" target="_blank" data-tippy-content="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li class="mr-3"><a class="enable-tooltip" rel="nofollow" href="https://www.facebook.com/serpapicom/" target="_blank" data-tippy-content="Facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="enable-tooltip" rel="nofollow" href="https://www.instagram.com/serpapicom/" target="_blank" data-tippy-content="Instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+
+<script src="../assets/built/casper.js%3Fv=391e5c6f0f"></script>
+<script>
+  $(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+
+    /* Enable Tooltip
+    *
+    * Add a class `enable-tooltip` to element
+    */
+    tippy('.enable-tooltip', {
+      arrow: true,
+      animateFill: false,
+      delay: [100, 0],
+    });
+
+    /* Enable Dropdown
+    *
+    * 1. Add a class `enable-dropdown` to element to enable dropdown
+    * 2. Add a class `dropdown-container` to element parent
+    * 2. Create html template that will go into the dropdown (e.g. <template id="dropdown_template_id">...</template>)
+    * 3. Add `data-template="dropdown_template_id"` to the same element
+    */
+    tippy('.enable-dropdown', {
+      content(reference) {
+        const id = reference.getAttribute('data-template'),
+              template = document.getElementById(id);
+        return template.innerHTML;
+      },
+      theme: 'light-border',
+      allowHTML: true,
+      interactive: true,
+      animation: 'scale',
+      placement: 'bottom',
+      hideOnClick: false,
+    });
+
+    $('pre').addClass('line-numbers');
+    Prism.highlightAll();
+
+    mediumZoom('.article img');
+
+    // Table of content side menu
+    tocbot.init({
+      tocSelector: '.toc',
+      contentSelector: '.post-content',
+      hasInnerContainers: true,
+      extraLinkClasses: 'serpapi-toc-link',
+      extraListClasses: 'serpapi-toc-list',
+    });
+
+    if ($(".toc").is(":empty")) {
+      $(".serpapi-toc-container").remove();
+      $(".post-content").removeClass("post-full-content");
+    } else {
+      $(".serpapi-toc-container").css("opacity", "1");
+    }
+  });
+</script>
+
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+</body>
+</html>
