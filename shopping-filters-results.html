@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="QgeBXGmDORrzkrYHsL1QAg4RulVoAR2ovRnO/Vcc5a8muW6VwJpFnO82NLJv7h0/4MXBzZWlCupZy8DoBgmo4Q==" />
+<meta name="csrf-token" content="LCTr0EgFrgWnUHftn/xenTydeqcVXAPPMMZHqQ1Qg10f/BQejimkngF2ZxtWepM8tHT0aEy5bONkKSeNpKKT1w==" />
 
       
   <title>Google Shopping Filters API - SerpApi</title>
@@ -3760,7 +3760,7 @@
       <p class="overflow-hidden m-0 bold-500">API Studio</p>
     </li>
     <li class="dashboard-menu-top demo pl-0 mb-4 ">
-      <a href="demo.html" class="d-flex text-decoration-none align-items-center">
+      <a href="playground_links/playground.html" class="d-flex text-decoration-none align-items-center">
         <div class="d-inline-flex py-1 align-items-center">
           <i class="icon fas fa-code"></i><span>Playground</span>
         </div>
@@ -3858,11 +3858,11 @@
     <div class="docu-para p-4"><p>To apply filters for the Google Shopping search, you need to update the <span class="parameter-highlight">tbs</span> parameter with the appropriate value. You can get the <span class="parameter-highlight">tbs</span> values for each filter from the <code>filters</code> array in the JSON results for a Google Shopping API search.</p></div>
   <div class="p-4 row m-0">
       <div class="col-lg-6 mb-2 p-1">
-          <img class="img-fluid html-example-image mb-3" alt="Results with tbs values" src="assets/google_shopping/filters-94b0705e8c767a112351e6356c2b53d0116502e9176d742be6ea4697e938cf1f.jpg" />
+          <img class="img-fluid html-example-image mb-3" alt="Results with tbs values" src="https://serpapi.com/assets/google_shopping/filters-94b0705e8c767a112351e6356c2b53d0116502e9176d742be6ea4697e938cf1f.jpg" />
       </div>
       <div class="col-lg-6 p-1">
-        <div class="integrationsMountPoint" id="integrationsMountPoint-4401"></div>
-        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_shopping&quot;,&quot;q&quot;:&quot;tv&quot;,&quot;tbs&quot;:&quot;mr:1,pdtr0:708987%7C709001&quot;,&quot;highlight&quot;:&quot;filters&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-4401&quot;,&quot;json_container_id&quot;:&quot;sub-pre-8990&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_shopping\u0026q=tv\u0026tbs=mr%3A1%2Cpdtr0%3A708987%257C709001&quot;}" data-react-cache-id="Integrations-0"></div>
+        <div class="integrationsMountPoint" id="integrationsMountPoint-5613"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_shopping&quot;,&quot;q&quot;:&quot;tv&quot;,&quot;tbs&quot;:&quot;mr:1,pdtr0:708987%7C709001&quot;,&quot;highlight&quot;:&quot;filters&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-5613&quot;,&quot;json_container_id&quot;:&quot;sub-pre-2495&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_shopping\u0026q=tv\u0026tbs=mr%3A1%2Cpdtr0%3A708987%257C709001&quot;}" data-react-cache-id="Integrations-0"></div>
         <br/>
         <div class="code-wrap">
           <div class="code-header">
@@ -3870,10 +3870,10 @@
               <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
             </div>
             <div class="code-links">
-              <a href="./playground%3Fengine=google_shopping&amp;q=tv&amp;tbs=mr:1,pdtr0:708987%257C709001&amp;highlight=filters.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+              <a href="https://serpapi.com/playground?engine=google_shopping&amp;q=tv&amp;tbs=mr%3A1%2Cpdtr0%3A708987%257C709001&amp;highlight=filters" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
             </div>
           </div>
-          <pre id="sub-pre-8990" class="sub-pre"><code class="language-json" id="jsonResults">{
+          <pre id="sub-pre-2495" class="sub-pre"><code class="language-json" id="jsonResults">{
   ...
   &quot;filters&quot;: [
     {
@@ -3953,11 +3953,11 @@
     <div class="docu-para p-4"><p>The <span class="parameter-highlight">tbs</span> parameter is constructed in the following manner:<br><br><code>mr:1</code> + <code>prefix</code> + <code>:</code> + <code>filter-type</code> + <code>|</code> + <code>value</code><br><br>Note that the <code>|</code> symbol is displayed as <code>%7C</code> in the JSON.<br><br> To add multiple values of the same type (I.e multiple brands, or multiple colors) use the following format:<br><br><code>mr:1</code> + <code>prefix</code> + <code>:</code> + <code>filter-type</code> + <code>|</code> + <code>first value</code> + <code>!</code> + <code>second value</code> + <code>!</code> + <code>third value</code><br><br>Google may use different formats for some filters. To quickly build your <span class="parameter-highlight">tbs</span> value, or to examine how <span class="parameter-highlight">tbs</span> values are put together for different filters, you can try a search in Google Shopping in your browser, select some filters, and extract the <span class="parameter-highlight">tbs</span> value from the address bar.</p></div>
   <div class="p-4 row m-0">
       <div class="col-lg-6 mb-2 p-1">
-          <img class="img-fluid html-example-image mb-3" alt="Results with  multiple filters  of the same type" src="assets/google_shopping/filters_multiple-5fa46a2d2d51981c31aa00083780529cd42dfd7a303c485684f098909ae82969.jpg" />
+          <img class="img-fluid html-example-image mb-3" alt="Results with  multiple filters  of the same type" src="https://serpapi.com/assets/google_shopping/filters_multiple-5fa46a2d2d51981c31aa00083780529cd42dfd7a303c485684f098909ae82969.jpg" />
       </div>
       <div class="col-lg-6 p-1">
-        <div class="integrationsMountPoint" id="integrationsMountPoint-8649"></div>
-        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_shopping&quot;,&quot;q&quot;:&quot;tv&quot;,&quot;tbs&quot;:&quot;mr:1,pdtr0:708987%7C709001!708995!1000526&quot;,&quot;highlight&quot;:&quot;filters&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-8649&quot;,&quot;json_container_id&quot;:&quot;sub-pre-4246&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_shopping\u0026q=tv\u0026tbs=mr%3A1%2Cpdtr0%3A708987%257C709001%21708995%211000526&quot;}" data-react-cache-id="Integrations-0"></div>
+        <div class="integrationsMountPoint" id="integrationsMountPoint-0693"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_shopping&quot;,&quot;q&quot;:&quot;tv&quot;,&quot;tbs&quot;:&quot;mr:1,pdtr0:708987%7C709001!708995!1000526&quot;,&quot;highlight&quot;:&quot;filters&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-0693&quot;,&quot;json_container_id&quot;:&quot;sub-pre-1202&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_shopping\u0026q=tv\u0026tbs=mr%3A1%2Cpdtr0%3A708987%257C709001%21708995%211000526&quot;}" data-react-cache-id="Integrations-0"></div>
         <br/>
         <div class="code-wrap">
           <div class="code-header">
@@ -3965,10 +3965,10 @@
               <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
             </div>
             <div class="code-links">
-              <a href="./playground%3Fengine=google_shopping&amp;q=tv&amp;tbs=mr:1,pdtr0:708987%257C709001!708995!1000526&amp;highlight=filters.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+              <a href="https://serpapi.com/playground?engine=google_shopping&amp;q=tv&amp;tbs=mr%3A1%2Cpdtr0%3A708987%257C709001%21708995%211000526&amp;highlight=filters" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
             </div>
           </div>
-          <pre id="sub-pre-4246" class="sub-pre"><code class="language-json" id="jsonResults">{
+          <pre id="sub-pre-1202" class="sub-pre"><code class="language-json" id="jsonResults">{
   ...
   &quot;filters&quot;: [
     {
@@ -4028,11 +4028,11 @@
     <div class="docu-para p-4"><p>The prefix is usually <code>pdtr[n]</code> where n is a number that starts with 0 and increments with each filter type you add. So to add two values for two different types of filters:<br><br><code>mr:1</code> + <code>pdtr[n]</code> + <code>:</code> + <code>first-filter-type</code> + <code>|</code> + <code>first value</code> +<code>!</code> + <code>second value</code> + <code>,</code> + <code>pdtr[n + 1]</code> + <code>:</code> + <code>second-filter-type</code> + <code>|</code> + <code>first value</code> + <code>!</code> + <code>second value</code><br><br>Note that the <code>|</code> symbol is displayed as <code>%7C</code> in the JSON.<br><br>Google may use different formats for some filters. To quickly build your <span class="parameter-highlight">tbs</span> value, or to examine how <span class="parameter-highlight">tbs</span> values are put together for different filters, you can try a search in Google Shopping in your browser, select some filters, and extract the <span class="parameter-highlight">tbs</span> value from the address bar.</p></div>
   <div class="p-4 row m-0">
       <div class="col-lg-6 mb-2 p-1">
-          <img class="img-fluid html-example-image mb-3" alt="Results with  multiple filters  of different types" src="assets/google_shopping/filters_multiple_different-404bbd546bb16cd2ec1d297e619727aa1fbad7018cd1eeba13c3483f369697f1.jpg" />
+          <img class="img-fluid html-example-image mb-3" alt="Results with  multiple filters  of different types" src="https://serpapi.com/assets/google_shopping/filters_multiple_different-404bbd546bb16cd2ec1d297e619727aa1fbad7018cd1eeba13c3483f369697f1.jpg" />
       </div>
       <div class="col-lg-6 p-1">
-        <div class="integrationsMountPoint" id="integrationsMountPoint-8665"></div>
-        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_shopping&quot;,&quot;q&quot;:&quot;tv&quot;,&quot;tbs&quot;:&quot;mr:1,pdtr0:708987%7C709001,pdtr1:2622114%7C3964445&quot;,&quot;highlight&quot;:&quot;filters&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-8665&quot;,&quot;json_container_id&quot;:&quot;sub-pre-5133&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_shopping\u0026q=tv\u0026tbs=mr%3A1%2Cpdtr0%3A708987%257C709001%2Cpdtr1%3A2622114%257C3964445&quot;}" data-react-cache-id="Integrations-0"></div>
+        <div class="integrationsMountPoint" id="integrationsMountPoint-1248"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_shopping&quot;,&quot;q&quot;:&quot;tv&quot;,&quot;tbs&quot;:&quot;mr:1,pdtr0:708987%7C709001,pdtr1:2622114%7C3964445&quot;,&quot;highlight&quot;:&quot;filters&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-1248&quot;,&quot;json_container_id&quot;:&quot;sub-pre-9728&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_shopping\u0026q=tv\u0026tbs=mr%3A1%2Cpdtr0%3A708987%257C709001%2Cpdtr1%3A2622114%257C3964445&quot;}" data-react-cache-id="Integrations-0"></div>
         <br/>
         <div class="code-wrap">
           <div class="code-header">
@@ -4040,10 +4040,10 @@
               <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
             </div>
             <div class="code-links">
-              <a href="./playground%3Fengine=google_shopping&amp;q=tv&amp;tbs=mr:1,pdtr0:708987%257C709001,pdtr1:2622114%257C3964445&amp;highlight=filters.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+              <a href="https://serpapi.com/playground?engine=google_shopping&amp;q=tv&amp;tbs=mr%3A1%2Cpdtr0%3A708987%257C709001%2Cpdtr1%3A2622114%257C3964445&amp;highlight=filters" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
             </div>
           </div>
-          <pre id="sub-pre-5133" class="sub-pre"><code class="language-json" id="jsonResults">{
+          <pre id="sub-pre-9728" class="sub-pre"><code class="language-json" id="jsonResults">{
   ...
   &quot;filters&quot;: [
     {
@@ -4104,11 +4104,11 @@
     <div class="docu-para p-4"><p>When listing multiple sellers, <code>|</code> is used to separate the values instead of <code>!</code>:<br><br><code>mr:1</code> + <code>merchagg</code> + <code>:</code> + <code>first value</code> + <code>|</code> + <code>second value</code> + <code>|</code> + <code>third value</code><br><br>Google may use different formats for some other filters as well. To quickly build your <span class="parameter-highlight">tbs</span> value, or to examine how <span class="parameter-highlight">tbs</span> values are put together for different filters, you can try a search in Google Shopping in your browser, select some filters, and extract the <span class="parameter-highlight">tbs</span> value from the address bar.</p></div>
   <div class="p-4 row m-0">
       <div class="col-lg-6 mb-2 p-1">
-          <img class="img-fluid html-example-image mb-3" alt="Filtering by  multiple sellers" src="assets/google_shopping/filters_sellers-74010b75a94e6bac2f1a6ca4f900bfb9bc752955aa4d0220b77317daeec17216.jpg" />
+          <img class="img-fluid html-example-image mb-3" alt="Filtering by  multiple sellers" src="https://serpapi.com/assets/google_shopping/filters_sellers-74010b75a94e6bac2f1a6ca4f900bfb9bc752955aa4d0220b77317daeec17216.jpg" />
       </div>
       <div class="col-lg-6 p-1">
-        <div class="integrationsMountPoint" id="integrationsMountPoint-1345"></div>
-        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_shopping&quot;,&quot;q&quot;:&quot;tv&quot;,&quot;tbs&quot;:&quot;mr:1,merchagg:g113872638%7Cm7388148%7Cm114193152|g7187155%7Cm1311674|g784994%7Cm10046&quot;,&quot;highlight&quot;:&quot;filters&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-1345&quot;,&quot;json_container_id&quot;:&quot;sub-pre-6513&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_shopping\u0026q=tv\u0026tbs=mr%3A1%2Cmerchagg%3Ag113872638%257Cm7388148%257Cm114193152%7Cg7187155%257Cm1311674%7Cg784994%257Cm10046&quot;}" data-react-cache-id="Integrations-0"></div>
+        <div class="integrationsMountPoint" id="integrationsMountPoint-7576"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_shopping&quot;,&quot;q&quot;:&quot;tv&quot;,&quot;tbs&quot;:&quot;mr:1,merchagg:g113872638%7Cm7388148%7Cm114193152|g7187155%7Cm1311674|g784994%7Cm10046&quot;,&quot;highlight&quot;:&quot;filters&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-7576&quot;,&quot;json_container_id&quot;:&quot;sub-pre-9030&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_shopping\u0026q=tv\u0026tbs=mr%3A1%2Cmerchagg%3Ag113872638%257Cm7388148%257Cm114193152%7Cg7187155%257Cm1311674%7Cg784994%257Cm10046&quot;}" data-react-cache-id="Integrations-0"></div>
         <br/>
         <div class="code-wrap">
           <div class="code-header">
@@ -4116,10 +4116,10 @@
               <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
             </div>
             <div class="code-links">
-              <a href="./playground%3Fengine=google_shopping&amp;q=tv&amp;tbs=mr:1,merchagg:g113872638%257Cm7388148%257Cm114193152|g7187155%257Cm1311674|g784994%257Cm10046&amp;highlight=filters.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+              <a href="https://serpapi.com/playground?engine=google_shopping&amp;q=tv&amp;tbs=mr%3A1%2Cmerchagg%3Ag113872638%257Cm7388148%257Cm114193152%7Cg7187155%257Cm1311674%7Cg784994%257Cm10046&amp;highlight=filters" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
             </div>
           </div>
-          <pre id="sub-pre-6513" class="sub-pre"><code class="language-json" id="jsonResults">{
+          <pre id="sub-pre-9030" class="sub-pre"><code class="language-json" id="jsonResults">{
   ...
   &quot;filters&quot;: [
    {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="+nMOzdKYXCdeWBJ4l5cJDiaUWs3+kqpIRheC8+NEUe+o0VvuDvxCuJe0r9OfLMjJ+LTwXQ8p3kBztNxcTWrcqQ==" />
+<meta name="csrf-token" content="3hgRQQyDKbzeObcZItxTYV40zeZdpGeKwsYG24ITCuT7DM9MUQdgspp7ekb1LN+7Nwz+00iaa31adzZO2oJ0SA==" />
 
       
   <title>Google Flights API - SerpApi</title>
@@ -3760,7 +3760,7 @@
       <p class="overflow-hidden m-0 bold-500">API Studio</p>
     </li>
     <li class="dashboard-menu-top demo pl-0 mb-4 ">
-      <a href="demo.html" class="d-flex text-decoration-none align-items-center">
+      <a href="playground_links/playground.html" class="d-flex text-decoration-none align-items-center">
         <div class="d-inline-flex py-1 align-items-center">
           <i class="icon fas fa-code"></i><span>Playground</span>
         </div>
@@ -3834,7 +3834,7 @@
     <div class="uptime-badge-container d-flex align-items-center mt-4">
   <a href="status/google_flights.html">
       
-          <div class="uptime-badge d-flex enable-tooltip" data-tippy-content="Last month uptime. 2.29s average response time.">
+          <div class="uptime-badge d-flex enable-tooltip" data-tippy-content="Last month uptime. 2.24s average response time.">
 
         <div class="text-nowrap badge-name">API uptime</div>
         <div class="text-nowrap badge-status green"><span>100.000%</span></div>
@@ -3846,7 +3846,7 @@
 
 
   <div class="mt-4 mb-5">
-    <p>Our Google Flights API allows you to scrape flight results from Google Flights. The API is accessed through the following endpoint: <code>/search?engine=google_flights</code>.<br><br>A user may query the following: <code>https://serpapi.com/search?engine=google_flights</code> utilizing a <code>GET</code> request. Head to the <a href="playground%3Fengine=google_flights.html">playground</a> for a live and interactive demo.</p>
+    <p>Our Google Flights API allows you to scrape flight results from Google Flights. The API is accessed through the following endpoint: <code>/search?engine=google_flights</code>.<br><br>A user may query the following: <code>https://serpapi.com/search?engine=google_flights</code> utilizing a <code>GET</code> request. Head to the <a href="playground_links/playground%3Fengine=google_flights.html">playground</a> for a live and interactive demo.</p>
   </div>
 
   <h2 id="api-parameters">
@@ -3968,7 +3968,7 @@
                       <p class="param-name"><span class="parameter-highlight">outbound_date</span></p>
                         <p class="param-req">Optional</p>
                     </div>
-                    <p class="param-des">Parameter defines the outbound date. The format is YYYY-MM-DD. e.g. <code>2024-12-04</code></p>
+                    <p class="param-des">Parameter defines the outbound date. The format is YYYY-MM-DD. e.g. <code>2024-12-07</code></p>
                   </div>
 
                   <div class="param-item mb-4 d-flex" id="api-parameters-advanced-google-flights-parameters-return-date">
@@ -3979,7 +3979,7 @@
                       <p class="param-name"><span class="parameter-highlight">return_date</span></p>
                         <p class="param-req">Optional</p>
                     </div>
-                    <p class="param-des">Parameter defines the return date. The format is YYYY-MM-DD. e.g. <code>2024-12-10</code><br><br><span class='bold-500'><i class='fas fa-info-circle mr-2 opacity-3'></i>Parameter is <span class='red'>required</span> if <span class='parameter-highlight'>type</span> parameter is set to: <code>1</code> (Round trip)</p>
+                    <p class="param-des">Parameter defines the return date. The format is YYYY-MM-DD. e.g. <code>2024-12-13</code><br><br><span class='bold-500'><i class='fas fa-info-circle mr-2 opacity-3'></i>Parameter is <span class='red'>required</span> if <span class='parameter-highlight'>type</span> parameter is set to: <code>1</code> (Round trip)</p>
                   </div>
 
                   <div class="param-item mb-4 d-flex" id="api-parameters-advanced-google-flights-parameters-travel-class">
@@ -4001,7 +4001,7 @@
                       <p class="param-name"><span class="parameter-highlight">multi_city_json</span></p>
                         <p class="param-req">Optional</p>
                     </div>
-                    <p class="param-des">Parameter defines the flight information for multi-city flights. It's a JSON string containing multiple flight information objects. Each object should contain the following fields:<br><br><code>departure_id</code> - The departure airport code or location kgmid. The format is the same as the main <a href='google-flights-api.html#api-parameters-search-query-departure-id'>departure_id</a> parameter.<br><code>arrival_id</code> - The arrival airport code or location kgmid. The format is the same as the main <a href='google-flights-api.html#api-parameters-search-query-arrival-id'>arrival_id</a> parameter.<br><code>date</code> - Flight date. The format is the same as the <a href='google-flights-api.html#api-parameters-advanced-google-flights-parameters-outbound-date'>outbound_date</a> parameter.<br><code>times</code> - Time range for the flight. The format is the same as the <a href='google-flights-api.html#api-parameters-advanced-filters-outbound-times'>outbound_times</a> parameter. This parameter is optional.<br><br>Example:<br><code>[{"departure_id":"CDG","arrival_id":"NRT","date":"2024-12-10"},{"departure_id":"NRT","arrival_id":"LAX,SEA","date":"2024-12-17"},{"departure_id":"LAX,SEA","arrival_id":"AUS","date":"2024-12-24","times":"8,18,9,23"}]</code><br><br>The example is a multi-city flight from <code>CDG</code> to <code>NRT</code> on <code>2024-12-10</code>, then from <code>NRT</code> to <code>LAX</code> or <code>SEA</code> on <code>2024-12-17</code>, and finally from <code>LAX</code> or <code>SEA</code> to <code>AUS</code> on <code>2024-12-24</code>. The last flight has a departure time range from 8:00 AM to 7:00 PM and an arrival time range from 9:00 AM to 12:00 AM (Midnight).</p>
+                    <p class="param-des">Parameter defines the flight information for multi-city flights. It's a JSON string containing multiple flight information objects. Each object should contain the following fields:<br><br><code>departure_id</code> - The departure airport code or location kgmid. The format is the same as the main <a href='google-flights-api.html#api-parameters-search-query-departure-id'>departure_id</a> parameter.<br><code>arrival_id</code> - The arrival airport code or location kgmid. The format is the same as the main <a href='google-flights-api.html#api-parameters-search-query-arrival-id'>arrival_id</a> parameter.<br><code>date</code> - Flight date. The format is the same as the <a href='google-flights-api.html#api-parameters-advanced-google-flights-parameters-outbound-date'>outbound_date</a> parameter.<br><code>times</code> - Time range for the flight. The format is the same as the <a href='google-flights-api.html#api-parameters-advanced-filters-outbound-times'>outbound_times</a> parameter. This parameter is optional.<br><br>Example:<br><code>[{"departure_id":"CDG","arrival_id":"NRT","date":"2024-12-13"},{"departure_id":"NRT","arrival_id":"LAX,SEA","date":"2024-12-20"},{"departure_id":"LAX,SEA","arrival_id":"AUS","date":"2024-12-27","times":"8,18,9,23"}]</code><br><br>The example is a multi-city flight from <code>CDG</code> to <code>NRT</code> on <code>2024-12-13</code>, then from <code>NRT</code> to <code>LAX</code> or <code>SEA</code> on <code>2024-12-20</code>, and finally from <code>LAX</code> or <code>SEA</code> to <code>AUS</code> on <code>2024-12-27</code>. The last flight has a departure time range from 8:00 AM to 7:00 PM and an arrival time range from 9:00 AM to 12:00 AM (Midnight).</p>
                   </div>
 
                   <div class="param-item mb-4 d-flex" id="api-parameters-advanced-google-flights-parameters-show-hidden">
@@ -4505,8 +4505,8 @@
           <img class="img-fluid html-example-image mb-3" alt="Typical Example" src="assets/google_flights/google_flights-34c6ceaf6f7ed51c2bae9c950c6d36ccde076a42eaf7d2f3858659578dc6aa74.png" />
       </div>
       <div class="col-lg-6 p-1">
-        <div class="integrationsMountPoint" id="integrationsMountPoint-7692"></div>
-        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_flights&quot;,&quot;departure_id&quot;:&quot;PEK&quot;,&quot;arrival_id&quot;:&quot;AUS&quot;,&quot;outbound_date&quot;:&quot;2024-12-04&quot;,&quot;return_date&quot;:&quot;2024-12-10&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;hl&quot;:&quot;en&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-7692&quot;,&quot;json_container_id&quot;:&quot;sub-pre-9174&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_flights\u0026departure_id=PEK\u0026arrival_id=AUS\u0026outbound_date=2024-12-04\u0026return_date=2024-12-10\u0026currency=USD\u0026hl=en&quot;}" data-react-cache-id="Integrations-0"></div>
+        <div class="integrationsMountPoint" id="integrationsMountPoint-3985"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_flights&quot;,&quot;departure_id&quot;:&quot;PEK&quot;,&quot;arrival_id&quot;:&quot;AUS&quot;,&quot;outbound_date&quot;:&quot;2024-12-07&quot;,&quot;return_date&quot;:&quot;2024-12-13&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;hl&quot;:&quot;en&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-3985&quot;,&quot;json_container_id&quot;:&quot;sub-pre-3606&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_flights\u0026departure_id=PEK\u0026arrival_id=AUS\u0026outbound_date=2024-12-07\u0026return_date=2024-12-13\u0026currency=USD\u0026hl=en&quot;}" data-react-cache-id="Integrations-0"></div>
         <br/>
         <div class="code-wrap">
           <div class="code-header">
@@ -4514,10 +4514,10 @@
               <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
             </div>
             <div class="code-links">
-              <a href="playground%3Fengine=google_flights&amp;departure_id=PEK&amp;arrival_id=AUS&amp;outbound_date=2024-12-04&amp;return_date=2024-12-10&amp;currency=USD&amp;hl=en.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+              <a href="playground_links/playground%3Fengine=google_flights&amp;departure_id=PEK&amp;arrival_id=AUS&amp;outbound_date=2024-12-07&amp;return_date=2024-12-13&amp;currency=USD&amp;hl=en.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
             </div>
           </div>
-          <pre id="sub-pre-9174" class="sub-pre"><code class="language-json" id="jsonResults">{
+          <pre id="sub-pre-3606" class="sub-pre"><code class="language-json" id="jsonResults">{
   &quot;search_metadata&quot;: {
     &quot;id&quot;: &quot;651a585815afff2d53eb9a5e&quot;,
     &quot;status&quot;: &quot;Success&quot;,
@@ -5077,8 +5077,8 @@
           <img class="img-fluid html-example-image mb-3" alt="Example with departure_id: CDG,ORY (multiple departure airports)" src="assets/google_flights/multiple_airports-e8bb0ce8a706e8cea50f3897879bb550eccea43d82c9759d3f7504ab0599715d.png" />
       </div>
       <div class="col-lg-6 p-1">
-        <div class="integrationsMountPoint" id="integrationsMountPoint-8268"></div>
-        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_flights&quot;,&quot;departure_id&quot;:&quot;CDG,ORY&quot;,&quot;arrival_id&quot;:&quot;LAX&quot;,&quot;outbound_date&quot;:&quot;2024-12-04&quot;,&quot;return_date&quot;:&quot;2024-12-10&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;hl&quot;:&quot;en&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-8268&quot;,&quot;json_container_id&quot;:&quot;sub-pre-6282&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_flights\u0026departure_id=CDG%2CORY\u0026arrival_id=LAX\u0026outbound_date=2024-12-04\u0026return_date=2024-12-10\u0026currency=USD\u0026hl=en&quot;}" data-react-cache-id="Integrations-0"></div>
+        <div class="integrationsMountPoint" id="integrationsMountPoint-6167"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_flights&quot;,&quot;departure_id&quot;:&quot;CDG,ORY&quot;,&quot;arrival_id&quot;:&quot;LAX&quot;,&quot;outbound_date&quot;:&quot;2024-12-07&quot;,&quot;return_date&quot;:&quot;2024-12-13&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;hl&quot;:&quot;en&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-6167&quot;,&quot;json_container_id&quot;:&quot;sub-pre-5395&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_flights\u0026departure_id=CDG%2CORY\u0026arrival_id=LAX\u0026outbound_date=2024-12-07\u0026return_date=2024-12-13\u0026currency=USD\u0026hl=en&quot;}" data-react-cache-id="Integrations-0"></div>
         <br/>
         <div class="code-wrap">
           <div class="code-header">
@@ -5086,10 +5086,10 @@
               <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
             </div>
             <div class="code-links">
-              <a href="playground%3Fengine=google_flights&amp;departure_id=CDG,ORY&amp;arrival_id=LAX&amp;outbound_date=2024-12-04&amp;return_date=2024-12-10&amp;currency=USD&amp;hl=en.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+              <a href="playground_links/playground%3Fengine=google_flights&amp;departure_id=CDG,ORY&amp;arrival_id=LAX&amp;outbound_date=2024-12-07&amp;return_date=2024-12-13&amp;currency=USD&amp;hl=en.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
             </div>
           </div>
-          <pre id="sub-pre-6282" class="sub-pre"><code class="language-json" id="jsonResults">{
+          <pre id="sub-pre-5395" class="sub-pre"><code class="language-json" id="jsonResults">{
   ...
   &quot;best_flights&quot;: [
     {
@@ -5285,8 +5285,8 @@
           <img class="img-fluid html-example-image mb-3" alt="Multi-city example" src="assets/google_flights/multi_city-6d8737e197e43b75d77aff44b1dc8f51bf586f3b3df15f03ac52825d5ef32819.png" />
       </div>
       <div class="col-lg-6 p-1">
-        <div class="integrationsMountPoint" id="integrationsMountPoint-8190"></div>
-        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_flights&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;hl&quot;:&quot;en&quot;,&quot;type&quot;:&quot;3&quot;,&quot;multi_city_json&quot;:&quot;[{\&quot;departure_id\&quot;:\&quot;CDG\&quot;,\&quot;arrival_id\&quot;:\&quot;NRT\&quot;,\&quot;date\&quot;:\&quot;2024-12-10\&quot;},{\&quot;departure_id\&quot;:\&quot;NRT\&quot;,\&quot;arrival_id\&quot;:\&quot;LAX,SEA\&quot;,\&quot;date\&quot;:\&quot;2024-12-17\&quot;},{\&quot;departure_id\&quot;:\&quot;LAX,SEA\&quot;,\&quot;arrival_id\&quot;:\&quot;AUS\&quot;,\&quot;date\&quot;:\&quot;2024-12-24\&quot;,\&quot;times\&quot;:\&quot;8,18,9,23\&quot;}]&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-8190&quot;,&quot;json_container_id&quot;:&quot;sub-pre-4550&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_flights\u0026currency=USD\u0026hl=en\u0026type=3\u0026multi_city_json=%5B%7B%22departure_id%22%3A%22CDG%22%2C%22arrival_id%22%3A%22NRT%22%2C%22date%22%3A%222024-12-10%22%7D%2C%7B%22departure_id%22%3A%22NRT%22%2C%22arrival_id%22%3A%22LAX%2CSEA%22%2C%22date%22%3A%222024-12-17%22%7D%2C%7B%22departure_id%22%3A%22LAX%2CSEA%22%2C%22arrival_id%22%3A%22AUS%22%2C%22date%22%3A%222024-12-24%22%2C%22times%22%3A%228%2C18%2C9%2C23%22%7D%5D&quot;}" data-react-cache-id="Integrations-0"></div>
+        <div class="integrationsMountPoint" id="integrationsMountPoint-1428"></div>
+        <div data-react-class="Integrations" data-react-props="{&quot;params&quot;:{&quot;engine&quot;:&quot;google_flights&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;hl&quot;:&quot;en&quot;,&quot;type&quot;:&quot;3&quot;,&quot;multi_city_json&quot;:&quot;[{\&quot;departure_id\&quot;:\&quot;CDG\&quot;,\&quot;arrival_id\&quot;:\&quot;NRT\&quot;,\&quot;date\&quot;:\&quot;2024-12-13\&quot;},{\&quot;departure_id\&quot;:\&quot;NRT\&quot;,\&quot;arrival_id\&quot;:\&quot;LAX,SEA\&quot;,\&quot;date\&quot;:\&quot;2024-12-20\&quot;},{\&quot;departure_id\&quot;:\&quot;LAX,SEA\&quot;,\&quot;arrival_id\&quot;:\&quot;AUS\&quot;,\&quot;date\&quot;:\&quot;2024-12-27\&quot;,\&quot;times\&quot;:\&quot;8,18,9,23\&quot;}]&quot;},&quot;container_id&quot;:&quot;integrationsMountPoint-1428&quot;,&quot;json_container_id&quot;:&quot;sub-pre-1507&quot;,&quot;root_url&quot;:&quot;https://serpapi.com/&quot;,&quot;url_params&quot;:&quot;engine=google_flights\u0026currency=USD\u0026hl=en\u0026type=3\u0026multi_city_json=%5B%7B%22departure_id%22%3A%22CDG%22%2C%22arrival_id%22%3A%22NRT%22%2C%22date%22%3A%222024-12-13%22%7D%2C%7B%22departure_id%22%3A%22NRT%22%2C%22arrival_id%22%3A%22LAX%2CSEA%22%2C%22date%22%3A%222024-12-20%22%7D%2C%7B%22departure_id%22%3A%22LAX%2CSEA%22%2C%22arrival_id%22%3A%22AUS%22%2C%22date%22%3A%222024-12-27%22%2C%22times%22%3A%228%2C18%2C9%2C23%22%7D%5D&quot;}" data-react-cache-id="Integrations-0"></div>
         <br/>
         <div class="code-wrap">
           <div class="code-header">
@@ -5294,10 +5294,10 @@
               <p><i class="fas fa-brackets-curly"></i>JSON Example</p>
             </div>
             <div class="code-links">
-              <a href="./playground%3Fengine=google_flights&amp;currency=USD&amp;hl=en&amp;type=3&amp;multi_city_json=[{&quot;departure_id&quot;:&quot;CDG&quot;,&quot;arrival_id&quot;:&quot;NRT&quot;,&quot;date&quot;:&quot;2024-12-10&quot;},{&quot;departure_id&quot;:&quot;NRT&quot;,&quot;arrival_id&quot;:&quot;LAX,SEA&quot;,&quot;date&quot;:&quot;2024-12-17&quot;},{&quot;departure_id&quot;:&quot;LAX,SEA&quot;,&quot;arriv.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
+              <a href="./playground%3Fengine=google_flights&amp;currency=USD&amp;hl=en&amp;type=3&amp;multi_city_json=[{&quot;departure_id&quot;:&quot;CDG&quot;,&quot;arrival_id&quot;:&quot;NRT&quot;,&quot;date&quot;:&quot;2024-12-13&quot;},{&quot;departure_id&quot;:&quot;NRT&quot;,&quot;arrival_id&quot;:&quot;LAX,SEA&quot;,&quot;date&quot;:&quot;2024-12-20&quot;},{&quot;departure_id&quot;:&quot;LAX,SEA&quot;,&quot;arriv.html" class="enable-tooltip" data-tippy-content="Open in playground" target="_blank"><i class="fas fa-external-link"></i></a>
             </div>
           </div>
-          <pre id="sub-pre-4550" class="sub-pre"><code class="language-json" id="jsonResults">{
+          <pre id="sub-pre-1507" class="sub-pre"><code class="language-json" id="jsonResults">{
   ...
   &quot;best_flights&quot;: [
     {
